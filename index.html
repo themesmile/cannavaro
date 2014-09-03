@@ -1,0 +1,1242 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="ico/favicon.ico" rel="shortcut icon">
+
+    <title>Cannavaro Web Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap theme -->
+    <!--  <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dripicon.css">
+    <link rel="stylesheet" href="css/typicons.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="js/tip/tooltipster.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="stylesheet" href="js/chartist/chartist.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style id="holderjs-style" type="text/css"></style>
+</head>
+
+<body role="document">
+    <!--  <div class="bg-top"></div> -->
+    <!-- TOPNAV -->
+    <nav class="navbar navbar-default navbar-static-top nav-bg-trans" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-text" href="#">Cannavaro<small>V 1.0</small></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+
+
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-white">
+                    <li><i class="fontello-calendar-1 text-white"></i>
+                    </li>
+                    <li id="Date"></li>
+                    <li id="hours"></li>
+                    <li class="point">:</li>
+                    <li id="min"></li>
+                    <li class="point">:</li>
+                    <li id="sec"></li>
+                </ul>
+
+
+
+
+
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/23.jpg">Hi, Dave Mattew <b class="caret"></b>
+                        </a>
+                        <ul style="margin-top:15px;" role="menu" class="dropdown-setting dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-user"></span>&nbsp;&nbsp;My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-vcard"></span>&nbsp;&nbsp;Account Setting</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-lifebuoy"></span>&nbsp;&nbsp;Help</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="http://themeforest.net/item/apricot-navigation-admin-dashboard-template/7664475?WT.ac=category_item&amp;WT.z_author=themesmile">
+                                    <span class="entypo-basket"></span>&nbsp;&nbsp; Purchase</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-gear"></i>&nbsp;&nbsp;Setting <span class="caret"></span></a>
+                        <ul style="margin-top:10px;" class="dropdown-setting dropdown-menu" role="menu">
+                            <li><a href="#">Color Changer</a>
+                                <li class="divider"></li>
+                                <li><a href="#">Color Background</a>
+                                </li>
+                                <li><a href="#">Image Background</a>
+                                </li>
+                                <li><a href="#">Pattern Background</a>
+                                </li>
+                                <li><a href="#">Video Background</a>
+                                </li>
+
+                        </ul>
+                        </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- END OF TOPNAV -->
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid paper-wrap bevel tlbr">
+        <div id="paper-top">
+
+            <div class="row">
+                <div class="col-sm-2 no-pad">
+                    <ul class="list-unstyled list-inline noft-btn">
+                        <li data-toggle="tooltip" data-placement="bottom" title="Profile" style="padding-left:8px; border-right:1px solid #ccc;"><i class="fontello-user-outline"></i>
+                        </li>
+
+                        <li data-toggle="tooltip" data-placement="bottom" title="Log Out"><i class="fontello-eject"></i>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-5 no-pad">
+                    <a id="leftmenu-trigger" class="tooltips" data-toggle="tooltip" data-placement="right" title="Toggle Sidebar"></a>
+                    <span class="header-icon"><i class="icon-home"></i>
+                    </span>
+
+
+                    <!--        <span class="subtitle-header">This is all about front page content</span> -->
+                    <ol class="breadcrumb newcrumb ng-scope">
+                        <li>
+                            <a href="#">
+                                <span>
+                                </span>Special Pages</a>
+                        </li>
+                        <li><a href="#">Invoice</a>
+                        </li>
+
+                    </ol>
+
+
+                </div>
+
+
+
+                <div class="col-sm-5 no-pad">
+                    <!-- menu right -->
+                    <div class="navbar-right">
+                        <ul class="nav navbar-nav margin-left">
+                            <!-- Messages: style can be found in dropdown.less-->
+                            <li class="dropdown messages-menu">
+                                <btn href="#" class="drop-btn dropdown-toggle bg-green" data-toggle="dropdown">
+                                    <i class="fa   fontello-mail"></i>
+                                    <span class="label label-success label-drop">4</span>
+                                </btn>
+                                <ul class="dropdown-menu drop-msg">
+                                    <li class="header bg-green">
+                                        <span class="text-green fa fa-sort-desc"></span>You have 4 messages</li>
+
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu">
+                                            <li>
+                                                <!-- start message -->
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="http://api.randomuser.me/portraits/thumb/men/30.jpg" class="img-circle" alt="User Image" />
+                                                    </div>
+                                                    <h4>
+                                                        Developer
+                                                        <!-- <small><i class="fa fa-clock-o"></i> 5 mins</small> -->
+                                                    </h4>
+                                                    <p>Bug fixed level 90%</p>
+                                                </a>
+                                            </li>
+                                            <!-- end message -->
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="http://api.randomuser.me/portraits/thumb/women/30.jpg" class="img-circle" alt="user image" />
+                                                    </div>
+                                                    <h4>
+                                                        Aplication Support
+                                                        <!-- <small><i class="fa fa-clock-o"></i> 2 hours</small> -->
+                                                    </h4>
+                                                    <p>There is some bug in your last submit</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="http://api.randomuser.me/portraits/thumb/men/31.jpg" class="img-circle" alt="user image" />
+                                                    </div>
+                                                    <h4>
+                                                        Lead Developers
+
+                                                    </h4>
+                                                    <p>Please check again your submit</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="http://api.randomuser.me/portraits/thumb/women/31.jpg" class="img-circle" alt="user image" />
+                                                    </div>
+                                                    <h4>
+                                                        Web Designer
+
+                                                    </h4>
+                                                    <p>Art has done</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="http://api.randomuser.me/portraits/thumb/men/32.jpg" class="img-circle" alt="user image" />
+                                                    </div>
+                                                    <h4>
+                                                        General Manager
+
+                                                    </h4>
+                                                    <p>Employed newslatter</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="footer bg-green">
+                                        <btn class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></btn>
+                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-trash"></btn>
+                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></btn>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Notifications: style can be found in dropdown.less -->
+                            <li class="dropdown notifications-menu">
+                                <btn href="#" class="drop-btn dropdown-toggle bg-aqua" data-toggle="dropdown">
+                                    <i class="fa fontello-bell"></i>
+                                    <span class="label bg-aqua label-drop">7</span>
+                                </btn>
+                                <ul class="dropdown-menu drop-noft">
+
+                                    <li class="header bg-aqua">
+                                        <span class="text-white fa fa-sort-desc"></span>You have 10 notifications</li>
+                                    <li class="divider bg-opacity-white"></li>
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fontello-user-add-outline"></i> New developer registered
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fontello-upload-outline"></i> 2 item commit
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fontello-users-outline"></i> 3 members joined
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fontello-basket"></i> 22 sales made
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fontello-contacts"></i> New task from manager
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="divider bg-opacity-white"></li>
+                                    <li class="footer bg-aqua">
+                                        <btn class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></btn>
+                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-trash"></btn>
+                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></btn>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Tasks: style can be found in dropdown.less -->
+                            <li class="dropdown tasks-menu">
+                                <btn href="#" class="drop-btn bg-red dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa  fontello-contacts"></i>
+                                    <span class="label bg-red label-drop">9</span>
+                                </btn>
+                                <ul class="dropdown-menu drop-task">
+
+                                    <li class="header bg-red">
+                                        <span class="fa fa-sort-desc"></span>You have 9 tasks</li>
+                                    <li class="divider bg-opacity-white"></li>
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu">
+                                            <li>
+
+                                                <!-- Task item -->
+                                                <a href="#">
+                                                    <h3 class="fontello-leaf">
+                                                        Tidy up your files
+                                                        <small class="pull-right">35%</small>
+                                                    </h3>
+                                                    <div class="progress xs bg-white">
+                                                        <div class="progress-bar bg-red-orange " style="width: 35%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">35% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end task item -->
+                                            <li>
+                                                <!-- Task item -->
+                                                <a href="#">
+                                                    <h3 class="fontello-box">
+                                                        Check server status
+                                                        <small class="pull-right">40%</small>
+                                                    </h3>
+                                                    <div class="progress xs bg-white">
+                                                        <div class="progress-bar bg-red-orange" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">40% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end task item -->
+                                            <li>
+                                                <!-- Task item -->
+                                                <a href="#">
+                                                    <h3 class="fontello-headphones">
+                                                        Support costumer
+                                                        <small class="pull-right">60%</small>
+                                                    </h3>
+                                                    <div class="progress xs bg-white">
+                                                        <div class="progress-bar bg-red-orange" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">60% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end task item -->
+                                            <li>
+                                                <!-- Task item -->
+                                                <a href="#">
+                                                    <h3 class="fontello-fire-station">
+                                                        Fix bug
+                                                        <small class="pull-right">80%</small>
+                                                    </h3>
+                                                    <div class="progress xs bg-white">
+                                                        <div class="progress-bar bg-red-orange" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">80% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- end task item -->
+                                        </ul>
+                                    </li>
+                                    <li class="divider bg-opacity-white"></li>
+                                    <li class="footer">
+                                        <btn class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></btn>
+                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-trash"></btn>
+                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></btn>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of menu right -->
+            </div>
+
+        </div>
+
+        <!-- SIDE MENU -->
+        <div class="wrap-sidebar-content">
+            <div id="skin-select">
+
+                <a id="toggle">
+                    <span class="entypo-menu"></span>
+                </a>
+
+                <div class="skin-part">
+                    <div id="tree-wrap">
+                        <div class="side-bar">
+                            <ul id="menu-showhide" class="topnav">
+                                <li class="devider-title">
+                                    <h3>
+                                        <span>Desain Kit Menu</span>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="index.html" title="Dashboard">
+                                        <i class="fontello-desktop-1"></i>
+                                        <span>Dashboard</span>
+                                        <div class="noft-blue">New</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="mail.html" title="Mail">
+                                        <i class=" fontello-mail-1"></i>
+                                        <span>mail</span>
+                                        <div class="noft-blue bg-red">289</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="#" title="UI">
+                                        <i class="fontello-note"></i>
+                                        <span>UI</span>
+                                    </a>
+                                    <ul>
+                                        <!--  <li class="hide-min-toggle">UI Element</li> -->
+                                        <li>
+                                            <!-- class="active" -->
+                                            <a class="tooltip-tip2" href="element.html" title="Element">Element</a>
+                                        </li>
+                                        <li><a class="tooltip-tip2" href="button.html" title="Button">
+                                            Button
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="wizard.html" title="Tab & Accordion">Wizard</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="calendar.html" title="Calender">Calendar</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="tree.html" title="Tree View">Tree View</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="grids.html" title="Grids">Grids</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="chart.html" title="Chart">Chart</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip" href="typhography.html" title="Typhoghrapy">
+                                                
+                                                Typhoghrapy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="devider-horizontal"></li>
+                                <li class="devider-title">
+                                    <h3>
+                                        <span>Component</span>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="#" title="Form">
+                                        <i class="fontello-doc-1"></i>
+                                        <span>Form</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a class="tooltip-tip2" href="form-element.html" title="Form Elements">Form Elements</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="andvance-form.html" title="Andvance Form">Andvance Form</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="text-editor.html" title="Text Editor">Text Editor</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="file-upload.html" title="File Upload">File Upload</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="#" title="Tables">
+                                        <i class="fontello-calendar-1"></i>
+                                        <span>Tables</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a class="tooltip-tip2" href="table-static.html" title="Table Static">Table Static</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="table-dynamic.html" title="Table Dynamic">Table Dynamic</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="icon.html" title="Icons">
+                                        <i class="fontello-food"></i>
+                                        <span>Icons</span>
+                                        <div class="noft-blue bg-green" style="display: inline-block; float: none;">New</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="map.html" title="Map">
+                                        <i class="fontello-location-1"></i>
+                                        <span>Map</span>
+
+                                    </a>
+                                </li>
+                                <li class="devider-horizontal"></li>
+                                <li class="devider-title">
+                                    <h3>
+                                        <span>Special Page</span>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="#" title="Extra">
+                                        <i class="fontello-beaker"></i>
+                                        <span>Extra</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a class="tooltip-tip2" href="invoice.html" title="Invoice">Invoice</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="pricing_table.html" title="Pricing Table">Pricing Table</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="time-line.html" title="Time Line">Time Line</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="404.html" title="404 Error Page">404 Error Page</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="500.html" title="500 Error Page">500 Error Page</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="lock-screen.html" title="Lock Screen">Lock Screen</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a class="tooltip-tip " href="login.html" title="login">
+                                        <i class=" fontello-lock-1"></i>
+                                        <span>Login</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="side-dash">
+                                <h3>
+                                    <span>Task Progress</span>
+                                </h3>
+                                <ul class="menu side-dashh-list">
+
+                                    <li>
+
+                                        <!-- Task item -->
+                                        <a href="#">
+                                            <h3 class="fontello-leaf">
+                                                Tidy up your files
+                                                <small class="pull-right">35%</small>
+                                            </h3>
+                                            <div class="progress xs bg-opacity-one height-tiny">
+                                                <div class="progress-bar bg-blue " style="width: 35%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="sr-only">35% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end task item -->
+                                    <li>
+                                        <!-- Task item -->
+                                        <a href="#">
+                                            <h3 class="fontello-box">
+                                                Check server status
+                                                <small class="pull-right">40%</small>
+                                            </h3>
+                                            <div class="progress xs bg-opacity-one height-tiny">
+                                                <div class="progress-bar bg-aqua" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="sr-only">40% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end task item -->
+                                    <li>
+                                        <!-- Task item -->
+                                        <a href="#">
+                                            <h3 class="fontello-headphones">
+                                                Support costumer
+                                                <small class="pull-right">60%</small>
+                                            </h3>
+                                            <div class="progress xs bg-opacity-one height-tiny">
+                                                <div class="progress-bar bg-red-orange" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="sr-only">60% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end task item -->
+                                    <li>
+                                        <!-- Task item -->
+                                        <a href="#">
+                                            <h3 class="fontello-fire-station">
+                                                Fix bug
+                                                <small class="pull-right">80%</small>
+                                            </h3>
+                                            <div class="progress xs bg-white height-tiny">
+                                                <div class="progress-bar bg-red" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="sr-only">80% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <h3>
+                                    <span>Traffic</span>
+                                </h3>
+                                <ul class="side-bar-list">
+                                    <li>Avg. Traffic
+                                        <div class="bar pull-right"></div>
+                                    </li>
+                                    <li>Visitors
+
+                                    </li>
+                                    <li>Convertion Rate
+                                        <div class="linebar3">5,7,8,9,3,5,3,8,5</div>
+                                    </li>
+                                </ul>
+                                <h3>
+                                    <span>Reply</span>
+                                </h3>
+                                <div id="g1" style="height:180px" class="gauge"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/skin-select -->
+
+
+            <!-- END OF SIDE MENU -->
+
+            <!-- CONTENT -->
+            <div class="wrap-fluid" id="paper-bg">
+                <h2 class="tittle-content-header">Dashboard</h2>
+                <div class="sub-board">
+                    <h4>Moshi moshi,
+                        <strong>Dave Mattew</strong>,&nbsp;<i class="fontello-location"></i> Berlin</h4>
+
+                    <div class="dark" style="visibility: visible;">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control search rounded id_search" placeholder="Search">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+
+
+                <div class="">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="content-bg bg-white radius">
+                                <div class="content-icon text-green">
+                                    <i class="fontello-twitter text-green border-green"></i>
+                                    <h2>5,455</h2>
+                                    <p>Followers</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="content-bg bg-white radius">
+
+                                <div class="content-icon text-aqua">
+                                    <i class="fontello-facebook text-aqua border-aqua"></i>
+                                    <h2>182</h2>
+                                    <p>Friends</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="content-bg bg-white radius">
+
+                                <div class="content-icon text-blue">
+                                    <i class="fontello-linkedin text-blue border-blue"></i>
+                                    <h2>564</h2>
+                                    <p>Conection</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="right-nest bg-white">
+
+                                <div class="media direction">
+                                    <span class="pull-left">
+                                        <i class="media-object fontello-params"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 style="margin:-2px 0 0" class="media-heading">Statitic</h5>
+                                        <h4>Trans Studio, Kiara Condong</h4>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="">
+                                    <ul class="list-unstyled newsticker">
+                                        <li>
+                                            <ul class="list-unstyled jalur-nest text-green">
+                                                <li>
+                                                    <strong>Jalur 1 : Trans Studio Master</strong>
+                                                </li>
+                                                <li>
+                                                    <strong>#34</strong>
+                                                    <span></span><i class="fontello-chronograph"></i>&nbsp;&nbsp;11 Menit 24 Detik</li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="bg-blue">
+                                            <ul class="list-unstyled jalur-nest ">
+                                                <li>
+                                                    <strong>Jalur 2 : Tomang</strong>
+                                                </li>
+                                                <li>
+                                                    <strong>#35</strong>
+                                                    <span></span><i class="fontello-chronograph"></i>&nbsp;&nbsp;23 Menit 53 Detik</li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="bg-aqua">
+                                            <ul class="list-unstyled jalur-nest">
+                                                <li>
+                                                    <strong>Jalur 3 : Cengkareng</strong>
+                                                </li>
+                                                <li>
+                                                    <strong>#36</strong>
+                                                    <span></span><i class="fontello-chronograph"></i>&nbsp;&nbsp;45 Menit 23 Detik</li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row -->
+
+                    <div class="row">
+                        <div class="socmed-stat">
+                            <i class="fa fontello-clouds-flash-alt bg-green"></i>
+                            <span>
+                                <strong>Weather Report</strong>from<i> Budai Toma</i>
+                                <small>23/6/2014</small>
+                            </span>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="weather-wrap">
+                                <div class="row">
+                                    <div class="col-xs-12 no-pad">
+                                        <div class="temperature"><b>Monday</b>, 07:30 AM
+                                            <span>F&nbsp;&nbsp;</span>
+                                            <span><b>C</b>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <div class="weather-icon">
+                                            <span>
+                                                <canvas id="clear-day" width="75" height="75">
+                                                </canvas>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="weather-text">
+                                            <h2>Denver
+                                                <br><i>Clear Day</i>
+                                            </h2>
+                                        </div>
+                                   
+                                        <div class="weather-local">
+                                            <i class="fontello-temperatire"></i><strong>18</strong> F
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="weather-dash">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="daily-weather">
+                                            <h2>Mon</h2>
+
+                                            <h1>
+                                                <span>
+                                                    <canvas id="fog" width="60" height="60">
+                                                    </canvas>
+
+                                                </span>
+                                            </h1>
+                                            <h3>85
+                                                <small><i class="fontello-fahrenheit"></i>
+                                                </small>
+                                            </h3>
+                                            <h5>15
+                                                <i>km/h</i>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div class="daily-weather">
+                                            <h2>Tue</h2>
+                                            <h1>
+                                                <canvas height="60" width="60" id="rain">
+                                                </canvas>
+                                            </h1>
+                                            <h3>65
+                                                <small><i class="fontello-fahrenheit"></i>
+                                                </small>
+                                            </h3>
+
+                                            <h5>12
+                                                <i>km/h</i>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div class="daily-weather">
+                                            <h2>Wed</h2>
+                                            <h1>
+                                                <canvas height="60" width="60" id="snow"></canvas>
+                                            </h1>
+                                            <h3>83
+                                                <small><i class="fontello-fahrenheit"></i>
+                                                </small>
+                                            </h3>
+
+                                            <h5>14
+                                                <i>km/h</i>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div class="daily-weather">
+                                            <h2>Thu</h2>
+                                            <h1>
+                                                <canvas height="60" width="60" id="sleet">
+                                                </canvas>
+                                            </h1>
+                                            <h3>80
+                                                <small><i class="fontello-fahrenheit"></i>
+                                                </small>
+                                            </h3>
+
+                                            <h5>15
+                                                <i>km/h</i>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div class="daily-weather">
+                                            <h2>Fri</h2>
+                                            <h1>
+                                                <canvas height="60" width="60" id="wind"></canvas>
+                                            </h1>
+                                            <h3>79
+                                                <small><i class="fontello-fahrenheit"></i>
+                                                </small>
+                                            </h3>
+
+                                            <h5>11
+                                                <i>km/h</i>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div class="daily-weather">
+                                            <h2>Sat</h2>
+                                            <h1>
+                                                <canvas height="60" width="60" id="partly-cloudy-day"></canvas>
+                                            </h1>
+                                            <h3>82
+                                                <small><i class="fontello-fahrenheit"></i>
+                                                </small>
+                                            </h3>
+
+                                            <h5>10
+                                                <i>km/h</i>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="clear:both;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- row -->
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!--   <div class="content-bg bg-red radius" style="text-align:center;width:100%;">
+                                <div class="socmed-stat">
+                                    <h3>
+                                        <span>Daily SocMed Statitic</span>
+                                    </h3>
+                                </div> -->
+
+                            <!-- <div id="sparkline"></div> -->
+                            <!-- <div id="placeholder" style="width:100%;height:200px;"></div> -->
+                            <div id="my-chart" class="ct-chart ct-double-octave"></div>
+
+                            <!--  </div> -->
+                        </div>
+
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- ./container-fluid -->
+            </div>
+            <!-- #/paper bg -->
+        </div>
+        <!-- ./wrap-sidebar-content -->
+
+        <!-- / END OF CONTENT -->
+
+
+
+
+
+
+
+
+        <!-- FOOTER -->
+        <div id="footer">
+            <div class="devider-footer-left"></div>
+            <div class="time">
+                <p id="spanDate"></p>
+                <p id="clock"></p>
+            </div>
+
+            <div class="copyright">Copyright &copy; 2014 <a href="http://gamatechno.com">Themesmile</a> All Rights Reserved</div>
+            <div class="devider-footer"></div>
+            <ul>
+                <li><i class="fa fa-facebook"></i>
+                </li>
+                <li><i class="fa fa-twitter"></i>
+                </li>
+                <li><i class="fa fa-google-plus"></i>
+                </li>
+            </ul>
+
+        </div>
+        <!-- / FOOTER -->
+
+    </div>
+    <!-- Container -->
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+    <script type='text/javascript' src='js/enquire.js'></script>
+    <script type='text/javascript' src='js/bootstrap.js'></script>
+    <script type='text/javascript' src='js/date.js'></script>
+    <script type='text/javascript' src='js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='plugins/form-toggle/toggle.min.js'></script>
+    <script type='text/javascript' src='js/placeholdr.js'></script>
+    <script type='text/javascript' src='js/sliding-menu.js'></script>
+
+    <script type='text/javascript' src='js/scriptbreaker-multiple-accordion-1.js'></script>
+    <script type='text/javascript' src='js/tip/jquery.tooltipster.min.js'></script>
+
+
+    <script type="text/javascript" src='http://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js'></script>
+    <script type="text/javascript" src='js/chart/Chart.js'></script>
+
+
+    <script type="text/javascript" src="js/skycons/skycons.js"></script>
+
+    <!-- FLOT -->
+    <script type="text/javascript" src="js/flot/jquery.flot.js"></script>
+    <script type="text/javascript" src="js/flot/jquery.flot.resize.js"></script>
+    <script type="text/javascript" src="js/flot/realTime.js"></script>
+
+    <!-- TAB SLIDER -->
+    <script src="js/tab/jquery.newsTicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="js/tab/jquery.liquid-slider.min.js"></script>
+    <script src="js/tab/app.ticker.js"></script>
+
+    <script src="js/chartist/chartist.min.js"></script>
+    <script type="text/javascript">
+    // Our labels and three data series
+    var data = {
+        labels: ['Week1', 'Week2', 'Week3', 'Week4', 'Week5', 'Week6'],
+        series: [
+            [5, 4, 3, 7, 5, 10],
+            [3, 2, 9, 5, 4, 6],
+            [2, 1, -3, -4, -2, 0]
+        ]
+    };
+
+    // We are setting a few options for our chart and override the defaults
+    var options = {
+        // Don't draw the line chart points
+        showPoint: false,
+        // Disable line smoothing
+        lineSmooth: false,
+        // X-Axis specific configuration
+        axisX: {
+            // We can disable the grid for this axis
+            showGrid: false,
+            // and also don't show the label
+            showLabel: false
+        },
+        // Y-Axis specific configuration
+        axisY: {
+            // Lets offset the chart a bit from the labels
+            offset: 40,
+            // The label interpolation function enables you to modify the values
+            // used for the labels on each axis. Here we are converting the
+            // values into million pound.
+            labelInterpolationFnc: function(value) {
+                return '£' + value + 'm';
+            }
+        }
+    };
+
+    // All you need to do is pass your configuration as third parameter to the chart function
+    Chartist.Line('.ct-chart', data, options);
+    </script>
+
+    <script type="text/javascript">
+    var icons = new Skycons({
+            "stroke": 0.08,
+            "color": "Gray",
+            "cloudColor": "#65C3DF",
+            "sunColor": "#0090d9",
+            "moonColor": "DodgerBlue",
+            "rainColor": "RoyalBlue",
+            "snowColor": "LightGray",
+            "windColor": "LightSteelBlue",
+            "fogColor": "#65C3DF"
+        }),
+        list = [
+            "clear-day", "clear-night", "partly-cloudy-day",
+            "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+            "fog"
+        ],
+        i;
+
+    for (i = list.length; i--;)
+        icons.set(list[i], list[i]);
+
+    icons.play();
+    </script>
+
+
+
+
+
+    <script>
+    //Untuk Fade in logo dan button
+    </script>
+
+    <script type="text/javascript">
+    var myvalues = [10, 8, 5, 7, 4, 4, 1];
+    $('.dynamicsparkline').sparkline(myvalues);
+
+    $('.bar').sparkline([
+        [1, 4],
+        [2, 3],
+        [3, 2],
+        [4, 1]
+    ], {
+        type: 'bar',
+        barColor: '#ccc'
+    });
+
+    $("[data-toggle='tooltip']").tooltip();
+    $(".topnav").accordionze({
+        accordionze: true,
+        speed: 300,
+        closedSign: '<b class="icon-chevron-left"></b>',
+        openedSign: '<b class="icon-chevron-down"></b>'
+    });
+
+    $('.tooltip-tip').tooltipster({
+        position: 'top-left',
+        animation: 'slide',
+        theme: '.tooltipster-shadow',
+        delay: 1,
+        offsetY: '-50px',
+        offsetX: '-60px',
+        onlyOne: true
+
+    });
+    $(window).resize(function() {
+        if ($(window).width() <= 768) {
+            $('.tooltip-tip2').addClass('tooltipster-disable');
+            $('.tooltip-tip').addClass('tooltipster-disable');
+        }
+    });
+
+    $.vegas('slideshow', {
+        delay: 8000,
+        backgrounds: [{
+            src: 'img/books-desk-google-nexus.jpg',
+            fade: 2000
+        }, {
+            src: 'img/analog-camera-kodak-old.jpg',
+            fade: 2000
+        }, {
+            src: 'img/activity-aviation-fly.jpg',
+            fade: 2000
+        }, {
+            src: 'img/boat-lake-landing-stage.jpg',
+            fade: 2000
+        }, {
+            src: 'img/city-people-shops.jpg',
+            fade: 2000
+        }, {
+            src: 'img/keyboard-old-technology.jpg',
+            fade: 2000
+        }, {
+            src: 'img/agriculture-farming-field.jpg',
+            fade: 2000
+        }, {
+            src: 'img/asia-buildings-china.jpg',
+            fade: 2000
+        }]
+    })('overlay', {
+        src: 'js/vegas/overlays/02.png'
+    });
+    </script>
+
+    <script>
+    var randomScalingFactor = function() {
+        return Math.round(Math.random() * 20)
+    };
+    var barChartData = {
+        labels: ["SUN", "MON", "TUS", "WED", "THU", "FRI", "SAT"],
+        datasets: [{
+            label: "My First dataset",
+            fillColor: "rgba(55, 168, 175,1)",
+            strokeColor: "rgba(55, 168, 175,1)",
+            pointColor: "rgba(55, 168, 175,1)",
+            pointStrokeColor: "#E5E9EC",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [18, 38, 50, 90, 36, 27, 10]
+        }, {
+            label: "My Second dataset",
+            fillColor: "rgba(0,144,217,1)",
+            strokeColor: "rgba(0,144,217,1)",
+            pointColor: "rgba(0,144,217,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(0,144,217,1)",
+            data: [20, 22, 35, 50, 80, 35, 15]
+        }, {
+            label: "My Third dataset",
+            fillColor: "#3E739D",
+            strokeColor: "#3E739D",
+            pointColor: "#3E739D",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(0,144,217,1)",
+            data: [65, 59, 80, 81, 56, 55, 40]
+        }]
+
+    }
+
+    window.onload = function() {
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myBar = new Chart(ctx).Bar(barChartData, {
+            responsive: true,
+            scaleFontFamily: "'Open sans', 'Helvetica', 'Arial', sans-serif",
+            scaleFontColor: "#87909e",
+            scaleFontSize: 12
+
+        });
+    }
+    </script>
+
+</body>
+
+</html>
