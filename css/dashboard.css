@@ -119,22 +119,22 @@
     display: inline-block;
 }
 .weather-dash {
-    /* background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
-    padding: 5% 20px;*/
     margin-top: 20px
 }
 .daily-weather {
     text-align: center;
+    background: #fff;
+    border-bottom: 0 solid #ccc;
 }
 .daily-weather > h2 {
     background: #65C3DF;
-    border-radius: 15px;
+    border-radius: 0;
     font-size: 13px;
     margin: 0;
-    padding: 1px 0;
+    padding: 7px 0;
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     color: #fff;
 }
 .daily-weather > h3 {
@@ -160,10 +160,11 @@
 }
 .daily-weather > h5 {
     font-size: 13px;
-    font-weight: bold;
-    margin: 35px 0 0;
-    text-align: center;
-    color: #555;
+font-weight: bold;
+margin: 18px 0 0;
+text-align: center;
+color: #999;
+padding: 0 0 13px;
 }
 .daily-weather > h5 > i {
     font-style: normal;
@@ -173,11 +174,11 @@
     font-size: 12px;
 }
 .weather-local {
-position: absolute;
-right: 20px;
-bottom: -40px;
+    position: absolute;
+    right: 20px;
+    bottom: -40px;
 }
-.weather-local i{
+.weather-local i {
     font-size: 24px;
 }
 /*HALTE*/
@@ -285,4 +286,9 @@ bottom: -40px;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: 6px 0px;
     margin: 0 10px 0 10px;
+}
+.chart-nest{
+    width: auto;
+    height: 200px;
+    position: relative;
 }

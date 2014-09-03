@@ -156,21 +156,10 @@
                 </div>
                 <div class="col-sm-5 no-pad">
                     <a id="leftmenu-trigger" class="tooltips" data-toggle="tooltip" data-placement="right" title="Toggle Sidebar"></a>
-                    <span class="header-icon"><i class="icon-home"></i>
-                    </span>
 
 
-                    <!--        <span class="subtitle-header">This is all about front page content</span> -->
-                    <ol class="breadcrumb newcrumb ng-scope">
-                        <li>
-                            <a href="#">
-                                <span>
-                                </span>Special Pages</a>
-                        </li>
-                        <li><a href="#">Invoice</a>
-                        </li>
+                    <!-- <h2 class="tittle-content-header"><i class="fontello-location"></i> Dashboard<small>dashboard description goes here</small></h2> -->
 
-                    </ol>
 
 
                 </div>
@@ -432,7 +421,7 @@
                                     <a class="tooltip-tip" href="index.html" title="Dashboard">
                                         <i class="fontello-desktop-1"></i>
                                         <span>Dashboard</span>
-                                        <div class="noft-blue">New</div>
+                                        <!--   <div class="noft-blue">New</div> -->
                                     </a>
                                 </li>
                                 <li>
@@ -670,22 +659,41 @@
 
             <!-- END OF SIDE MENU -->
 
+
+            <div class="sub-board">
+
+                <span class="header-icon"><i class="icon-home"></i>
+                </span>
+                <ol class="breadcrumb newcrumb ng-scope">
+                    <li>
+                        <a href="#">
+                            <span>
+                            </span>Special Pages</a>
+                    </li>
+                    <li><a href="#">Invoice</a>
+                    </li>
+
+                </ol>
+
+
+                <div class="dark" style="visibility: visible;">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control search rounded id_search" placeholder="Search">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+
             <!-- CONTENT -->
             <div class="wrap-fluid" id="paper-bg">
-                <h2 class="tittle-content-header">Dashboard</h2>
-                <div class="sub-board">
-                    <h4>Moshi moshi,
-                        <strong>Dave Mattew</strong>,&nbsp;<i class="fontello-location"></i> Berlin</h4>
 
-                    <div class="dark" style="visibility: visible;">
-                        <form class="navbar-form navbar-left" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control search rounded id_search" placeholder="Search">
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
 
 
 
@@ -780,6 +788,20 @@
                         </div>
                     </div>
                     <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="timeline-body pad-twenty bg-orange">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                      <!--   <img width="100%" src="img/animated-svg-ff.svg" alt=""> -->
+                                       <div id="placeholder" class="chart-nest"></div>
+                                  
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="socmed-stat">
@@ -817,9 +839,10 @@
                                                 <br><i>Clear Day</i>
                                             </h2>
                                         </div>
-                                   
+
                                         <div class="weather-local">
-                                            <i class="fontello-temperatire"></i><strong>18</strong> F
+                                            <i class="fontello-temperatire"></i>
+                                            <strong>18</strong>F
 
                                         </div>
                                     </div>
@@ -1035,6 +1058,7 @@
     <script type="text/javascript" src="js/flot/jquery.flot.resize.js"></script>
     <script type="text/javascript" src="js/flot/realTime.js"></script>
 
+
     <!-- TAB SLIDER -->
     <script src="js/tab/jquery.newsTicker.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -1057,7 +1081,7 @@
     // We are setting a few options for our chart and override the defaults
     var options = {
         // Don't draw the line chart points
-        showPoint: false,
+        showPoint: true,
         // Disable line smoothing
         lineSmooth: false,
         // X-Axis specific configuration

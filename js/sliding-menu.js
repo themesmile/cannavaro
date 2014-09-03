@@ -10,7 +10,7 @@ $(document).ready(function() {
 			$(this).removeClass('active')
 			//$('#skin-select').animate({ left:0 }, 100);	
 			$('#skin-select').css({"width":"200px"});
-			$('.wrap-fluid').css({"width":"auto","margin-left":"200px",});
+			$('.wrap-fluid, .sub-board').css({"width":"auto","margin-left":"200px",});
 			
 
 			$('#skin-select li').css({"text-align":"left"});
@@ -27,7 +27,7 @@ $(document).ready(function() {
 			//$('#menu-showhide').css({"margin":"10px"});
 		
 			$('ul.topnav ul').css({"position":"relative", "right":"0px", "width":"100%", "margin-top":"0px"});
-			$('#menu-showhide').css({"height":"auto"});
+			$('#menu-showhide').css({"height":"auto", "margin":"-10px 0 0"});
 			$('#skin-select li i').css({"top":"8px 0"});
 			$('ul.topnav ul').css({"border-radius":"0"});
 			
@@ -37,7 +37,7 @@ $(document).ready(function() {
 			//$('#skin-select').animate({ left:-200 }, 100);
 			$('#skin-select').css({"width":"50px"});
 
-			$('.wrap-fluid').css({"width":"auto", "margin-left":"50px"});
+			$('.wrap-fluid, .sub-board').css({"width":"auto", "margin-left":"50px"});
 			$('#skin-select li').css({"text-align":"right"});
 			$('#skin-select li span, .devider-title h3, ul.topnav h4, .side-dash, .noft-blue, .noft-purple-number, .noft-blue-number').css({"display":"none"});
 			//$('body').css({"padding-left":"50px"});
@@ -46,7 +46,7 @@ $(document).ready(function() {
 			$('.datepicker-wrap').css({"position":"absolute", "right":"84px"});	
 			$('.skin-part').css({"visibility":"visible"});
 			$('.hide-min-toggle').css({"display":"block"});
-			$('#menu-showhide').css({"height":"100vh"});
+			$('#menu-showhide').css({"height":"100vh", "margin":"40px 0 0"});
 			$('ul.topnav ul').css({"position":"absolute", "right":"-180px", "width":"180px", "margin-top":"-38px"});
 			$('#skin-select li i').css({"top":"0", "left":"-11px", "padding":"8px 0"});
 			$('ul.topnav ul').css({"border-radius":"0 4px 4px 0"});
