@@ -13,3 +13,6 @@ http://bootflat.github.io/
 =========
 http://campus.codeschool.com/courses/shaping-up-with-angular-js/level/2/section/1/video/1
 =========
+http://www.dtelepathy.com/blog/inspiration/24-flat-designs-with-compelling-color-palettes
+=========
+https://blogin.co/

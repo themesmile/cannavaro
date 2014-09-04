@@ -4,7 +4,12 @@
         duration: 3000,
         pauseOnHover: 0
     });
-
+  $('.top-newsticker').newsTicker({
+        row_height: 20,
+        max_rows: 1,
+        duration: 5000,
+        pauseOnHover: 0
+    });
        /**
      * If you need to access the internal property or methods, use this:
      * var api = $.data( $('#main-slider')[0], 'liquidSlider');

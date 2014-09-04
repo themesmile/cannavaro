@@ -1,7 +1,7 @@
 .content-icon {
     text-align: center;
     position: relative;
-    padding: 20px 0 0;
+    padding: 15px 0 0;
 }
 .content-icon i {
     font-size: 40px;
@@ -18,6 +18,11 @@
 .content-icon h2 {
     margin: 10px 0 0;
     font-weight: bold;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 .content-icon p {
     margin: 5px 0;
@@ -41,6 +46,17 @@
     background: rgba(255, 255, 255, 0.6);
     padding: 2px 15px;
     border-radius: 20px;
+}
+.soc-widget {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 3px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.soc-widget li i {
+    font-size: 11px;
 }
 #div_g {
     position: absolute;
@@ -74,8 +90,13 @@
 }
 .temperature {
     font-size: 14px;
-    margin: 15px;
+    margin: 15px -5px;
     z-index: 1;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 .temperature span {
     float: right;
@@ -123,12 +144,11 @@
 }
 .daily-weather {
     text-align: center;
-    background: #fff;
+    background: #FFFCF4;
     border-bottom: 0 solid #ccc;
 }
 .daily-weather > h2 {
     background: #65C3DF;
-    border-radius: 0;
     font-size: 13px;
     margin: 0;
     padding: 7px 0;
@@ -136,6 +156,7 @@
     text-transform: uppercase;
     font-weight: normal;
     color: #fff;
+    border-radius: 3px 3px 0 0;
 }
 .daily-weather > h3 {
     font-size: 22px;
@@ -160,11 +181,11 @@
 }
 .daily-weather > h5 {
     font-size: 13px;
-font-weight: bold;
-margin: 18px 0 0;
-text-align: center;
-color: #999;
-padding: 0 0 13px;
+    font-weight: bold;
+    margin: 18px 0 0;
+    text-align: center;
+    color: #999;
+    padding: 0 0 13px;
 }
 .daily-weather > h5 > i {
     font-style: normal;
@@ -176,7 +197,7 @@ padding: 0 0 13px;
 .weather-local {
     position: absolute;
     right: 20px;
-    bottom: -40px;
+    bottom: -15px;
 }
 .weather-local i {
     font-size: 24px;
@@ -184,7 +205,6 @@ padding: 0 0 13px;
 /*HALTE*/
 
 .right-nest {
-    background: rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 0;
     width: 100%;
@@ -240,8 +260,6 @@ padding: 0 0 13px;
     height: 59px;
 }
 .direction {
-    /* background: #09ACB3; */
-    color: #09ACB3;
     margin: 0;
     padding: 0px 10px;
     min-height: 75px;
@@ -287,8 +305,47 @@ padding: 0 0 13px;
     padding: 6px 0px;
     margin: 0 10px 0 10px;
 }
-.chart-nest{
+.chart-nest {
     width: auto;
-    height: 200px;
     position: relative;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.news-widget {
+    background: #FFFCF4;
+    width: auto;
+    border-radius: 4px;
+    padding: 0 30px 20px 0;
+}
+.news-widget h2 span {
+    background: #000;
+    font-size: 13px;
+    margin: 15px 0 0;
+    padding: 3px 15px;
+    color: #fff;
+    display: inline-block;
+}
+.news-widget i {
+    background: #efe1b3;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    line-height: 80px;
+    float: left;
+    margin: 0 20px;
+    padding: 20px 0;
+}
+.news-widget h4 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: right;
+}
+.news-widget h5 {
+    font-size: 16px;
+    font-weight: 100;
+    text-align: right;
 }

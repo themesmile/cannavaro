@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/dripicon.css">
     <link rel="stylesheet" href="css/typicons.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="js/tip/tooltipster.css">
     <link rel="stylesheet" href="css/dashboard.css">
@@ -29,14 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <style id="holderjs-style" type="text/css"></style>
 </head>
 
@@ -53,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand logo-text" href="#">Cannavaro<small>V 1.0</small></a>
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,15 +56,24 @@
 
 
 
-                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-white">
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-white date-list">
                     <li><i class="fontello-calendar-1 text-white"></i>
                     </li>
                     <li id="Date"></li>
-                    <li id="hours"></li>
-                    <li class="point">:</li>
-                    <li id="min"></li>
-                    <li class="point">:</li>
-                    <li id="sec"></li>
+                    <li><i class="fontello-clock-1 text-white"></i></li>
+                        <li id="hours"></li>
+                        <li class="point">:</li>
+                        <li id="min"></li>
+                        <li class="point">:</li>
+                        <li id="sec"></li>
+                           <li>News</li>
+                        <li>
+                            <ul class="list-unstyled top-newsticker text-white date-list">
+                                <li>Lop pasdaspdisadiasdpasiap paspjfnmftl v[as[ [a [adfas [asd asd[</li>
+                                <li>sdfdsf sdfdsf sdfdsfdsd dsfddfds sdfdsfdf dsfdsf</li>
+                                <li>dsads yiill ffdhf rtyt tyrtyrty trytryrty trywqwer</li>
+                            </ul>
+                        </li>
                 </ul>
 
 
@@ -145,28 +148,58 @@
 
             <div class="row">
                 <div class="col-sm-2 no-pad">
-                    <ul class="list-unstyled list-inline noft-btn">
-                        <li data-toggle="tooltip" data-placement="bottom" title="Profile" style="padding-left:8px; border-right:1px solid #ccc;"><i class="fontello-user-outline"></i>
-                        </li>
-
-                        <li data-toggle="tooltip" data-placement="bottom" title="Log Out"><i class="fontello-eject"></i>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="col-sm-5 no-pad">
-                    <a id="leftmenu-trigger" class="tooltips" data-toggle="tooltip" data-placement="right" title="Toggle Sidebar"></a>
-
-
-                    <!-- <h2 class="tittle-content-header"><i class="fontello-location"></i> Dashboard<small>dashboard description goes here</small></h2> -->
+                    <!--     <ul class="list-unstyled list-inline noft-btn">
+                    <li data-toggle="tooltip" data-placement="bottom" title="Profile" style="padding-left:8px; border-right:1px solid #ccc;"><i class="fontello-user-outline"></i>
+                    </li>
+                
+                    <li data-toggle="tooltip" data-placement="bottom" title="Log Out"><i class="fontello-eject"></i>
+                    </li>
+                
+                </ul> -->
+                    <a class="navbar-brand logo-text" href="#">Cannavaro<small>V 1.0</small></a>
 
 
 
                 </div>
+                <div class="col-sm-4 no-pad">
+                    <!--   <a id="leftmenu-trigger" class="tooltips" data-toggle="tooltip" data-placement="right" title="Toggle Sidebar"></a>
+                          
+                          
+                            <h2 class="tittle-content-header"><i class="fontello-location"></i> Dashboard<small>dashboard description goes here</small></h2> 
+                                <div class="">
+
+                
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/23.jpg">Hi, Dave Mattew <b class="caret"></b>
+                        </a>
+                        <ul style="margin-top:15px;" role="menu" class="dropdown-setting dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-user"></span>&nbsp;&nbsp;My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-vcard"></span>&nbsp;&nbsp;Account Setting</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-lifebuoy"></span>&nbsp;&nbsp;Help</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="http://themeforest.net/item/apricot-navigation-admin-dashboard-template/7664475?WT.ac=category_item&amp;WT.z_author=themesmile">
+                                    <span class="entypo-basket"></span>&nbsp;&nbsp; Purchase</a>
+                            </li>
+                        </ul>
+                 
+                    </div> -->
 
 
 
-                <div class="col-sm-5 no-pad">
+                </div>
+
+
+                <div class="col-sm-6 no-pad">
                     <!-- menu right -->
                     <div class="navbar-right">
                         <ul class="nav navbar-nav margin-left">
@@ -405,7 +438,8 @@
             <div id="skin-select">
 
                 <a id="toggle">
-                    <span class="entypo-menu"></span>
+                    <span class="fa fa-angle-left"></span>
+                    <span class="fa fa-angle-right"></span>
                 </a>
 
                 <div class="skin-part">
@@ -700,44 +734,79 @@
                 <div class="">
                     <div class="row">
                         <div class="col-lg-2">
-                            <div class="content-bg bg-white radius">
-                                <div class="content-icon text-green">
-                                    <i class="fontello-twitter text-green border-green"></i>
+                            <div class="content-bg  bg-green radius">
+                                <div class="content-icon">
+                                    <i class="fontello-twitter text-white"></i>
                                     <h2>5,455</h2>
                                     <p>Followers</p>
 
+                                    <ul class="list-unstyled list-inline soc-widget">
+                                        <li>
+                                            <span class="fontello-pen"></span>
+                                        </li>
+                                        <li>
+                                            <span class="fontello-loop-alt"></span>
+                                        </li>
+                                        <li>
+                                            <span class=" fontello-post"></span>
+                                        </li>
+                                    </ul>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2">
-                            <div class="content-bg bg-white radius">
+                            <div class="content-bg bg-aqua radius">
 
-                                <div class="content-icon text-aqua">
-                                    <i class="fontello-facebook text-aqua border-aqua"></i>
+                                <div class="content-icon">
+                                    <i class="fontello-facebook text-white"></i>
                                     <h2>182</h2>
                                     <p>Friends</p>
+                                    <ul class="list-unstyled list-inline soc-widget">
+                                        <li>
+                                            <span class="fontello-pen"></span>
+                                        </li>
+                                        <li>
+                                            <span class="fontello-loop-alt"></span>
+                                        </li>
+                                        <li>
+                                            <span class=" fontello-post"></span>
+                                        </li>
+                                    </ul>
 
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2">
-                            <div class="content-bg bg-white radius">
+                            <div class="content-bg bg-red radius">
 
-                                <div class="content-icon text-blue">
-                                    <i class="fontello-linkedin text-blue border-blue"></i>
+                                <div class="content-icon text-white">
+                                    <i class="fa fa-google-plus text-white"></i>
                                     <h2>564</h2>
-                                    <p>Conection</p>
+                                    <p>Circle</p>
+                                    <ul class="list-unstyled list-inline soc-widget">
+                                        <li>
+                                            <span class="fontello-pen"></span>
+                                        </li>
+                                        <li>
+                                            <span class="fontello-loop-alt"></span>
+                                        </li>
+                                        <li>
+                                            <span class=" fontello-post"></span>
+                                        </li>
+                                    </ul>
+
 
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
 
-                            <div class="right-nest bg-white">
+                            <div class="right-nest bg-blue">
 
                                 <div class="media direction">
                                     <span class="pull-left">
-                                        <i class="media-object fontello-params"></i>
+                                        <i class="media-object fontello-chart-alt-outline"></i>
                                     </span>
                                     <div class="media-body">
                                         <h5 style="margin:-2px 0 0" class="media-heading">Statitic</h5>
@@ -749,25 +818,25 @@
 
                                 <div class="">
                                     <ul class="list-unstyled newsticker">
-                                        <li>
-                                            <ul class="list-unstyled jalur-nest text-green">
+                                        <li class="bg-red">
+                                            <ul class="list-unstyled jalur-nest">
                                                 <li>
-                                                    <strong>Jalur 1 : Trans Studio Master</strong>
+                                                    "Happy brithday to you hunny"
                                                 </li>
                                                 <li>
-                                                    <strong>#34</strong>
-                                                    <span></span><i class="fontello-chronograph"></i>&nbsp;&nbsp;11 Menit 24 Detik</li>
+                                                    <i class="fa fa-google-plus"></i>
+                                                    <i class="fontello-chronograph"></i>&nbsp;&nbsp;11 Menit 24 Detik</li>
                                             </ul>
                                         </li>
 
-                                        <li class="bg-blue">
+                                        <li class="bg-green">
                                             <ul class="list-unstyled jalur-nest ">
                                                 <li>
                                                     <strong>Jalur 2 : Tomang</strong>
                                                 </li>
                                                 <li>
-                                                    <strong>#35</strong>
-                                                    <span></span><i class="fontello-chronograph"></i>&nbsp;&nbsp;23 Menit 53 Detik</li>
+                                                    <i class="fontello-facebook"></i>
+                                                    <i class="fontello-chronograph"></i>&nbsp;&nbsp;23 Menit 53 Detik</li>
                                             </ul>
                                         </li>
 
@@ -777,8 +846,8 @@
                                                     <strong>Jalur 3 : Cengkareng</strong>
                                                 </li>
                                                 <li>
-                                                    <strong>#36</strong>
-                                                    <span></span><i class="fontello-chronograph"></i>&nbsp;&nbsp;45 Menit 23 Detik</li>
+                                                    <i class="fontello-facebook"></i>
+                                                    <i class="fontello-chronograph"></i>&nbsp;&nbsp;45 Menit 23 Detik</li>
                                             </ul>
                                         </li>
 
@@ -789,19 +858,83 @@
                     </div>
                     <!-- row -->
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="timeline-body pad-twenty bg-orange">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                      <!--   <img width="100%" src="img/animated-svg-ff.svg" alt=""> -->
-                                       <div id="placeholder" class="chart-nest"></div>
-                                  
-                                    </div>
-
-                                </div>
+                        <div class="col-lg-6">
+                            <div class="news-widget">
+                                <h2>
+                                    <span class="bg-green">Today</span>
+                                </h2>
+                                <i class="fontello-shop-1"></i>
+                                <h4 class="text-green">832</h4>
+                                <h5>SALES</h5>
+                                <div style="clear:both;"></div>
                             </div>
                         </div>
+
+                        <div class="col-lg-6">
+                            <div class="news-widget">
+                                <h2>
+                                    <span class="bg-aqua">Today</span>
+                                </h2>
+                                <i class="fontello-cup"></i>
+                                <h4 class="text-aqua">76</h4>
+                                <h5>Visitors</h5>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="news-widget">
+                                <h2>
+                                    <span class="bg-red">Last Month</span>
+                                </h2>
+                                <i class="fontello-money"></i>
+                                <h4 class="text-red">
+                                    <small>$</small>8,475</h4>
+                                <h5>Earning</h5>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="news-widget">
+                                <h2>
+                                    <span class="bg-blue">Today</span>
+                                </h2>
+                                <i class="fontello-user-1"></i>
+                                <h4 class="text-blue">1645</h4>
+                                <h5>New User</h5>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+
                     </div>
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="content-bg bg-amber radius chart-nest">
+                                <div class="socmed-stat">
+                                    <h3>
+                                        <span>Daily SocMed Statitic</span>
+                                    </h3>
+                                </div>
+
+
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img width="100%" src="img/animated-svg-ff.svg" alt="">
+                                    </div>
+                                    <div class="col-lg-6">4</div>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!-- row -->
+
 
                     <div class="row">
                         <div class="socmed-stat">
@@ -966,24 +1099,9 @@
                     <!-- row -->
 
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <!--   <div class="content-bg bg-red radius" style="text-align:center;width:100%;">
-                                <div class="socmed-stat">
-                                    <h3>
-                                        <span>Daily SocMed Statitic</span>
-                                    </h3>
-                                </div> -->
 
-                            <!-- <div id="sparkline"></div> -->
-                            <!-- <div id="placeholder" style="width:100%;height:200px;"></div> -->
-                            <div id="my-chart" class="ct-chart ct-double-octave"></div>
 
-                            <!--  </div> -->
-                        </div>
 
-                    </div>
-                    <!-- row -->
                 </div>
                 <!-- ./container-fluid -->
             </div>
@@ -1032,19 +1150,20 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
 
 
     <script type='text/javascript' src='js/enquire.js'></script>
     <script type='text/javascript' src='js/bootstrap.js'></script>
     <script type='text/javascript' src='js/date.js'></script>
-    <script type='text/javascript' src='js/jquery.cookie.js'></script>
+
     <script type='text/javascript' src='plugins/form-toggle/toggle.min.js'></script>
-    <script type='text/javascript' src='js/placeholdr.js'></script>
+
     <script type='text/javascript' src='js/sliding-menu.js'></script>
 
     <script type='text/javascript' src='js/scriptbreaker-multiple-accordion-1.js'></script>
     <script type='text/javascript' src='js/tip/jquery.tooltipster.min.js'></script>
+    <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script>
 
 
     <script type="text/javascript" src='http://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js'></script>
