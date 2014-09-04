@@ -437,23 +437,22 @@ border-radius: 15px;
     right: 0;
 }
 .dark:before {
-    content: "\e802";
-    position: absolute;
-    color: #fff;
-    font-family: 'typicons';
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    display: block;
-    height: 40px;
-    width: 40px;
-    /* border-radius: 50%; */
-    text-align: center;
-    line-height: 35px;
-    top: 5px;
-    left: 15px;
-    border-right: 1px solid #e3e3e3;
-    border-left: 1px solid #e3e3e3;
+   content: "\e802";
+position: absolute;
+font-family: 'typicons';
+font-style: normal;
+font-weight: normal;
+speak: none;
+display: block;
+height: 30px;
+width: 30px;
+border-radius: 50%;
+text-align: center;
+line-height: 35px;
+top: 8px;
+left: -9px;
+border: 1px solid #e3e3e3;
+color: #B1C2CA;
     color: #B1C2CA;
 }
 .dark input[type=text] {
