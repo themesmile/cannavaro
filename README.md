@@ -16,3 +16,5 @@ http://campus.codeschool.com/courses/shaping-up-with-angular-js/level/2/section/
 http://www.dtelepathy.com/blog/inspiration/24-flat-designs-with-compelling-color-palettes
 =========
 https://blogin.co/
+--
+- **Motion design**: http://kalasoo.github.io/NumberProgressBar/
