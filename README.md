@@ -16,5 +16,6 @@ file yang dipake
 - http://www.dtelepathy.com/blog/inspiration/24-flat-designs-with-compelling-color-palettes
 
 - https://blogin.co/
+- http://www.jqueryscript.net/slider/list-1-2.html
 
 - **Motion design**: http://kalasoo.github.io/NumberProgressBar/

@@ -387,10 +387,10 @@ HEADER
     font-weight: bold;
 }
 .top-newsticker {
-   margin: -2px 0 0 0px;
-/* background: rgba(0,0,0,0.1); */
-padding: 0 20px;
-border-radius: 15px;
+    margin: -2px 0 0 0px;
+    /* background: rgba(0,0,0,0.1); */
+    padding: 0 20px;
+    border-radius: 15px;
 }
 .noft-btn {
     position: relative;
@@ -437,22 +437,22 @@ border-radius: 15px;
     right: 0;
 }
 .dark:before {
-   content: "\e802";
-position: absolute;
-font-family: 'typicons';
-font-style: normal;
-font-weight: normal;
-speak: none;
-display: block;
-height: 30px;
-width: 30px;
-border-radius: 50%;
-text-align: center;
-line-height: 35px;
-top: 8px;
-left: -9px;
-border: 1px solid #e3e3e3;
-color: #B1C2CA;
+    content: "\e802";
+    position: absolute;
+    font-family: 'typicons';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    top: 8px;
+    left: -9px;
+    border: 1px solid #e3e3e3;
+    color: #B1C2CA;
     color: #B1C2CA;
 }
 .dark input[type=text] {
@@ -526,6 +526,13 @@ ol.breadcrumb.newcrumb li a span {
     font-weight: normal;
     color: #B1C2CA;
     margin: 0 2px;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #666;
 }
 /* 
     Dropdown menus
