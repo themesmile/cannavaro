@@ -1287,13 +1287,14 @@ li.footer:before {
 .side-dash h3 span {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
     border-radius: 24px;
-    margin-left: -10px;
-    padding: 4px 12px;
+    margin-left: 5px;
+    padding: 5px 12px;
     text-align: center;
 }
 .side-dashh-list, .side-bar-list {
     margin-bottom: 25px;
     margin-left: -30px;
+    width: 195px;
 }
 .side-dashh-list li, .side-bar-list li {
     font-size: 12px !important;
@@ -2210,3 +2211,76 @@ img.sidebar-icon {
     width: 4px;
 }
 /*/ FOOTER*/
+
+/* CHART */
+
+.chart {
+    width: 100%;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+    left: -20px;
+}
+.doughnutTip {
+    position: absolute;
+    min-width: 30px;
+    max-width: 300px;
+    padding: 5px 15px;
+    border-radius: 1px;
+    background: rgba(0, 0, 0, .8);
+    color: #ddd;
+    font-size: 10px;
+    text-shadow: 0 1px 0 #000;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: .06em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-transform: all .3s;
+    -moz-transform: all .3s;
+    -ms-transform: all .3s;
+    -o-transform: all .3s;
+    transform: all .3s;
+    pointer-events: none;
+    z-index: 5000;
+}
+.doughnutTip:after {
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    content: "";
+    height: 0;
+    margin: 0 0 0 -6px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, .8);
+    line-height: 0;
+}
+.doughnutSummary {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #d5d5d5;
+    text-align: center;
+    text-shadow: 0 -1px 0 #111;
+    cursor: default;
+}
+.doughnutSummaryTitle {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -27%;
+    font-size: 13px;
+    letter-spacing: .06em;
+}
+.doughnutSummaryNumber {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -15%;
+    font-size: 22px;
+    font-weight: bold;
+}
+g path:hover {
+    opacity: .65;
+}
