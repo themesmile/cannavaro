@@ -19,3 +19,4 @@ file yang dipake
 - http://www.jqueryscript.net/slider/list-1-2.html
 
 - **Motion design**: http://kalasoo.github.io/NumberProgressBar/
+- **Donut Chart**: http://codepen.io/githiro/details/ICfFE
