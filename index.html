@@ -594,7 +594,7 @@
                                                 <small class="pull-right">35%</small>
                                             </h3>
                                             <div class="progress xs bg-opacity-one height-tiny">
-                                                <div class="progress-bar bg-green " style="width: 35%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-blue " style="width: 35%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                                     <span class="sr-only">35% Complete</span>
                                                 </div>
                                             </div>
@@ -631,20 +631,40 @@
                                         </a>
                                     </li>
                                     <!-- end task item -->
-                                
+                                    <li>
+                                        <!-- Task item -->
+                                        <a href="#">
+                                            <h3 class="fontello-fire-station">
+                                                Fix bug
+                                                <small class="pull-right">80%</small>
+                                            </h3>
+                                            <div class="progress xs bg-white height-tiny">
+                                                <div class="progress-bar bg-red" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="sr-only">80% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
 
                                 </ul>
                                 <h3>
                                     <span>Traffic</span>
                                 </h3>
-                               <!--  <ul class="side-bar-list">
-                                   <li>Avg. Traffic
-                                       
-                                   </li>
-                                  
-                               </ul> -->
-                               <div id="doughnutChart" class="chart"></div>
-                                
+                                <ul class="side-bar-list">
+                                    <li>Avg. Traffic
+                                        <div class="bar pull-right"></div>
+                                    </li>
+                                    <li>Visitors
+
+                                    </li>
+                                    <li>Convertion Rate
+                                        <div class="linebar3">5,7,8,9,3,5,3,8,5</div>
+                                    </li>
+                                </ul>
+                                <h3>
+                                    <span>Reply</span>
+                                </h3>
+                                <div id="doughnutChart" class="chart"></div>
                             </div>
                         </div>
                     </div>
@@ -1187,13 +1207,13 @@
 
     <script type='text/javascript' src='js/scriptbreaker-multiple-accordion-1.js'></script>
     <script type='text/javascript' src='js/tip/jquery.tooltipster.min.js'></script>
-    <script type='text/javascript' src='js/donut-chart/jquery.drawDoughnutChart.js'></script>
-   
-    <!--     <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+    /*
+    <!--     <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->*/
 
 
- <!--   <script type="text/javascript" src='http://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js'></script> -->
+    <script type="text/javascript" src='http://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js'></script>
     <script type="text/javascript" src='js/chart/Chart.js'></script>
+    <script src="js/donut-chart/jquery.drawDoughnutChart.js"></script>
 
 
     <script type="text/javascript" src="js/skycons/skycons.js"></script>
@@ -1211,16 +1231,19 @@
 
     <script src="js/chartist/chartist.min.js"></script>
 
-
-<script type="text/javascript">
-    $(function(){
+    <script>
+$(function(){
   $("#doughnutChart").drawDoughnutChart([
-    { title: "Tokyo",         value : 100,  color: "#41C3AC" },
-    { title: "San Francisco", value:  80,   color: "#3C90BE" },
-    { title: "New York",      value:  70,   color: "#FF6B57" }
+    { title: "Tokyo",         value : 100,  color: "#2C3E50" },
+    { title: "San Francisco", value:  80,   color: "#FC4349" },
+    { title: "New York",      value:  70,   color: "#6DBCDB" },
+    { title: "London",        value : 50,   color: "#F7E248" },
+    { title: "Sydney",        value : 40,   color: "#D7DADB" },
+    { title: "Berlin",        value : 20,   color: "#FFF" }
   ]);
 });
-</script>
+    </script>
+
 
 <script type="text/javascript">
     $(".menu").slimscroll({
