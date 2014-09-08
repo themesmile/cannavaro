@@ -21,3 +21,5 @@ file yang dipake
 - **Motion design**: http://kalasoo.github.io/NumberProgressBar/
 - **Donut Chart**: http://codepen.io/githiro/details/ICfFE
 - **Animated Transisition**: http://git.blivesta.com/animsition/
+- **Range Slider**: http://www.jqueryscript.net/demo/Highly-Customizable-jQuery-Range-Slider-Plugin-Range-2d-Slider/
+- **Nice Slider**: http://www.jqueryscript.net/demo/Simple-Nice-jQuery-Value-Range-Slider-Plugin-Fresh-Slider/

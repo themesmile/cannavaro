@@ -241,6 +241,9 @@ body {
     border: none!important;
     color: #f79365!important;
 }
+.alert {
+    font-size: 13px;
+}
 /*COUSTOMIZE*/
 
 .container-fluid {
