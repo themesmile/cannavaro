@@ -451,8 +451,9 @@ HEADER
 }
 .dark {
     position: absolute;
-    top: -6px;
+    top: -7px;
     right: 0;
+    z-index: 1000;
 }
 .dark:before {
     content: "\e802";
@@ -1680,11 +1681,8 @@ input:-moz-placeholder {
 ================*/
 
 #paper-bg {
-    /*   background: #fcf5de; */
-    /*#E5E9EC*/
     background: url(../img/linedpaper.gif) repeat;
-    /*   background: url(../img/grid.gif) repeat;  */
-    min-height: 2024px;
+    min-height: 1345px;
     margin-top: -10px;
     padding-top: 36px;
     width: 100%;

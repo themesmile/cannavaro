@@ -311,10 +311,10 @@ canvas {
     margin: 0 10px 0 10px;
 }
 .chart-nest {
-    width: auto;
-    position: relative;
-    padding: 0 20px;
-    margin-top: 20px;
+   position: relative;
+padding: 20px;
+margin-top: 20px;
+
 }
 .news-widget {
     background: #FFFCF4;
@@ -353,4 +353,11 @@ canvas {
     font-size: 16px;
     font-weight: 100;
     text-align: right;
+}
+.chart-bg{
+    background-color: #fff;
+    padding: 20px 20px 0;
+/*    background: url(../img/grid.gif) repeat;*/
+    border: 1px solid #f9cfbb;
+    border-radius: 0px;
 }

@@ -1,6 +1,7 @@
 @media only screen and (max-width: 768px) {
     body {
         padding: 10px;
+        overflow-x: hidden;
     }
     #skin-select #toggle.active, #skin-select #toggle {
         visibility: hidden!important;
@@ -28,13 +29,57 @@
         padding: 8px 0!important;
     }
     .nav-bg-trans {
-        padding: 10px!important;
+        padding: 0 10px!important;
+        z-index: 5000;
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border-color: #111!important;
-        background: #222!important;
-        position: relative!important;
-        z-index: 5000!important;
+        /* background: #222!important; */
+        /* position: relative!important; */
+        /* z-index: 5000!important; */
+        overflow-x: hidden;
     }
+    .sub-board {
+        margin-left: 50px!important;
+    }
+    .margin-left {
+        margin: -8px 40px 0 0;
+        float: right;
+        display: inline-block;
+    }
+    .margin-left li {
+        position: relative;
+        display: inline-block;
+        float: left;
+        margin: 0 -6px 0 0 !important;
+    }
+    .logo-text {
+        font-size: 20px;
+        top: -8px!important;
+        left: 50px;
+    }
+    .date-list {
+        margin-top: 16px;
+        font-size: 12px;
+        display: inline-flex;
+    }
+    .noft-btn, .admin-pic, .dropdown-setting:after {
+        display: none;
+    }
+    .navbar-nav > li > a {
+        border-top: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    .dropdown-setting {
+        background: rgba(0, 0, 0, 0.9)!important;
+    }
+    .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+        background-color: #eee;
+        border-color: transparent!important;
+    }
+    .nav>li>a:hover, .nav>li>a:focus {
+        background-color: transparent!important;
+        color: #fff!important;
+    }
+    /*------------------------------------------------------------------------------------*/
 }
-}
+/*end responsive*/
