@@ -17,17 +17,20 @@
     <!--  <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
 
     <!-- Custom styles for this template -->
-        <link rel="stylesheet" href="js/animsition/animsition.min.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/dripicon.css">
     <link rel="stylesheet" href="css/typicons.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/mail.css">
     <link rel="stylesheet" href="js/tip/tooltipster.css">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="js/chartist/chartist.min.css">
     <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
+    <!-- pace loader -->
+    <script src="js/pace/pace.js"></script>
+    <link href="js/pace/themes/orange/pace-theme-flash.css" rel="stylesheet" />
 
 
 </head>
@@ -49,22 +52,37 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
-                    <li><i class="fontello-calendar-1 text-amber"></i>
+                    <li><i class="fontello-th text-amber"></i>
                     </li>
                     <li id="Date"></li>
-                    <li><i class="fontello-clock-1 text-amber"></i>
+                </ul>
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+                    <li><i class="fontello-stopwatch text-amber"></i>
                     </li>
                     <li id="hours"></li>
                     <li class="point">:</li>
                     <li id="min"></li>
                     <li class="point">:</li>
                     <li id="sec"></li>
-                    <li>News</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+
+
+                    <li><i class="fontello-doc-text text-amber"></i>
+                    </li>
                     <li>
                         <ul class="list-unstyled top-newsticker text-amber news-list">
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;Lop pasdaspdisadiasdpasiap paspjfnmftl v[as[ [a [adfas [asd asd[</li>
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;sdfdsf sdfdsf sdfdsfdsd dsfddfds sdfdsfdf dsfdsf</li>
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;dsads yiill ffdhf rtyt tyrtyrty trytryrty trywqwer</li>
+                            <li><i class="fontello-cloud-flash-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Yogyakarta,</strong>Achmad Dhani Partly Cloudy Feels Like &nbsp;<b>22 °C</b>
+                            </li>
+                            <li><i class="fontello-sun-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Bandung,</strong>Jln Sudirman, Sunny Feels Like &nbsp;<b>31 °C</b>
+                            </li>
+                            <li><i class="fontello-rain-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Jakarta,</strong>Tomang, Rain Like &nbsp;<b>19 °C</b>
+                            </li>
+
+
                         </ul>
                     </li>
                 </ul>
@@ -102,13 +120,13 @@
                         <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu" role="menu">
                             <li><a href="#">Color Changer</a>
                                 <li class="divider"></li>
-                                <li><a href="#">Color Background</a>
+                                <li><a href="#"><i class="fontello-brush"></i> Color Background</a>
                                 </li>
-                                <li><a href="#">Image Background</a>
+                                <li><a href="#"><i class="fontello-picture-outline"></i> Image Background</a>
                                 </li>
-                                <li><a href="#">Pattern Background</a>
+                                <li><a href="#"><i class="fontello-puzzle-outline"></i> Pattern Background</a>
                                 </li>
-                                <li><a href="#">Video Background</a>
+                                <li><a href="#"><i class="fontello-video"></i> Video Background</a>
                                 </li>
                         </ul>
                         </li>
@@ -120,7 +138,7 @@
     </nav>
     <!-- END OF TOPNAV -->
 
-
+    <!-- Comtainer -->
     <div class="container-fluid paper-wrap bevel tlbr">
         <div id="paper-top">
             <div class="row">
@@ -335,7 +353,7 @@
                                             <!-- end task item -->
                                             <li>
                                                 <!-- Task item -->
-                                                 <div class="task-list-item">
+                                                <div class="task-list-item">
                                                     <h2>Fri, 20 Mar 2014
                                                         <span>8:00
                                                             <small>PM</small>
@@ -383,21 +401,32 @@
                                     </h3>
                                 </li>
                                 <li>
-                                    <a class="tooltip-tip animsition-link" href="index.html" title="Dashboard">
+                                    <a class="tooltip-tip" href="index.html" title="Dashboard">
                                         <i class="fontello-desktop-1"></i>
                                         <span>Dashboard</span>
                                         <!--   <div class="noft-blue">New</div> -->
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="tooltip-tip animsition-link" href="mail.html" title="Mail">
+                                    <a class="tooltip-tip" href="#" title="Mail">
                                         <i class=" fontello-mail-1"></i>
                                         <span>mail</span>
-                                        <div class="noft-blue bg-red">289</div>
+
                                     </a>
+                                    <ul>
+                                        <!--  <li class="hide-min-toggle">UI Element</li> -->
+                                        <li>
+                                            <!-- class="active" -->
+                                            <a class="tooltip-tip2" href="mail.html" title="Index">Inbox<small class="side-menu-noft bg-aqua">289</small></a>
+                                        </li>
+                                        <li>
+                                            <!-- class="active" -->
+                                            <a class="tooltip-tip2" href="compose.html" title="Compose">Compose</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <a class="tooltip-tip animsition-link" href="#" title="UI">
+                                    <a class="tooltip-tip" href="#" title="UI">
                                         <i class="fontello-note"></i>
                                         <span>UI</span>
                                     </a>
@@ -405,29 +434,29 @@
                                         <!--  <li class="hide-min-toggle">UI Element</li> -->
                                         <li>
                                             <!-- class="active" -->
-                                            <a class="tooltip-tip animsition-link2" href="element.html" title="Element">Element</a>
+                                            <a class="tooltip-tip2" href="element.html" title="Element">Element</a>
                                         </li>
-                                        <li><a class="tooltip-tip animsition-link2" href="button.html" title="Button">
+                                        <li><a class="tooltip-tip2" href="button.html" title="Button">
                                             Button
                                         </a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="wizard.html" title="Tab & Accordion">Wizard</a>
+                                            <a class="tooltip-tip2" href="wizard.html" title="Tab & Accordion">Wizard</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="calendar.html" title="Calender">Calendar</a>
+                                            <a class="tooltip-tip2" href="calendar.html" title="Calender">Calendar</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="tree.html" title="Tree View">Tree View</a>
+                                            <a class="tooltip-tip2" href="tree.html" title="Tree View">Tree View</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="grids.html" title="Grids">Grids</a>
+                                            <a class="tooltip-tip2" href="grids.html" title="Grids">Grids</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="chart.html" title="Chart">Chart</a>
+                                            <a class="tooltip-tip2" href="chart.html" title="Chart">Chart</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link" href="typhography.html" title="Typhoghrapy">
+                                            <a class="tooltip-tip" href="typhography.html" title="Typhoghrapy">
                                                 
                                                 Typhoghrapy
                                             </a>
@@ -441,40 +470,40 @@
                                     </h3>
                                 </li>
                                 <li>
-                                    <a class="tooltip-tip animsition-link" href="#" title="Form">
+                                    <a class="tooltip-tip" href="#" title="Form">
                                         <i class="fontello-doc-1"></i>
                                         <span>Form</span>
                                     </a>
                                     <ul>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="form-element.html" title="Form Elements">Form Elements</a>
+                                            <a class="tooltip-tip2" href="form-element.html" title="Form Elements">Form Elements</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="andvance-form.html" title="Andvance Form">Andvance Form</a>
+                                            <a class="tooltip-tip2" href="andvance-form.html" title="Andvance Form">Andvance Form</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="text-editor.html" title="Text Editor">Text Editor</a>
+                                            <a class="tooltip-tip2" href="text-editor.html" title="Text Editor">Text Editor</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="file-upload.html" title="File Upload">File Upload</a>
+                                            <a class="tooltip-tip2" href="file-upload.html" title="File Upload">File Upload</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="tooltip-tip animsition-link" href="#" title="Tables">
+                                    <a class="tooltip-tip" href="#" title="Tables">
                                         <i class="fontello-calendar-1"></i>
                                         <span>Tables</span>
                                     </a>
                                     <ul>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="table-static.html" title="Table Static">Table Static</a>
+                                            <a class="tooltip-tip2" href="table-static.html" title="Table Static">Table Static</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="table-dynamic.html" title="Table Dynamic">Table Dynamic</a>
+                                            <a class="tooltip-tip2" href="table-dynamic.html" title="Table Dynamic">Table Dynamic</a>
 
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="#" title="Submenu">Table Dynamic</a>
+                                            <a class="tooltip-tip2" href="#" title="Submenu">Table Dynamic</a>
                                             <ul>
                                                 <li><a href="#">Submenu 1a</a>
                                                 </li>
@@ -487,14 +516,14 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="tooltip-tip animsition-link" href="icon.html" title="Icons">
+                                    <a class="tooltip-tip" href="icon.html" title="Icons">
                                         <i class="fontello-food"></i>
                                         <span>Icons</span>
                                         <div class="noft-blue bg-green" style="display: inline-block; float: none;">New</div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="tooltip-tip animsition-link" href="map.html" title="Map">
+                                    <a class="tooltip-tip" href="map.html" title="Map">
                                         <i class="fontello-location-1"></i>
                                         <span>Map</span>
 
@@ -507,34 +536,34 @@
                                     </h3>
                                 </li>
                                 <li>
-                                    <a class="tooltip-tip animsition-link" href="#" title="Extra">
+                                    <a class="tooltip-tip" href="#" title="Extra">
                                         <i class="fontello-beaker"></i>
                                         <span>Extra</span>
                                     </a>
                                     <ul>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="invoice.html" title="Invoice">Invoice</a>
+                                            <a class="tooltip-tip2" href="invoice.html" title="Invoice">Invoice</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="pricing_table.html" title="Pricing Table">Pricing Table</a>
+                                            <a class="tooltip-tip2" href="pricing_table.html" title="Pricing Table">Pricing Table</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="time-line.html" title="Time Line">Time Line</a>
+                                            <a class="tooltip-tip2" href="time-line.html" title="Time Line">Time Line</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="404.html" title="404 Error Page">404 Error Page</a>
+                                            <a class="tooltip-tip2" href="404.html" title="404 Error Page">404 Error Page</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="500.html" title="500 Error Page">500 Error Page</a>
+                                            <a class="tooltip-tip2" href="500.html" title="500 Error Page">500 Error Page</a>
                                         </li>
                                         <li>
-                                            <a class="tooltip-tip animsition-link2" href="lock-screen.html" title="Lock Screen">Lock Screen</a>
+                                            <a class="tooltip-tip2" href="lock-screen.html" title="Lock Screen">Lock Screen</a>
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li>
-                                    <a class="tooltip-tip animsition-link " href="login.html" title="login">
+                                    <a class="tooltip-tip " href="login.html" title="login">
                                         <i class=" fontello-lock-1"></i>
                                         <span>Login</span>
                                     </a>
@@ -545,9 +574,7 @@
                                     <span>Task Progress</span>
                                 </h3>
                                 <ul class="side-dashh-list">
-
                                     <li>
-
                                         <!-- Task item -->
                                         <a href="#">
                                             <h3 class="fontello-leaf">
@@ -613,9 +640,9 @@
                     <li>
                         <a href="#">
                             <span>
-                            </span>Special Pages</a>
+                            </span>Desain Kit</a>
                     </li>
-                    <li><a href="#">Invoice</a>
+                    <li><a href="#">Mail Page</a>
                     </li>
                 </ol>
                 <div class="dark" style="visibility: visible;">
@@ -638,449 +665,29 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="socmed-stat">
-                            <i class="fa fontello-clouds-flash-alt bg-green"></i>
-                            <span>
-                                <strong>Weather Report</strong>from<i> Budai Toma</i>
-                                <small>23/6/2014</small>
-                            </span>
+                        <div class="box">
+                            <div class="box-header">
+                                <!-- tools box -->
+                                <div class="pull-right box-tools">
+
+                                    <span class="box-btn" data-widget="collapse"><i class="fa fa-minus"></i>
+                                    </span>
+                                    <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
+                                    </span>
+                                </div>
+                                <h3 class="box-title fontello-doc">Blank Page</h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <h4>Content Goes Here</h4>
+                                <p>content</p>
+                            </div>
+                            <!-- /.box-body -->
                         </div>
+                        <!-- /.box -->
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="weather-wrap bg-amber">
-                            <div class="row">
-                                <div class="col-xs-12 no-pad">
-                                    <div class="temperature bg-aqua"><b>Monday</b>, 07:30 AM
-                                        <span>F&nbsp;&nbsp;</span>
-                                        <span><b>C</b>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <div class="weather-icon">
-                                        <span>
-                                            <canvas id="clear-day" width="75" height="75">
-                                            </canvas>
-                                        </span>
-
-                                    </div>
-                                </div>
-                                <div class="col-xs-8">
-                                    <div class="weather-text text-aqua">
-                                        <h2>Denver
-                                            <br><i>Clear Day</i>
-                                        </h2>
-                                    </div>
-
-                                    <div class="weather-local text-red">
-                                        <i class="fontello-temperatire"></i>
-                                        <strong>18</strong>F
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-8">
-                        <div class="weather-dash">
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <div class="daily-weather">
-                                        <h2>Mon</h2>
-
-                                        <h1>
-                                            <span>
-                                                <canvas id="fog" width="60" height="60">
-                                                </canvas>
-
-                                            </span>
-                                        </h1>
-                                        <h3>85
-                                            <small><i class="fontello-fahrenheit"></i>
-                                            </small>
-                                        </h3>
-                                        <h5>15
-                                            <i>km/h</i>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-sm-2">
-                                    <div class="daily-weather">
-                                        <h2>Tue</h2>
-                                        <h1>
-                                            <canvas height="60" width="60" id="rain">
-                                            </canvas>
-                                        </h1>
-                                        <h3>65
-                                            <small><i class="fontello-fahrenheit"></i>
-                                            </small>
-                                        </h3>
-
-                                        <h5>12
-                                            <i>km/h</i>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-sm-2">
-                                    <div class="daily-weather">
-                                        <h2>Wed</h2>
-                                        <h1>
-                                            <canvas height="60" width="60" id="snow"></canvas>
-                                        </h1>
-                                        <h3>83
-                                            <small><i class="fontello-fahrenheit"></i>
-                                            </small>
-                                        </h3>
-
-                                        <h5>14
-                                            <i>km/h</i>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-sm-2">
-                                    <div class="daily-weather">
-                                        <h2>Thu</h2>
-                                        <h1>
-                                            <canvas height="60" width="60" id="sleet">
-                                            </canvas>
-                                        </h1>
-                                        <h3>80
-                                            <small><i class="fontello-fahrenheit"></i>
-                                            </small>
-                                        </h3>
-
-                                        <h5>15
-                                            <i>km/h</i>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-sm-2">
-                                    <div class="daily-weather">
-                                        <h2>Fri</h2>
-                                        <h1>
-                                            <canvas height="60" width="60" id="wind"></canvas>
-                                        </h1>
-                                        <h3>79
-                                            <small><i class="fontello-fahrenheit"></i>
-                                            </small>
-                                        </h3>
-
-                                        <h5>11
-                                            <i>km/h</i>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-sm-2">
-                                    <div class="daily-weather">
-                                        <h2>Sat</h2>
-                                        <h1>
-                                            <canvas height="60" width="60" id="partly-cloudy-day"></canvas>
-                                        </h1>
-                                        <h3>82
-                                            <small><i class="fontello-fahrenheit"></i>
-                                            </small>
-                                        </h3>
-
-                                        <h5>10
-                                            <i>km/h</i>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div style="clear:both;"></div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- row -->
-
-                </br>
-
-
-
-
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="content-bg  bg-green radius">
-                            <div class="content-icon">
-                                <i class="fontello-twitter text-white"></i>
-                                <h2>5,455</h2>
-                                <p>Followers</p>
-
-                                <ul class="list-unstyled list-inline soc-widget">
-                                    <li>
-                                        <span class="fontello-pen"></span>
-                                    </li>
-                                    <li>
-                                        <span class="fontello-loop-alt"></span>
-                                    </li>
-                                    <li>
-                                        <span class=" fontello-post"></span>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="content-bg bg-aqua radius">
-
-                            <div class="content-icon">
-                                <i class="fontello-facebook text-white"></i>
-                                <h2>182</h2>
-                                <p>Friends</p>
-                                <ul class="list-unstyled list-inline soc-widget">
-                                    <li>
-                                        <span class="fontello-pen"></span>
-                                    </li>
-                                    <li>
-                                        <span class="fontello-loop-alt"></span>
-                                    </li>
-                                    <li>
-                                        <span class=" fontello-post"></span>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="content-bg bg-red radius">
-
-                            <div class="content-icon text-white">
-                                <i class="fa fa-google-plus text-white"></i>
-                                <h2>564</h2>
-                                <p>Circle</p>
-                                <ul class="list-unstyled list-inline soc-widget">
-                                    <li>
-                                        <span class="fontello-pen"></span>
-                                    </li>
-                                    <li>
-                                        <span class="fontello-loop-alt"></span>
-                                    </li>
-                                    <li>
-                                        <span class=" fontello-post"></span>
-                                    </li>
-                                </ul>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-
-                        <div class="right-nest bg-amber">
-
-                            <div class="media direction">
-                                <span class="pull-left">
-                                    <i class="media-object fontello-chart-alt-outline"></i>
-                                </span>
-                                <div class="media-body">
-                                    <h5 style="margin:-2px 0 0" class="media-heading">Statitic</h5>
-                                    <h4>Trans Studio, Kiara Condong</h4>
-                                    <span class="pull-right"></span>
-                                </div>
-                            </div>
-
-
-
-                            <div class="">
-                                <ul class="list-unstyled newsticker">
-                                    <li class="bg-red">
-                                        <ul class="list-unstyled jalur-nest">
-                                            <li>
-                                                "Happy brithday to you hunny"
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-google-plus"></i>
-                                                <i class="fontello-chronograph"></i>&nbsp;&nbsp;11 Menit 24 Detik</li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="bg-green">
-                                        <ul class="list-unstyled jalur-nest ">
-                                            <li>
-                                                <strong>Jalur 2 : Tomang</strong>
-                                            </li>
-                                            <li>
-                                                <i class="fontello-facebook"></i>
-                                                <i class="fontello-chronograph"></i>&nbsp;&nbsp;23 Menit 53 Detik</li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="bg-aqua">
-                                        <ul class="list-unstyled jalur-nest">
-                                            <li>
-                                                <strong>Jalur 3 : Cengkareng</strong>
-                                            </li>
-                                            <li>
-                                                <i class="fontello-facebook"></i>
-                                                <i class="fontello-chronograph"></i>&nbsp;&nbsp;45 Menit 23 Detik</li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- row -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="news-widget">
-                            <h2>
-                                <span class="bg-green">Today</span>
-                            </h2>
-                            <i class="fontello-shop-1"></i>
-                            <h4 class="text-green">832</h4>
-                            <h5>SALES</h5>
-                            <div style="clear:both;"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="news-widget">
-                            <h2>
-                                <span class="bg-aqua">Today</span>
-                            </h2>
-                            <i class="fontello-cup"></i>
-                            <h4 class="text-aqua">76</h4>
-                            <h5>Visitors</h5>
-                            <div style="clear:both;"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="news-widget">
-                            <h2>
-                                <span class="bg-red">Last Month</span>
-                            </h2>
-                            <i class="fontello-money"></i>
-                            <h4 class="text-red">
-                                <small>$</small>8,475</h4>
-                            <h5>Earning</h5>
-                            <div style="clear:both;"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="news-widget">
-                            <h2>
-                                <span class="bg-blue">Today</span>
-                            </h2>
-                            <i class="fontello-user-1"></i>
-                            <h4 class="text-blue">1645</h4>
-                            <h5>New User</h5>
-                            <div style="clear:both;"></div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- row -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="content-bg bg-amber radius chart-nest">
-
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="socmed-stat">
-                                        <h3>
-                                            <span>Daily SocMed Statitic</span>
-                                        </h3>
-                                    </div>
-                                    <img width="100%" class="chart-bg" src="img/animated-svg-ff.svg" alt="">
-                                </div>
-
-
-                                <div class="col-lg-6">
-                                    <div class="table-responsive">
-                                        <table class="table">
-
-                                            <tbody>
-                                                <tr>
-
-                                                    <td>
-                                                        <strong>Google Plus page value</strong>
-                                                        </br>Averga Persetance</td>
-                                                    <td>
-                                                        <div class="pull-right text-red">
-                                                            <small>$</small>7,086,050</div>
-                                                        <br>
-                                                        <small class="pull-right">21,00%</small>
-                                                    </td>
-
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <strong>Twitter page value</strong>
-                                                        </br>Averga Persetance</td>
-                                                    <td>
-                                                        <div class="pull-right text-green">
-                                                            <small>$</small>1,346,232</div>
-                                                        <br>
-                                                        <small class="pull-right">56,00%</small>
-                                                    </td>
-
-
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <strong>Facebook page value</strong>
-                                                        </br>Averga Persetance</td>
-                                                    <td>
-                                                        <div class="pull-right text-aqua">
-                                                            <small>$</small>3,734,858</div>
-                                                        <br>
-                                                        <small class="pull-right">78,00%</small>
-                                                    </td>
-
-
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <div>
-                                        <canvas id="canvas" width="800" height="300"></canvas>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                            <div style="clear:both;"></div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-                <!-- row -->
-                <div class="row">
-                    <div class="col-lg-12">
-
-                    </div>
-
-
-
-
-
-
-
-                </div>
-                <!-- ./container-fluid -->
             </div>
             <!-- #/paper bg -->
         </div>
@@ -1105,11 +712,11 @@
             <div class="copyright">Copyright &copy; 2014 <a href="http://gamatechno.com">Themesmile</a> All Rights Reserved</div>
             <div class="devider-footer"></div>
             <ul>
-                <li><i class="fa fa-facebook"></i>
+                <li><i class="fa fa-facebook-square"></i>
                 </li>
-                <li><i class="fa fa-twitter"></i>
+                <li><i class="fa fa-twitter-square"></i>
                 </li>
-                <li><i class="fa fa-google-plus"></i>
+                <li><i class="fa fa-instagram"></i>
                 </li>
             </ul>
         </div>
@@ -1124,253 +731,29 @@
     <!-- 
     ================================================== -->
     <!-- Main jQuery Plugins -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
     <script type='text/javascript' src='js/enquire.js'></script>
     <script type='text/javascript' src='js/bootstrap.js'></script>
     <script type='text/javascript' src='js/date.js'></script>
-        <script type='text/javascript' src="js/animsition/jquery.animsition.min.js"></script>
     <script type='text/javascript' src='js/slimscroll/jquery.slimscroll.js'></script>
     <script type='text/javascript' src='js/sliding-menu.js'></script>
     <script type='text/javascript' src='js/scriptbreaker-multiple-accordion-1.js'></script>
     <script type='text/javascript' src='js/tip/jquery.tooltipster.min.js'></script>
+    <script type='text/javascript' src="js/donut-chart/jquery.drawDoughnutChart.js"></script>
+    <script type='text/javascript' src="js/tab/jquery.newsTicker.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+  
+    <script type='text/javascript' src="js/tab/app.ticker.js"></script>
+    <script type='text/javascript' src='js/app.js'></script>
     /*
-    <!--     <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->*/
+    <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->*/
     <!-- 
-    ================================================== -->
-    <script type="text/javascript" src='http://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js'></script>
-    <script type="text/javascript" src='js/chart/Chart.js'></script>
-    <script src="js/donut-chart/jquery.drawDoughnutChart.js"></script>
-    <script type="text/javascript" src="js/skycons/skycons.js"></script>
-    <!-- FLOT -->
-    <!-- TAB SLIDER -->
-    <script src="js/tab/jquery.newsTicker.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
-    <script src="js/tab/jquery.liquid-slider.min.js"></script>
-    <script src="js/tab/app.ticker.js"></script>
-    <script src="js/chartist/chartist.min.js"></script>
-
-    <script>
-    $(function() {
-        $("#doughnutChart").drawDoughnutChart([{
-            title: "Tokyo",
-            value: 232,
-            color: "#2C3E50"
-        }, {
-            title: "San Francisco",
-            value: 165,
-            color: "#FC4349"
-        }, {
-            title: "New York",
-            value: 183,
-            color: "#6DBCDB"
-        }]);
-    });
-    </script>
-
-
-    <script type="text/javascript">
-    $(".menu").slimscroll({
-        height: "200px",
-        alwaysVisible: true,
-        size: "5px"
-    }).css("width", "100%");
-    </script>
-
-
-    <script type="text/javascript">
-    // Our labels and three data series
-    var data = {
-        labels: ['Week1', 'Week2', 'Week3', 'Week4', 'Week5', 'Week6'],
-        series: [
-            [5, 4, 3, 7, 5, 10],
-            [3, 2, 9, 5, 4, 6],
-            [2, 1, -3, -4, -2, 0]
-        ]
-    };
-
-    // We are setting a few options for our chart and override the defaults
-    var options = {
-        // Don't draw the line chart points
-        showPoint: true,
-        // Disable line smoothing
-        lineSmooth: false,
-        // X-Axis specific configuration
-        axisX: {
-            // We can disable the grid for this axis
-            showGrid: false,
-            // and also don't show the label
-            showLabel: false
-        },
-        // Y-Axis specific configuration
-        axisY: {
-            // Lets offset the chart a bit from the labels
-            offset: 40,
-            // The label interpolation function enables you to modify the values
-            // used for the labels on each axis. Here we are converting the
-            // values into million pound.
-            labelInterpolationFnc: function(value) {
-                return '£' + value + 'm';
-            }
-        }
-    };
-
-    // All you need to do is pass your configuration as third parameter to the chart function
-    Chartist.Line('.ct-chart', data, options);
-    </script>
-
-    <script type="text/javascript">
-    var icons = new Skycons({
-            "stroke": 0.08,
-            "color": "Gray",
-            "cloudColor": "#65C3DF",
-            "sunColor": "#0090d9",
-            "moonColor": "DodgerBlue",
-            "rainColor": "RoyalBlue",
-            "snowColor": "LightGray",
-            "windColor": "LightSteelBlue",
-            "fogColor": "#65C3DF"
-        }),
-        list = [
-            "clear-day", "clear-night", "partly-cloudy-day",
-            "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
-            "fog"
-        ],
-        i;
-
-    for (i = list.length; i--;)
-        icons.set(list[i], list[i]);
-
-    icons.play();
-    </script>
 
 
 
 
 
-    <script>
-    //Untuk Fade in logo dan button
-    </script>
-
-    <script type="text/javascript">
-    var myvalues = [10, 8, 5, 7, 4, 4, 1];
-    $('.dynamicsparkline').sparkline(myvalues);
-
-    $('.bar').sparkline([
-        [1, 4],
-        [2, 3],
-        [3, 2],
-        [4, 1]
-    ], {
-        type: 'bar',
-        barColor: '#ccc'
-    });
-
-    $("[data-toggle='tooltip']").tooltip();
-    $(".topnav").accordionze({
-        accordionze: true,
-        speed: 300,
-        closedSign: '<b class="icon-chevron-left"></b>',
-        openedSign: '<b class="icon-chevron-down"></b>'
-    });
-
-    $('.tooltip-tip animsition-link').tooltipster({
-        position: 'top-left',
-        animation: 'slide',
-        theme: '.tooltipster-shadow',
-        delay: 1,
-        offsetY: '-50px',
-        offsetX: '-60px',
-        onlyOne: true
-
-    });
-    $(window).resize(function() {
-        if ($(window).width() <= 768) {
-            $('.tooltip-tip animsition-link2').addClass('tooltipster-disable');
-            $('.tooltip-tip animsition-link').addClass('tooltipster-disable');
-        }
-    });
-
-    $.vegas('slideshow', {
-        delay: 8000,
-        backgrounds: [{
-            src: 'img/books-desk-google-nexus.jpg',
-            fade: 2000
-        }, {
-            src: 'img/analog-camera-kodak-old.jpg',
-            fade: 2000
-        }, {
-            src: 'img/activity-aviation-fly.jpg',
-            fade: 2000
-        }, {
-            src: 'img/boat-lake-landing-stage.jpg',
-            fade: 2000
-        }, {
-            src: 'img/city-people-shops.jpg',
-            fade: 2000
-        }, {
-            src: 'img/keyboard-old-technology.jpg',
-            fade: 2000
-        }, {
-            src: 'img/agriculture-farming-field.jpg',
-            fade: 2000
-        }, {
-            src: 'img/asia-buildings-china.jpg',
-            fade: 2000
-        }]
-    })('overlay', {
-        src: 'js/vegas/overlays/02.png'
-    });
-    </script>
-
-    <script>
-    var randomScalingFactor = function() {
-        return Math.round(Math.random() * 20)
-    };
-    var barChartData = {
-        labels: ["SUN", "MON", "TUS", "WED", "THU", "FRI", "SAT"],
-        datasets: [{
-            label: "My First dataset",
-            fillColor: "#41C3AC",
-            strokeColor: "#41C3AC",
-            pointColor: "r#41C3AC",
-            pointStrokeColor: "#E5E9EC",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [18, 38, 50, 90, 36, 27, 10]
-        }, {
-            label: "My Second dataset",
-            fillColor: "#FF6B57",
-            strokeColor: "#FF6B57",
-            pointColor: "#FF6B57",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(0,144,217,1)",
-            data: [20, 22, 35, 50, 80, 35, 15]
-        }, {
-            label: "My Third dataset",
-            fillColor: "#3E739D",
-            strokeColor: "#3E739D",
-            pointColor: "#3E739D",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(0,144,217,1)",
-            data: [65, 59, 80, 81, 56, 55, 40]
-        }]
-
-    }
-
-    window.onload = function() {
-        var ctx = document.getElementById("canvas").getContext("2d");
-        window.myBar = new Chart(ctx).Bar(barChartData, {
-            responsive: true,
-            scaleFontFamily: "'Open sans', 'Helvetica', 'Arial', sans-serif",
-            scaleFontColor: "#888", //#f79365
-            scaleFontSize: 10
-
-        });
-    }
-    </script>
 
 </body>
 

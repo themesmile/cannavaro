@@ -20,3 +20,4 @@ file yang dipake
 
 - **Motion design**: http://kalasoo.github.io/NumberProgressBar/
 - **Donut Chart**: http://codepen.io/githiro/details/ICfFE
+- **Animated Transisition**: http://git.blivesta.com/animsition/

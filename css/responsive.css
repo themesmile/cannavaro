@@ -62,6 +62,7 @@
         margin-top: 16px;
         font-size: 12px;
         display: inline-flex;
+        margin-right: 0px;
     }
     .noft-btn, .admin-pic, .dropdown-setting:after {
         display: none;
