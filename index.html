@@ -17,7 +17,7 @@
     <!--  <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
 
     <!-- Custom styles for this template -->
-    
+
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/dripicon.css">
@@ -33,9 +33,9 @@
 </head>
 
 <body role="document">
-<div id="preloader">
-    <div id="status">&nbsp;</div>
-</div>
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
     <!-- TOPNAV -->
     <nav class="navbar navbar-default navbar-static-top nav-bg-trans" role="navigation">
         <div class="container-fluid">
@@ -52,22 +52,37 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
-                    <li><i class="fontello-calendar-1 text-amber"></i>
+                    <li><i class="fontello-th text-amber"></i>
                     </li>
                     <li id="Date"></li>
-                    <li><i class="fontello-clock-1 text-amber"></i>
+                </ul>
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+                    <li><i class="fontello-stopwatch text-amber"></i>
                     </li>
                     <li id="hours"></li>
                     <li class="point">:</li>
                     <li id="min"></li>
                     <li class="point">:</li>
                     <li id="sec"></li>
-                    <li>News</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+
+
+                    <li><i class="fontello-doc-text text-amber"></i>
+                    </li>
                     <li>
                         <ul class="list-unstyled top-newsticker text-amber news-list">
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;Lop pasdaspdisadiasdpasiap paspjfnmftl v[as[ [a [adfas [asd asd[</li>
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;sdfdsf sdfdsf sdfdsfdsd dsfddfds sdfdsfdf dsfdsf</li>
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;dsads yiill ffdhf rtyt tyrtyrty trytryrty trywqwer</li>
+                            <li><i class="fontello-cloud-flash-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Yogyakarta,</strong>Achmad Dhani Partly Cloudy Feels Like &nbsp;<b>22 °C</b>
+                            </li>
+                            <li><i class="fontello-sun-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Bandung,</strong>Jln Sudirman, Sunny Feels Like &nbsp;<b>31 °C</b>
+                            </li>
+                            <li><i class="fontello-rain-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Jakarta,</strong>Tomang, Rain Like &nbsp;<b>19 °C</b>
+                            </li>
+
+
                         </ul>
                     </li>
                 </ul>
@@ -105,13 +120,13 @@
                         <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu" role="menu">
                             <li><a href="#">Color Changer</a>
                                 <li class="divider"></li>
-                                <li><a href="#">Color Background</a>
+                                <li><a href="#"><i class="fontello-brush"></i> Color Background</a>
                                 </li>
-                                <li><a href="#">Image Background</a>
+                                <li><a href="#"><i class="fontello-picture-outline"></i> Image Background</a>
                                 </li>
-                                <li><a href="#">Pattern Background</a>
+                                <li><a href="#"><i class="fontello-puzzle-outline"></i> Pattern Background</a>
                                 </li>
-                                <li><a href="#">Video Background</a>
+                                <li><a href="#"><i class="fontello-video"></i> Video Background</a>
                                 </li>
                         </ul>
                         </li>
@@ -338,7 +353,7 @@
                                             <!-- end task item -->
                                             <li>
                                                 <!-- Task item -->
-                                                 <div class="task-list-item">
+                                                <div class="task-list-item">
                                                     <h2>Fri, 20 Mar 2014
                                                         <span>8:00
                                                             <small>PM</small>
@@ -1105,14 +1120,15 @@
                 <p id="spanDate"></p>
                 <p id="clock"></p>
             </div>
-            <div class="copyright">Copyright &copy; 2014 <a href="http://gamatechno.com">Themesmile</a> All Rights Reserved</div>
+            <div class="copyright">Copyright &copy; 2014 <a href="http://ndesaintheme.com/">Themesmile</a> Made with <i class="fontello-heart-filled text-red"></i>
+            </div>
             <div class="devider-footer"></div>
             <ul>
-                <li><i class="fa fa-facebook"></i>
+                <li><i class="fa fa-facebook-square"></i>
                 </li>
-                <li><i class="fa fa-twitter"></i>
+                <li><i class="fa fa-twitter-square"></i>
                 </li>
-                <li><i class="fa fa-google-plus"></i>
+                <li><i class="fa fa-instagram"></i>
                 </li>
             </ul>
         </div>
@@ -1131,7 +1147,7 @@
     <script type='text/javascript' src='js/enquire.js'></script>
     <script type='text/javascript' src='js/bootstrap.js'></script>
     <script type='text/javascript' src='js/date.js'></script>
-        <script type='text/javascript' src="js/animsition/jquery.animsition.min.js"></script>
+    <script type='text/javascript' src="js/animsition/jquery.animsition.min.js"></script>
     <script type='text/javascript' src='js/slimscroll/jquery.slimscroll.js'></script>
     <script type='text/javascript' src='js/sliding-menu.js'></script>
     <script type='text/javascript' src='js/scriptbreaker-multiple-accordion-1.js'></script>
@@ -1374,7 +1390,7 @@
         });
     }
     </script>
-      <script type="text/javascript">
+    <script type="text/javascript">
     //<![CDATA[
     $(window).load(function() { // makes sure the whole site is loaded
         $('#status').fadeOut(); // will first fade out the loading animation

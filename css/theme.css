@@ -501,12 +501,12 @@ HEADER
     width: 30px;
     border-radius: 50%;
     text-align: center;
-    line-height: 35px;
+    line-height: 32px;
     top: 8px;
     left: -9px;
-    border: 1px solid #e3e3e3;
-    color: #888;
-    color: #888;
+    /* border: 1px solid #e3e3e3; */
+    color: #fff;
+    background: #888;
 }
 .dark input[type=text] {
     border-top: 0px solid #ccc;
@@ -635,7 +635,7 @@ ol.breadcrumb.newcrumb li a span {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    border-bottom: 4px double #F7BFA8;
+    border-bottom: 0px double #F7BFA8;
     color: #444;
     padding-bottom: 0px;
 }
@@ -2175,7 +2175,7 @@ input:-moz-placeholder {
     background: url(../img/linedpaper.gif) repeat;
     min-height: 1345px;
     margin-top: -10px;
-    padding-top: 36px;
+    padding: 36px 25px 60px 25px;
     width: 100%;
 }
 #paper-bg:before {

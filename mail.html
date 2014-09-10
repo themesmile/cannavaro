@@ -25,15 +25,15 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/mail.css">
     <link rel="stylesheet" href="js/tip/tooltipster.css">
-    <link rel="stylesheet" href="js/animsition/animsition.min.css">
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="js/chartist/chartist.min.css">
     <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
 
 
 </head>
 
 <body role="document">
+  <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
     <!-- TOPNAV -->
     <nav class="navbar navbar-default navbar-static-top nav-bg-trans" role="navigation">
         <div class="container-fluid">
@@ -50,22 +50,37 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
-                    <li><i class="fontello-calendar-1 text-amber"></i>
+                    <li><i class="fontello-th text-amber"></i>
                     </li>
                     <li id="Date"></li>
-                    <li><i class="fontello-clock-1 text-amber"></i>
+                </ul>
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+                    <li><i class="fontello-stopwatch text-amber"></i>
                     </li>
                     <li id="hours"></li>
                     <li class="point">:</li>
                     <li id="min"></li>
                     <li class="point">:</li>
                     <li id="sec"></li>
-                    <li>News</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+
+
+                    <li><i class="fontello-doc-text text-amber"></i>
+                    </li>
                     <li>
                         <ul class="list-unstyled top-newsticker text-amber news-list">
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;Lop pasdaspdisadiasdpasiap paspjfnmftl v[as[ [a [adfas [asd asd[</li>
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;sdfdsf sdfdsf sdfdsfdsd dsfddfds sdfdsfdf dsfdsf</li>
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;dsads yiill ffdhf rtyt tyrtyrty trytryrty trywqwer</li>
+                            <li><i class="fontello-cloud-flash-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Yogyakarta,</strong>Achmad Dhani Partly Cloudy Feels Like &nbsp;<b>22 °C</b>
+                            </li>
+                            <li><i class="fontello-sun-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Bandung,</strong>Jln Sudirman, Sunny Feels Like &nbsp;<b>31 °C</b>
+                            </li>
+                            <li><i class="fontello-rain-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Jakarta,</strong>Tomang, Rain Like &nbsp;<b>19 °C</b>
+                            </li>
+
+
                         </ul>
                     </li>
                 </ul>
@@ -103,13 +118,13 @@
                         <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu" role="menu">
                             <li><a href="#">Color Changer</a>
                                 <li class="divider"></li>
-                                <li><a href="#">Color Background</a>
+                                <li><a href="#"><i class="fontello-brush"></i> Color Background</a>
                                 </li>
-                                <li><a href="#">Image Background</a>
+                                <li><a href="#"><i class="fontello-picture-outline"></i> Image Background</a>
                                 </li>
-                                <li><a href="#">Pattern Background</a>
+                                <li><a href="#"><i class="fontello-puzzle-outline"></i> Pattern Background</a>
                                 </li>
-                                <li><a href="#">Video Background</a>
+                                <li><a href="#"><i class="fontello-video"></i> Video Background</a>
                                 </li>
                         </ul>
                         </li>
@@ -1245,24 +1260,64 @@
     ================================================== -->
     <!-- Main jQuery Plugins -->
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
-    <script type='text/javascript' src='js/enquire.js'></script>
+
     <script type='text/javascript' src='js/bootstrap.js'></script>
     <script type='text/javascript' src='js/date.js'></script>
     <script type='text/javascript' src='js/slimscroll/jquery.slimscroll.js'></script>
+    <script type='text/javascript' src='js/jquery.nicescroll.min.js'></script>
     <script type='text/javascript' src='js/sliding-menu.js'></script>
     <script type='text/javascript' src='js/scriptbreaker-multiple-accordion-1.js'></script>
     <script type='text/javascript' src='js/tip/jquery.tooltipster.min.js'></script>
     <script type='text/javascript' src="js/donut-chart/jquery.drawDoughnutChart.js"></script>
     <script type='text/javascript' src="js/tab/jquery.newsTicker.js"></script>
-    <script type='text/javascript' src="js/animsition/jquery.animsition.min.js"></script>
-
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
-  
     <script type='text/javascript' src="js/tab/app.ticker.js"></script>
     <script type='text/javascript' src='js/app.js'></script>
-   
+
     <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+
+
+     <script type="text/javascript">
+    //<![CDATA[
+    $(window).load(function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({
+            'overflow': 'visible'
+        });
+        $.vegas('slideshow', {
+            delay: 8000,
+            backgrounds: [{
+                src: 'img/books-desk-google-nexus.jpg',
+                fade: 2000
+            }, {
+                src: 'img/analog-camera-kodak-old.jpg',
+                fade: 2000
+            }, {
+                src: 'img/activity-aviation-fly.jpg',
+                fade: 2000
+            }, {
+                src: 'img/boat-lake-landing-stage.jpg',
+                fade: 2000
+            }, {
+                src: 'img/city-people-shops.jpg',
+                fade: 2000
+            }, {
+                src: 'img/keyboard-old-technology.jpg',
+                fade: 2000
+            }, {
+                src: 'img/agriculture-farming-field.jpg',
+                fade: 2000
+            }, {
+                src: 'img/asia-buildings-china.jpg',
+                fade: 2000
+            }]
+        })('overlay', {
+            src: 'js/vegas/overlays/02.png'
+        });
+    })
+    //]]>
+    </script>
+
 
 
 
