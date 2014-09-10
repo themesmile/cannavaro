@@ -18,22 +18,25 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dripicon.css">
     <link rel="stylesheet" href="css/typicons.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/mail.css">
     <link rel="stylesheet" href="js/tip/tooltipster.css">
-    <link rel="stylesheet" href="js/animsition/animsition.min.css">
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="js/chartist/chartist.min.css">
     <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
+    <!-- pace loader -->
+    <script src="js/pace/pace.js"></script>
+    <link href="js/pace/themes/orange/pace-theme-flash.css" rel="stylesheet" />
+
 
 
 </head>
 
 <body role="document">
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
     <!-- TOPNAV -->
     <nav class="navbar navbar-default navbar-static-top nav-bg-trans" role="navigation">
         <div class="container-fluid">
@@ -50,22 +53,37 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
-                    <li><i class="fontello-calendar-1 text-amber"></i>
+                    <li><i class="fontello-th text-amber"></i>
                     </li>
                     <li id="Date"></li>
-                    <li><i class="fontello-clock-1 text-amber"></i>
+                </ul>
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+                    <li><i class="fontello-stopwatch text-amber"></i>
                     </li>
                     <li id="hours"></li>
                     <li class="point">:</li>
                     <li id="min"></li>
                     <li class="point">:</li>
                     <li id="sec"></li>
-                    <li>News</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+
+
+                    <li><i class="fontello-doc-text text-amber"></i>
+                    </li>
                     <li>
                         <ul class="list-unstyled top-newsticker text-amber news-list">
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;Lop pasdaspdisadiasdpasiap paspjfnmftl v[as[ [a [adfas [asd asd[</li>
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;sdfdsf sdfdsf sdfdsfdsd dsfddfds sdfdsfdf dsfdsf</li>
-                            <li><i class="fontello-clock-1 text-amber"></i>&nbsp;&nbsp;dsads yiill ffdhf rtyt tyrtyrty trytryrty trywqwer</li>
+                            <li><i class="fontello-cloud-flash-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Yogyakarta,</strong>Achmad Dhani Partly Cloudy Feels Like &nbsp;<b>22 °C</b>
+                            </li>
+                            <li><i class="fontello-sun-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Bandung,</strong>Jln Sudirman, Sunny Feels Like &nbsp;<b>31 °C</b>
+                            </li>
+                            <li><i class="fontello-rain-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Jakarta,</strong>Tomang, Rain Like &nbsp;<b>19 °C</b>
+                            </li>
+
+
                         </ul>
                     </li>
                 </ul>
@@ -103,13 +121,13 @@
                         <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu" role="menu">
                             <li><a href="#">Color Changer</a>
                                 <li class="divider"></li>
-                                <li><a href="#">Color Background</a>
+                                <li><a href="#"><i class="fontello-brush"></i> Color Background</a>
                                 </li>
-                                <li><a href="#">Image Background</a>
+                                <li><a href="#"><i class="fontello-picture-outline"></i> Image Background</a>
                                 </li>
-                                <li><a href="#">Pattern Background</a>
+                                <li><a href="#"><i class="fontello-puzzle-outline"></i> Pattern Background</a>
                                 </li>
-                                <li><a href="#">Video Background</a>
+                                <li><a href="#"><i class="fontello-video"></i> Video Background</a>
                                 </li>
                         </ul>
                         </li>
@@ -134,7 +152,7 @@
                         <li data-toggle="tooltip" data-placement="left" title="Profile" style="padding-left:4px;"><i class="fontello-user-outline"></i>
                         </li>
 
-                        <li data-toggle="tooltip" data-placement="right" title="Log Out"><i class="fontello-eject"></i>
+                        <li data-toggle="tooltip" data-placement="right" title="Log Out"> <a href="login.html" class="text-white"><i class="fontello-eject"></i></a>
                         </li>
 
                     </ul>
@@ -146,10 +164,10 @@
                         <ul class="nav navbar-nav margin-left">
                             <!-- Messages: style can be found in dropdown.less-->
                             <li class="dropdown messages-menu">
-                                <btn href="#" class="drop-btn dropdown-toggle bg-green" data-toggle="dropdown">
+                                <div class="drop-btn dropdown-toggle bg-green" data-toggle="dropdown">
                                     <i class="fa  fontello-chat"></i>
                                     <span class="label label-success label-drop">4</span>
-                                </btn>
+                                </div>
                                 <ul class="dropdown-menu drop-msg ">
                                     <li class="header bg-green">
                                         You have 4 messages</li>
@@ -223,18 +241,18 @@
                                     </li>
 
                                     <li class="footer bg-green">
-                                        <btn class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-trash"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></btn>
+                                        <div class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-trash"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></div>
                                     </li>
                                 </ul>
                             </li>
                             <!-- Notifications: style can be found in dropdown.less -->
                             <li class="dropdown notifications-menu">
-                                <btn href="#" class="drop-btn dropdown-toggle bg-aqua" data-toggle="dropdown">
+                                <div class="drop-btn dropdown-toggle bg-aqua" data-toggle="dropdown">
                                     <i class="fa fontello-warning-empty"></i>
                                     <span class="label bg-aqua label-drop">7</span>
-                                </btn>
+                                </div>
                                 <ul class="dropdown-menu drop-noft">
 
                                     <li class="header bg-aqua">
@@ -273,18 +291,18 @@
                                     </li>
 
                                     <li class="footer bg-aqua">
-                                        <btn class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-trash"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></btn>
+                                        <div class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-trash"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></div>
                                     </li>
                                 </ul>
                             </li>
                             <!-- Tasks: style can be found in dropdown.less -->
                             <li class="dropdown tasks-menu">
-                                <btn href="#" class="drop-btn bg-red dropdown-toggle" data-toggle="dropdown">
+                                <div class="drop-btn bg-red dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa  fontello-lightbulb"></i>
                                     <span class="label bg-red label-drop">9</span>
-                                </btn>
+                                </div>
                                 <ul class="dropdown-menu drop-task">
 
                                     <li class="header bg-red">
@@ -351,9 +369,9 @@
                                     </li>
 
                                     <li class="footer bg-red">
-                                        <btn class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-trash"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></btn>
+                                        <div class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-trash"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></div>
                                     </li>
                                 </ul>
                             </li>
@@ -394,19 +412,19 @@
                                     <a class="tooltip-tip" href="#" title="Mail">
                                         <i class=" fontello-mail-1"></i>
                                         <span>mail</span>
-                                        
+
                                     </a>
-                                      <ul>
+                                    <ul>
                                         <!--  <li class="hide-min-toggle">UI Element</li> -->
                                         <li>
                                             <!-- class="active" -->
                                             <a class="tooltip-tip2" href="mail.html" title="Index">Inbox<small class="side-menu-noft bg-aqua">289</small></a>
-                                        </li>  
+                                        </li>
                                         <li>
                                             <!-- class="active" -->
                                             <a class="tooltip-tip2" href="compose.html" title="Compose">Compose</a>
                                         </li>
-                                        </ul>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a class="tooltip-tip" href="#" title="UI">
@@ -557,9 +575,7 @@
                                     <span>Task Progress</span>
                                 </h3>
                                 <ul class="side-dashh-list">
-
                                     <li>
-
                                         <!-- Task item -->
                                         <a href="#">
                                             <h3 class="fontello-leaf">
@@ -625,9 +641,9 @@
                     <li>
                         <a href="#">
                             <span>
-                            </span>Desain Kit</a>
+                            </span>Extra</a>
                     </li>
-                    <li><a href="#">Mail Page</a>
+                    <li><a href="#">Timeline</a>
                     </li>
                 </ol>
                 <div class="dark" style="visibility: visible;">
@@ -647,557 +663,114 @@
 
             <!-- CONTENT -->
             <div class="wrap-fluid" id="paper-bg">
-                <!-- Small boxes (Stat box) -->
 
                 <div class="row">
-                    <div class="col-sm-12">
-                        <ul class="list-unstyled list-inline mail-btn">
-                            <li><i class=" fontello-inbox"></i><b>Compose</b>
-                            </li>
+                    <div class="col-lg-12">
 
-                            <li><i class=" fontello-inbox"></i><b>Inbox<small>68</small></b>
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i>
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                                        <p>
+                                            <small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small>
+                                        </p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                    </div>
+                                </div>
                             </li>
-                            <li> <i class="fontello-pencil-1"></i><b>Draft<small>5</small></b>
-                            <li> <i class="fontello-paper-plane"></i><b>Sent</b>
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-credit-card"></i>
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                        <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+                                    </div>
+                                </div>
                             </li>
-                             <li> <i class="fontello-trash-2"></i><b>Trash<small>23</small></b>
-                            </li> 
-                            <li> <i class="fontello-fire"></i><b>Spam<small class="bg-red">452</small></b>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-credit-card"></i>
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                    </div>
+                                </div>
                             </li>
-
+                            <li class="timeline-inverted">
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-floppy-disk"></i>
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                        <hr>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                <i class="glyphicon glyphicon-cog"></i> 
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Action</a>
+                                                </li>
+                                                <li><a href="#">Another action</a>
+                                                </li>
+                                                <li><a href="#">Something else here</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge"><i class="glyphicon glyphicon-thumbs-up"></i>
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="row">
-
-                    <!-- CONTENT MAIL -->
-                    <div class="col-sm-12">
-                        <div class="mail_header">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div style="margin-right:10px" class="btn-group pull-left">
-                                        <div class="btn btn-sm btn-default bg-amber">
-                                            <input type="checkbox" style="margin:0 5px;padding:0;position:relative;top:2px;">All</div>
-                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle bg-amber" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">None</a>
-                                            </li>
-                                            <li><a href="#">read</a>
-                                            </li>
-                                            <li><a href="#">Unread</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-
-                                    <div style="margin-right:10px" class="btn-group pull-left">
-                                        <button type="button" class="btn btn-sm btn-default dropdown-toggle bg-amber" data-toggle="dropdown">More
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#"><i class="fa fa-pencil"></i> Mark as Read</a>
-                                            </li>
-                                            <li><a href="#"><i class="fa fa-ban"></i> Spam</a>
-                                            </li>
-                                            <li class="divider"></li>
-                                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <button style="margin-right:10px" type="button" data-color="#39B3D7" data-opacity="0.95" class="btn btn-sm btn-default button test pull-left bg-amber">
-                                        <span class="fontello-loop"></span>&nbsp;&nbsp;Refresh</button>
-                                </div>
-
-
-                                <div class="col-sm-6">
-                                    <div class="btn-group  pull-right ">
-                                        <button type="button" class="btn btn-sm btn-default bg-amber">
-                                            <span class="fontello-left-open-outline"></span>
-                                        </button>
-                                        <button type="button" class="btn btn-default btn-sm bg-amber">
-                                            <span class="fontello-right-open-outline"></span>
-                                        </button>
-                                    </div>
-
-                                    <div class="btn-group pull-right " style="margin-right:10px;">
-                                        <button type="button" class="btn btn-default btn-sm bg-amber">1-50 of 124</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="content-mail" class="bg-amber">
-                            <div class="table-responsive">
-                                <!-- THE MESSAGES -->
-                                <table class="table table-mailbox">
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                          <a href="#">
-                                                 <img alt="" class="img-circle star" src="http://api.randomuser.me/portraits/thumb/men/22.jpg">
-                                            </a>
-                                        </a>
-                                        </td>
-                                        <td>New Paijo</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Do You Know</strong>Iko Uwais, Justin Beiber on twitter? ...</p>
-                                        </td>
-                                        <td class="time text-right">Jan 8 at 07:10am</td>
-                                    </tr>
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name"> <a class="star" href=""><i class="fa fa-facebook"></i></a>
-                                        </td>
-                                        <td>Facebook</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Meeting Reminder</strong>Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                                        </td>
-                                        <td class="time text-right">Yesterday at 1:30am</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-instagrem"></span>
-                                            </a>
-                                        </td>
-                                        <td>Instagram</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>User Interface Conference</strong>Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                                        </td>
-                                        <td class="time text-right">Jan 13 at 7:30am</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a href="#">
-                                                <img alt="" class="img-circle star" src="http://api.randomuser.me/portraits/thumb/men/23.jpg">
-                                            </a>
-                                        </td>
-                                        <td>Jhony Deep</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Hi, matirasa</strong>how are u today?</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 7:32am</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-behance"></span>
-                                            </a>
-                                        </td>
-                                        <td>Behance Support</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Upgrade your membership</strong>, you may be eligible for a FREE Trial.</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 10:11pm</td>
-                                    </tr>
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-tumblr"></span>
-                                            </a>
-                                        </td>
-                                        <td>Tumblr</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Follow</strong>more blogs and have more fun</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 9:54pm</td>
-                                    </tr>
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-paypal"></span>
-                                            </a>
-                                        </td>
-                                        <td>Paypal</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                We're transferring money from PayPal to your bank</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 9:54pm</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-dropbox"></span>
-                                            </a>
-                                        </td>
-                                        <td>Dropbox</td>
-                                        <td class="subject">
-                                            <strong>New Update</strong>Now are available, get it now!
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 9:54pm</td>
-                                    </tr>
-                                    <!-- TWO -->
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name"><a class="star" href=""><i class="fa fa-twitter"></i></a>
-                                        </td>
-                                        <td>Twitter</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Do You Know</strong>Iko Uwais, Justin Beiber on twitter? ...</p>
-                                        </td>
-                                        <td class="time text-right">Jan 8 at 07:10am</td>
-                                    </tr>
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name"> <a class="star" href=""><i class="fa fa-facebook"></i></a>
-                                        </td>
-                                        <td>Facebook</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Meeting Reminder</strong>Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                                        </td>
-                                        <td class="time text-right">Yesterday at 1:30am</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-instagrem"></span>
-                                            </a>
-                                        </td>
-                                        <td>Instagram</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>User Interface Conference</strong>Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                                        </td>
-                                        <td class="time text-right">Jan 13 at 7:30am</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a href="#">
-                                                 <img alt="" class="img-circle star" src="http://api.randomuser.me/portraits/thumb/men/25.jpg">
-                                            </a>
-                                        </td>
-                                        <td>Muhammad Ali</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Hi, matirasa</strong>how are u today?</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 7:32am</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-behance"></span>
-                                            </a>
-                                        </td>
-                                        <td>Behance Support</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Upgrade your membership</strong>, you may be eligible for a FREE Trial.</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 10:11pm</td>
-                                    </tr>
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-tumblr"></span>
-                                            </a>
-                                        </td>
-                                        <td>Tumblr</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Follow</strong>more blogs and have more fun</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 9:54pm</td>
-                                    </tr>
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-paypal"></span>
-                                            </a>
-                                        </td>
-                                        <td>Paypal</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                We're transferring money from PayPal to your bank</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 9:54pm</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-dropbox"></span>
-                                            </a>
-                                        </td>
-                                        <td>Dropbox</td>
-                                        <td class="subject">
-                                            <strong>New Update</strong>Now are available, get it now!
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 9:54pm</td>
-                                    </tr>
-
-                                    <!-- END OF TWO -->
-                                    <!-- THREE -->
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name"><a class="star" href=""><i class="fa fa-twitter"></i></a>
-                                        </td>
-                                        <td>Twitter</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Do You Know</strong>Iko Uwais, Justin Beiber on twitter? ...</p>
-                                        </td>
-                                        <td class="time text-right">Jan 8 at 07:10am</td>
-                                    </tr>
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name"> <a class="star" href=""><i class="fa fa-facebook"></i></a>
-                                        </td>
-                                        <td>Facebook</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Meeting Reminder</strong>Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                                        </td>
-                                        <td class="time text-right">Yesterday at 1:30am</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-instagrem"></span>
-                                            </a>
-                                        </td>
-                                        <td>Instagram</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>User Interface Conference</strong>Ut enim ad minim veniam, quis nostrud exercitation...</p>
-                                        </td>
-                                        <td class="time text-right">Jan 13 at 7:30am</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-user"></span>
-                                            </a>
-                                        </td>
-                                        <td>Jhony Deep</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Hi, matirasa</strong>how are u today?</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 7:32am</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-behance"></span>
-                                            </a>
-                                        </td>
-                                        <td>Behance Support</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Upgrade your membership</strong>, you may be eligible for a FREE Trial.</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 10:11pm</td>
-                                    </tr>
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-tumblr"></span>
-                                            </a>
-                                        </td>
-                                        <td>Tumblr</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                <strong>Follow</strong>more blogs and have more fun</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 9:54pm</td>
-                                    </tr>
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-paypal"></span>
-                                            </a>
-                                        </td>
-                                        <td>Paypal</td>
-                                        <td class="subject">
-                                            <p class="email-summary">
-                                                We're transferring money from PayPal to your bank</p>
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 9:54pm</td>
-                                    </tr>
-
-
-                                    <tr class="unread">
-                                        <td class="small-col">
-                                            <input type="checkbox" />
-                                        </td>
-                                        <td class="small-col"><i class="fa fa-star"></i>
-                                        </td>
-                                        <td class="name">
-                                            <a class="star" href="">
-                                                <span class="entypo-dropbox"></span>
-                                            </a>
-                                        </td>
-                                        <td>Dropbox</td>
-                                        <td class="subject">
-                                            <strong>New Update</strong>Now are available, get it now!
-                                        </td>
-                                        <td class="time text-right">Jan 11 at 9:54pm</td>
-                                    </tr>
-
-                                    <!-- END OF THREE -->
-
-
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
-
-
-                        </div>
-
                     </div>
                 </div>
 
@@ -1222,14 +795,15 @@
                 <p id="spanDate"></p>
                 <p id="clock"></p>
             </div>
-            <div class="copyright">Copyright &copy; 2014 <a href="http://gamatechno.com">Themesmile</a> All Rights Reserved</div>
+            <div class="copyright">Copyright &copy; 2014 <a href="http://ndesaintheme.com/">Themesmile</a> Made with <i class="fontello-heart-filled text-red"></i>
+            </div>
             <div class="devider-footer"></div>
             <ul>
-                <li><i class="fa fa-facebook"></i>
+                <li><i class="fa fa-facebook-square"></i>
                 </li>
-                <li><i class="fa fa-twitter"></i>
+                <li><i class="fa fa-twitter-square"></i>
                 </li>
-                <li><i class="fa fa-google-plus"></i>
+                <li><i class="fa fa-instagram"></i>
                 </li>
             </ul>
         </div>
@@ -1245,24 +819,63 @@
     ================================================== -->
     <!-- Main jQuery Plugins -->
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
-    <script type='text/javascript' src='js/enquire.js'></script>
+
     <script type='text/javascript' src='js/bootstrap.js'></script>
     <script type='text/javascript' src='js/date.js'></script>
     <script type='text/javascript' src='js/slimscroll/jquery.slimscroll.js'></script>
+    <script type='text/javascript' src='js/jquery.nicescroll.min.js'></script>
     <script type='text/javascript' src='js/sliding-menu.js'></script>
     <script type='text/javascript' src='js/scriptbreaker-multiple-accordion-1.js'></script>
     <script type='text/javascript' src='js/tip/jquery.tooltipster.min.js'></script>
     <script type='text/javascript' src="js/donut-chart/jquery.drawDoughnutChart.js"></script>
     <script type='text/javascript' src="js/tab/jquery.newsTicker.js"></script>
-    <script type='text/javascript' src="js/animsition/jquery.animsition.min.js"></script>
-
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
-  
     <script type='text/javascript' src="js/tab/app.ticker.js"></script>
     <script type='text/javascript' src='js/app.js'></script>
-   
+
     <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+
+
+    <script type="text/javascript">
+    //<![CDATA[
+    $(window).load(function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({
+            'overflow': 'visible'
+        });
+        $.vegas('slideshow', {
+            delay: 8000,
+            backgrounds: [{
+                src: 'img/books-desk-google-nexus.jpg',
+                fade: 2000
+            }, {
+                src: 'img/analog-camera-kodak-old.jpg',
+                fade: 2000
+            }, {
+                src: 'img/activity-aviation-fly.jpg',
+                fade: 2000
+            }, {
+                src: 'img/boat-lake-landing-stage.jpg',
+                fade: 2000
+            }, {
+                src: 'img/city-people-shops.jpg',
+                fade: 2000
+            }, {
+                src: 'img/keyboard-old-technology.jpg',
+                fade: 2000
+            }, {
+                src: 'img/agriculture-farming-field.jpg',
+                fade: 2000
+            }, {
+                src: 'img/asia-buildings-china.jpg',
+                fade: 2000
+            }]
+        })('overlay', {
+            src: 'js/vegas/overlays/02.png'
+        });
+    })
+    //]]>
+    </script>
 
 
 

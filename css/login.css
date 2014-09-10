@@ -138,15 +138,10 @@ body {
 */
 
 .account-box {
-    -moz-border-radius: 0 0 4px 4px -webkit-border-radius: 0 0 4px 4px;
-    -khtml-border-radius: 0 0 4px 4px;
-    border-radius: 0 0 4px 4px;
     z-index: 3;
     font-size: 13px !important;
-    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-    /* background-color: #ffffff; */
-    /* padding: 20px; */
-    margin-bottom: 25px;
+    padding: 0 20px;
+    margin-bottom: 0;
 }
 .logo {
     width: 138px;
@@ -165,7 +160,7 @@ body {
     color: #fff;
 }
 .or-box {
-    border-top: 1px solid #DFDFDF;
+    border-top: 2px solid #f9cfbb;
     margin-bottom: 0;
     margin-top: 80px;
     padding-top: 20px;
@@ -186,22 +181,26 @@ body {
 .btn-facebook {
     background-color: #3B5998;
     color: #fff;
-    font-weight: bold;
+    font-weight: 100;
+    text-align: left;
 }
 .btn-google {
     background-color: #C32F10;
     color: #fff;
-    font-weight: bold;
+    font-weight: 100;
+    text-align: left;
 }
 .btn-twitter {
     background-color: #00ACED;
     color: #fff;
-    font-weight: bold;
+    font-weight: 100;
+    text-align: left;
 }
 .btn-instagram {
     background-color: #316698;
     color: #fff;
-    font-weight: bold;
+    font-weight: 100;
+    text-align: left;
 }
 .label-forgot {
     font-size: 11px;
@@ -213,11 +212,13 @@ body {
 .space-icon {
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1);
-    margin-right: 10px;
-    padding-right: 10px;
+    margin-right: 11px;
+    padding-right: 0;
+    width: 24px;
+    display: inline-block;
 }
 .login-with {
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: #FCF5DE;
     font-size: 14px;
     font-weight: bold;
     margin: 0 auto;

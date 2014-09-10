@@ -12,9 +12,38 @@ body {
     background-color: #2E353D !important;
     background: url("../img/wood.jpg") repeat fixed;
     padding: 20px 65px 60px;
+    overflow: hidden;
 }
 /* 10px padding and margins */
 
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FCF5DE;
+    /* change if the mask should have another color then white */
+    z-index: 9999;
+    /* makes sure it stays on top */
+}
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../img/status.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
 .no-pad {
     padding: 0px!important;
 }
@@ -658,6 +687,21 @@ ol.breadcrumb.newcrumb li a span {
     border-top-right-radius: 0;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+.box .box-body:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-width: 22px 22px 0 0;
+    border-style: solid;
+    border-color: #f7e7c5 #FCF5DE #FCF5DE #f7e7c5;
+    background: transparent;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), -1px 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), -1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 0;
 }
 .box .box-body > table, .box .box-body > .table {
     margin-bottom: 0;
