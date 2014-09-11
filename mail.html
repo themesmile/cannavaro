@@ -31,11 +31,11 @@
 </head>
 
 <body role="document">
-  <div id="preloader">
+    <div id="preloader">
         <div id="status">&nbsp;</div>
     </div>
     <!-- TOPNAV -->
-    <nav class="navbar navbar-default navbar-static-top nav-bg-trans" role="navigation">
+      <nav class="navbar navbar-default navbar-static-top nav-bg-trans" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -91,7 +91,7 @@
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/23.jpg">Hi, Dave Mattew <b class="caret"></b>
                         </a>
-                        <ul style="margin-top:6px;" role="menu" class="dropdown-setting dropdown-menu">
+                        <ul style="margin-top:6px;" role="menu" class="dropdown-setting dropdown-menu bg-amber">
                             <li>
                                 <a href="#">
                                     <span class="entypo-user"></span>&nbsp;&nbsp;My Profile</a>
@@ -115,7 +115,7 @@
 
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-gear"></i>&nbsp;&nbsp;Setting <span class="caret"></span></a>
-                        <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu" role="menu">
+                        <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu bg-amber" role="menu">
                             <li><a href="#">Color Changer</a>
                                 <li class="divider"></li>
                                 <li><a href="#"><i class="fontello-brush"></i> Color Background</a>
@@ -138,7 +138,7 @@
 
     <!-- Comtainer -->
     <div class="container-fluid paper-wrap bevel tlbr">
-        <div id="paper-top">
+      <div id="paper-top">
             <div class="row">
                 <div class="col-sm-2 no-pad">
                     <!--     -->
@@ -149,7 +149,7 @@
                         <li data-toggle="tooltip" data-placement="left" title="Profile" style="padding-left:4px;"><i class="fontello-user-outline"></i>
                         </li>
 
-                        <li data-toggle="tooltip" data-placement="right" title="Log Out"><i class="fontello-eject"></i>
+                        <li data-toggle="tooltip" data-placement="right" title="Log Out"> <a href="login.html" class="text-white"><i class="fontello-eject"></i></a>
                         </li>
 
                     </ul>
@@ -161,10 +161,10 @@
                         <ul class="nav navbar-nav margin-left">
                             <!-- Messages: style can be found in dropdown.less-->
                             <li class="dropdown messages-menu">
-                                <btn href="#" class="drop-btn dropdown-toggle bg-green" data-toggle="dropdown">
+                                <div class="drop-btn dropdown-toggle bg-green" data-toggle="dropdown">
                                     <i class="fa  fontello-chat"></i>
                                     <span class="label label-success label-drop">4</span>
-                                </btn>
+                                </div>
                                 <ul class="dropdown-menu drop-msg ">
                                     <li class="header bg-green">
                                         You have 4 messages</li>
@@ -237,19 +237,19 @@
                                         </ul>
                                     </li>
 
-                                    <li class="footer bg-green">
-                                        <btn class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-trash"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></btn>
+                                    <li class="footer-green">
+                                        <div class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-trash"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></div>
                                     </li>
                                 </ul>
                             </li>
                             <!-- Notifications: style can be found in dropdown.less -->
                             <li class="dropdown notifications-menu">
-                                <btn href="#" class="drop-btn dropdown-toggle bg-aqua" data-toggle="dropdown">
+                                <div class="drop-btn dropdown-toggle bg-aqua" data-toggle="dropdown">
                                     <i class="fa fontello-warning-empty"></i>
                                     <span class="label bg-aqua label-drop">7</span>
-                                </btn>
+                                </div>
                                 <ul class="dropdown-menu drop-noft">
 
                                     <li class="header bg-aqua">
@@ -287,19 +287,19 @@
                                         </ul>
                                     </li>
 
-                                    <li class="footer bg-aqua">
-                                        <btn class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-trash"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></btn>
+                                    <li class="footer-blue">
+                                        <div class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-trash"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></div>
                                     </li>
                                 </ul>
                             </li>
                             <!-- Tasks: style can be found in dropdown.less -->
                             <li class="dropdown tasks-menu">
-                                <btn href="#" class="drop-btn bg-red dropdown-toggle" data-toggle="dropdown">
+                                <div class="drop-btn bg-red dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa  fontello-lightbulb"></i>
                                     <span class="label bg-red label-drop">9</span>
-                                </btn>
+                                </div>
                                 <ul class="dropdown-menu drop-task">
 
                                     <li class="header bg-red">
@@ -365,10 +365,10 @@
                                         </ul>
                                     </li>
 
-                                    <li class="footer bg-red">
-                                        <btn class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-trash"></btn>
-                                        <btn class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></btn>
+                                    <li class="footer-red">
+                                        <div class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-trash"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></div>
                                     </li>
                                 </ul>
                             </li>
@@ -380,6 +380,8 @@
                 <!-- end of menu right -->
             </div>
         </div>
+
+
 
         <!-- SIDE MENU -->
         <div class="wrap-sidebar-content">
@@ -409,19 +411,19 @@
                                     <a class="tooltip-tip" href="#" title="Mail">
                                         <i class=" fontello-mail-1"></i>
                                         <span>mail</span>
-                                        
+
                                     </a>
-                                      <ul>
+                                    <ul>
                                         <!--  <li class="hide-min-toggle">UI Element</li> -->
                                         <li>
                                             <!-- class="active" -->
                                             <a class="tooltip-tip2" href="mail.html" title="Index">Inbox<small class="side-menu-noft bg-aqua">289</small></a>
-                                        </li>  
+                                        </li>
                                         <li>
                                             <!-- class="active" -->
                                             <a class="tooltip-tip2" href="compose.html" title="Compose">Compose</a>
                                         </li>
-                                        </ul>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a class="tooltip-tip" href="#" title="UI">
@@ -673,12 +675,12 @@
                             <li><i class=" fontello-inbox"></i><b>Inbox<small>68</small></b>
                             </li>
                             <li> <i class="fontello-pencil-1"></i><b>Draft<small>5</small></b>
-                            <li> <i class="fontello-paper-plane"></i><b>Sent</b>
-                            </li>
-                             <li> <i class="fontello-trash-2"></i><b>Trash<small>23</small></b>
-                            </li> 
-                            <li> <i class="fontello-fire"></i><b>Spam<small class="bg-red">452</small></b>
-                            </li>
+                                <li> <i class="fontello-paper-plane"></i><b>Sent</b>
+                                </li>
+                                <li> <i class="fontello-trash-2"></i><b>Trash<small>23</small></b>
+                                </li>
+                                <li> <i class="fontello-fire"></i><b>Spam<small class="bg-red">452</small></b>
+                                </li>
 
                         </ul>
                     </div>
@@ -757,10 +759,10 @@
                                         <td class="small-col"><i class="fa fa-star"></i>
                                         </td>
                                         <td class="name">
-                                          <a href="#">
-                                                 <img alt="" class="img-circle star" src="http://api.randomuser.me/portraits/thumb/men/22.jpg">
+                                            <a href="#">
+                                                <img alt="" class="img-circle star" src="http://api.randomuser.me/portraits/thumb/men/22.jpg">
                                             </a>
-                                        </a>
+                                            </a>
                                         </td>
                                         <td>New Paijo</td>
                                         <td class="subject">
@@ -964,7 +966,7 @@
                                         </td>
                                         <td class="name">
                                             <a href="#">
-                                                 <img alt="" class="img-circle star" src="http://api.randomuser.me/portraits/thumb/men/25.jpg">
+                                                <img alt="" class="img-circle star" src="http://api.randomuser.me/portraits/thumb/men/25.jpg">
                                             </a>
                                         </td>
                                         <td>Muhammad Ali</td>
@@ -1276,7 +1278,7 @@
     <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
 
 
-     <script type="text/javascript">
+    <script type="text/javascript">
     //<![CDATA[
     $(window).load(function() { // makes sure the whole site is loaded
         $('#status').fadeOut(); // will first fade out the loading animation

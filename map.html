@@ -18,6 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dripicon.css">
     <link rel="stylesheet" href="css/typicons.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
@@ -93,7 +94,7 @@
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/23.jpg">Hi, Dave Mattew <b class="caret"></b>
                         </a>
-                        <ul style="margin-top:6px;" role="menu" class="dropdown-setting dropdown-menu">
+                        <ul style="margin-top:6px;" role="menu" class="dropdown-setting dropdown-menu bg-amber">
                             <li>
                                 <a href="#">
                                     <span class="entypo-user"></span>&nbsp;&nbsp;My Profile</a>
@@ -117,7 +118,7 @@
 
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-gear"></i>&nbsp;&nbsp;Setting <span class="caret"></span></a>
-                        <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu" role="menu">
+                        <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu bg-amber" role="menu">
                             <li><a href="#">Color Changer</a>
                                 <li class="divider"></li>
                                 <li><a href="#"><i class="fontello-brush"></i> Color Background</a>
@@ -140,7 +141,7 @@
 
     <!-- Comtainer -->
     <div class="container-fluid paper-wrap bevel tlbr">
-          <div id="paper-top">
+        <div id="paper-top">
             <div class="row">
                 <div class="col-sm-2 no-pad">
                     <!--     -->
@@ -383,7 +384,6 @@
             </div>
         </div>
 
-
         <!-- SIDE MENU -->
         <div class="wrap-sidebar-content">
             <div id="skin-select">
@@ -503,17 +503,7 @@
                                             <a class="tooltip-tip2" href="table-dynamic.html" title="Table Dynamic">Table Dynamic</a>
 
                                         </li>
-                                        <li>
-                                            <a class="tooltip-tip2" href="#" title="Submenu">Table Dynamic</a>
-                                            <ul>
-                                                <li><a href="#">Submenu 1a</a>
-                                                </li>
-                                                <li><a href="#">Submenu 2a</a>
-                                                </li>
-                                                <li><a href="#">Submenu 3a</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+
                                     </ul>
                                 </li>
                                 <li>
@@ -641,10 +631,9 @@
                     <li>
                         <a href="#">
                             <span>
-                            </span>Extra</a>
+                            </span>Map</a>
                     </li>
-                    <li><a href="#">Invoice</a>
-                    </li>
+
                 </ol>
                 <div class="dark" style="visibility: visible;">
                     <form class="navbar-form navbar-left" role="search">
@@ -665,167 +654,45 @@
             <div class="wrap-fluid" id="paper-bg">
 
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-6">
                         <div class="box">
                             <div class="box-header">
-                                <!-- tools box -->
-                                <div class="pull-right box-tools">
-
-                                    <span class="box-btn" data-widget="collapse"><i class="fa fa-minus"></i>
-                                    </span>
-                                    <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
-                                    </span>
-                                </div>
-                                <h3 class="box-title fontello-doc">Invoice</h3>
+                                <h3 class="box-title">Gmap Marker</h3>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
-                                <!-- Main content -->
-                                <section class="content invoice">
-                                    <!-- title row -->
-                                    <div class="row">
-                                        <div class="col-xs-12 invoice-header">
-                                            <h2 class="page-header text-red">
-                                                <i class="fa fa-globe"></i> Cannavaro, Inc.
-                                                <small style="font-size:12px;" class="pull-right">Date: 8/03/2014</small>
-                                            </h2>
-                                        </div>
-                                        <!-- /.col -->
-                                    </div>
-                                    <!-- info row -->
-                                    <div class="row invoice-info">
-                                        <div class="col-sm-4 invoice-col">
-                                            From
-                                            <address>
-                                                <strong>Admin, Inc.</strong>
-                                                <br>795 Folsom Ave, Suite 600
-                                                <br>San Francisco, CA 94107
-                                                <br>Phone: (804) 123-5432
-                                                <br/>Email: info@almasaeedstudio.com
-                                            </address>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-sm-4 invoice-col">
-                                            To
-                                            <address>
-                                                <strong>John Doe</strong>
-                                                <br>795 Folsom Ave, Suite 600
-                                                <br>San Francisco, CA 94107
-                                                <br>Phone: (555) 539-1037
-                                                <br/>Email: john.doe@example.com
-                                            </address>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-sm-4 invoice-col">
-                                            <b>Invoice #007612</b>
-                                            <br/>
-                                            <br/>
-                                            <b>Order ID:</b> 4F3S8J
-                                            <br/>
-                                            <b>Payment Due:</b> 2/22/2014
-                                            <br/>
-                                            <b>Account:</b> 968-34567
-                                        </div>
-                                        <!-- /.col -->
-                                    </div>
-                                    <!-- /.row -->
+                                   <div id="test1" class="gmap3"></div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
 
-                                    <!-- Table row -->
-                                    <div class="row">
-                                        <div class="col-xs-12 table-responsive">
-                                            <table class="table table-striped">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Qty</th>
-                                                        <th>Product</th>
-                                                        <th>Serial #</th>
-                                                        <th>Description</th>
-                                                        <th>Subtotal</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr class="bg-white">
-                                                        <td>1</td>
-                                                        <td>Call of Duty</td>
-                                                        <td>455-981-221</td>
-                                                        <td>El snort testosterone trophy driving gloves handsome</td>
-                                                        <td>$64.50</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Need for Speed IV</td>
-                                                        <td>247-925-726</td>
-                                                        <td>Wes Anderson umami biodiesel</td>
-                                                        <td>$50.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Monsters DVD</td>
-                                                        <td>735-845-642</td>
-                                                        <td>Terry Richardson helvetica tousled street art master</td>
-                                                        <td>$10.70</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Grown Ups Blue Ray</td>
-                                                        <td>422-568-642</td>
-                                                        <td>Tousled lomo letterpress</td>
-                                                        <td>$25.99</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <!-- /.col -->
-                                    </div>
-                                    <!-- /.row -->
+                    <div class="col-lg-6">
+                        <div class="box">
+                            <div class="box-header">
+                                <h3 class="box-title">Gmap</h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                 <div id="test2" class="gmap3"></div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
 
-                                    <div class="row">
-                                        <!-- accepted payments column -->
-                                        <div class="col-xs-6">
-                                            <p class="lead">Payment Methods:</p>
-                                            <span style="font-size:36px" class="text-left">
-                                                <i class="pw pw-american-express"></i><i class="pw pw-mastercard"></i><i class="pw pw-visa"></i><i class="pw pw-paypal"></i>
-                                            </span>
-
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-xs-6">
-                                            <p class="lead">Amount Due 2/22/2014</p>
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <tr>
-                                                        <th style="width:50%">Subtotal:</th>
-                                                        <td>$250.30</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Tax (9.3%)</th>
-                                                        <td>$10.34</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Shipping:</th>
-                                                        <td>$5.80</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Total:</th>
-                                                        <td>$265.24</td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <!-- /.col -->
-                                    </div>
-                                    <!-- /.row -->
-
-                                    <!-- this row will not appear when printing -->
-                                    <div class="row no-print">
-                                        <div class="col-xs-12">
-                                            <button class="btn bg-orange" onclick="window.print();"><i class="fa fa-print"></i> Print</button>
-                                            <button class="btn pull-right bg-red"><i class="fa fa-credit-card"></i> Submit Payment</button>
-                                            <button class="btn pull-right bg-red" style="margin-right: 5px;"><i class="fa fa-download"></i> Generate PDF</button>
-                                        </div>
-                                    </div>
-                                </section>
-                                <!-- /.content -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <h3 class="box-title fontello-doc">Blank Page</h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <h4>Content Goes Here</h4>
+                                <p>content</p>
                             </div>
                             <!-- /.box-body -->
                         </div>
@@ -892,6 +759,138 @@
     <script type='text/javascript' src='js/app.js'></script>
 
     <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script type="text/javascript" src="js/gmap/gmap3.js"></script>
+       <script type="text/javascript">
+    
+      function onClk(circle, event, context){
+        var $e = $('#'+context.data);
+        if ($e.hasClass('clicked')) {
+          $e.removeClass('clicked').css('backgroundColor', '#FFFFFF');
+        } else {
+          $e.addClass('clicked').css('backgroundColor', circle.strokeColor);
+        }
+      }
+    
+      $(function(){
+      
+        // 1st call : init the map and create circles
+        $('#test2').gmap3({
+          map:{
+            options:{
+              center: [37.772323, -122.214897],
+              zoom:13
+            }
+          },
+          circle:{
+            values:[
+              { options:{
+                  center: [37.772323, -122.214897],
+                  radius : 750,
+                  fillColor : "#FFAF9F",
+                  strokeColor : "#FF512F"   
+                },
+                data:"box1"
+              },
+              { options:{
+                  center: [37.772323, -122.214897],
+                  radius : 500,
+                  fillColor : "#F4AFFF",
+                  strokeColor : "#CB53DF"   
+                },
+                data: "box2"
+              }
+          ],
+          events:{
+            click: onClk
+          }
+        }
+      }); 
+      
+      // second call : create a single cicle
+      $('#test2').gmap3({
+        circle:{
+          options:{
+            center: [37.772323, -122.214897],
+            radius : 250,
+            fillColor : "#008BB2",
+            strokeColor : "#005BB7"
+          },
+          data: "box3",
+          events:{
+            click: onClk
+          }
+        }
+      });
+      
+      
+    });
+    </script> 
+
+    <script type="text/javascript">
+    $(function() {
+
+        $('#test1').gmap3({
+            map: {
+                options: {
+                    center: [46.578498, 2.457275],
+                    zoom: 5
+                }
+            },
+            marker: {
+                values: [{
+                    latLng: [48.8620722, 2.352047],
+                    data: "Paris !"
+                }, {
+                    address: "86000 Poitiers, France",
+                    data: "Poitiers : great city !"
+                }, {
+                    address: "66000 Perpignan, France",
+                    data: "Perpignan ! <br> GO USAP !",
+                    options: {
+                        icon: "http://maps.google.com/mapfiles/marker_green.png"
+                    }
+                }],
+                options: {
+                    draggable: false
+                },
+                events: {
+                    mouseover: function(marker, event, context) {
+                        var map = $(this).gmap3("get"),
+                            infowindow = $(this).gmap3({
+                                get: {
+                                    name: "infowindow"
+                                }
+                            });
+                        if (infowindow) {
+                            infowindow.open(map, marker);
+                            infowindow.setContent(context.data);
+                        } else {
+                            $(this).gmap3({
+                                infowindow: {
+                                    anchor: marker,
+                                    options: {
+                                        content: context.data
+                                    }
+                                }
+                            });
+                        }
+                    },
+                    mouseout: function() {
+                        var infowindow = $(this).gmap3({
+                            get: {
+                                name: "infowindow"
+                            }
+                        });
+                        if (infowindow) {
+                            infowindow.close();
+                        }
+                    }
+                }
+            }
+        });
+    });
+    </script>
 
 
     <script type="text/javascript">
