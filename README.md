@@ -23,3 +23,4 @@ file yang dipake
 - **Animated Transisition**: http://git.blivesta.com/animsition/
 - **Range Slider**: http://www.jqueryscript.net/demo/Highly-Customizable-jQuery-Range-Slider-Plugin-Range-2d-Slider/
 - **Nice Slider**: http://www.jqueryscript.net/demo/Simple-Nice-jQuery-Value-Range-Slider-Plugin-Fresh-Slider/
+- **Video Background**: http://pupunzi.com/#mb.components/mb.YTPlayer/YTPlayer.html
