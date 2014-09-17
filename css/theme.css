@@ -273,6 +273,24 @@ body {
 .alert {
     font-size: 13px;
 }
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 12px!important;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.1)!important;
+    border-radius: 3px;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    -webkit-transition: none!important;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s!important;
+    transition: none!important;
+}
 /*COUSTOMIZE*/
 
 .container-fluid {
@@ -666,6 +684,27 @@ ol.breadcrumb.newcrumb li a span {
     cursor: default;
     font-weight: bold;
     color: #888;
+}
+.box .box-header > .fa, .box .box-header > .glyphicon, .box .box-header > .ion, .box .box-header .box-title i {
+    height: 35px;
+    width: 35px;
+    background: #F7BFA8;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    position: relative;
+    padding: 0;
+    border-radius: 50%;
+    float: left;
+}
+.box .box-header > .fa, .box .box-header > .glyphicon, .box .box-header > .ion, .box .box-header .box-title span {
+    top: 9px;
+    position: relative;
+    left: 5px;
+    color: #F7BFA8;
 }
 .box .box-header a {
     color: #444;
@@ -1109,8 +1148,7 @@ box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.1); */
     top: 100%;
     border: 0px solid #dfdfdf;
     box-shadow: none;
-     background: transparent!important;
- 
+    background: transparent!important;
 }
 .navbar-nav > .notifications-menu > .dropdown-menu, .navbar-nav > .messages-menu > .dropdown-menu, .navbar-nav > .style-menu > .dropdown-menu {
     width: 280px;
