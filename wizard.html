@@ -18,13 +18,17 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dripicon.css">
     <link rel="stylesheet" href="css/typicons.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="js/tip/tooltipster.css">
     <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
+
+    <link rel="stylesheet" href="js/wizard/css/jquery.steps.css">
+    <link rel="stylesheet" href="js/wizard/jquery.stepy.css" />
+    <link rel="stylesheet" href="js/tabs/acc-wizard.min.css" rel="stylesheet">
+
     <!-- pace loader -->
     <script src="js/pace/pace.js"></script>
     <link href="js/pace/themes/orange/pace-theme-flash.css" rel="stylesheet" />
@@ -94,7 +98,7 @@
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/23.jpg">Hi, Dave Mattew <b class="caret"></b>
                         </a>
-                        <ul style="margin-top:6px;" role="menu" class="dropdown-setting dropdown-menu">
+                        <ul style="margin-top:6px;" role="menu" class="dropdown-setting dropdown-menu bg-amber">
                             <li>
                                 <a href="#">
                                     <span class="entypo-user"></span>&nbsp;&nbsp;My Profile</a>
@@ -118,7 +122,7 @@
 
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-gear"></i>&nbsp;&nbsp;Setting <span class="caret"></span></a>
-                        <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu" role="menu">
+                        <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu bg-amber" role="menu">
                             <li><a href="#">Color Changer</a>
                                 <li class="divider"></li>
                                 <li><a href="#"><i class="fontello-brush"></i> Color Background</a>
@@ -141,7 +145,7 @@
 
     <!-- Comtainer -->
     <div class="container-fluid paper-wrap bevel tlbr">
-         <div id="paper-top">
+        <div id="paper-top">
             <div class="row">
                 <div class="col-sm-2 no-pad">
                     <!--     -->
@@ -384,7 +388,6 @@
             </div>
         </div>
 
-
         <!-- SIDE MENU -->
         <div class="wrap-sidebar-content">
             <div id="skin-select">
@@ -504,17 +507,7 @@
                                             <a class="tooltip-tip2" href="table-dynamic.html" title="Table Dynamic">Table Dynamic</a>
 
                                         </li>
-                                        <li>
-                                            <a class="tooltip-tip2" href="#" title="Submenu">Table Dynamic</a>
-                                            <ul>
-                                                <li><a href="#">Submenu 1a</a>
-                                                </li>
-                                                <li><a href="#">Submenu 2a</a>
-                                                </li>
-                                                <li><a href="#">Submenu 3a</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                
                                     </ul>
                                 </li>
                                 <li>
@@ -642,9 +635,9 @@
                     <li>
                         <a href="#">
                             <span>
-                            </span>Extra</a>
+                            </span>UI</a>
                     </li>
-                    <li><a href="#">404 Eror Page</a>
+                    <li><a href="#">Wizards</a>
                     </li>
                 </ol>
                 <div class="dark" style="visibility: visible;">
@@ -665,26 +658,199 @@
             <!-- CONTENT -->
             <div class="wrap-fluid" id="paper-bg">
 
+              <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box">
+                            <div class="box-header">
+                          
+                                <h3 class="box-title"><i class="fontello-doc"></i> <span>Basic Wizard</span></h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                      <div id="wizard">
+                                    <h2>First Step</h2>
+                                    <section>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus dolor, tristique ac tempus nec, iaculis quis nisi.</p>
+                                    </section>
+
+                                    <h2>Second Step</h2>
+                                    <section>
+                                        <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum, nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                                    </section>
+
+                                    <h2>Third Step</h2>
+                                    <section>
+                                        <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor mauris venenatis.
+                                        </p>
+                                    </section>
+
+                                    <h2>Forth Step</h2>
+                                    <section>
+                                        <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae. Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
+                                    </section>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+
+
+                  <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box">
+                            <div class="box-header">
+                            
+                                <h3 class="box-title"><i class="fontello-doc"></i> <span>Blank Page</span></h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                       <div id="wizard_vertical">
+                                    <h2>First Step</h2>
+                                    <section>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus dolor, tristique ac tempus nec, iaculis quis nisi.</p>
+                                    </section>
+
+                                    <h2>Second Step</h2>
+                                    <section>
+                                        <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum, nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                                    </section>
+
+                                    <h2>Third Step</h2>
+                                    <section>
+                                        <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor mauris venenatis.
+                                        </p>
+                                    </section>
+
+                                    <h2>Forth Step</h2>
+                                    <section>
+                                        <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae. Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
+                                    </section>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+
+
+                   <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box">
+                            <div class="box-header">
+                             
+                                <h3 class="box-title"><i class="fontello-doc"></i> <span>Blank Page</span></h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                       <div class="demo">
+                                    <form id="transition-duration-demo">
+                                        <fieldset title="Login">
+                                            <legend>Access</legend>
+
+                                            <input type="hidden" name="id" />
+
+                                            <p>
+                                                <label for="username-2">Username:</label>
+                                                <input id="username-2" type="text" value="wbotelhos" disabled="disabled" />
+                                            </p>
+
+                                            <p>
+                                                <label for="email-2">E-mail:</label>
+                                                <input id="email-2" type="text" />
+                                            </p>
+
+                                            <p>
+                                                <label for="password-2">Password:</label>
+                                                <input id="password-2" type="password" />
+                                            </p>
+                                        </fieldset>
+
+                                        <fieldset title="Personal">
+                                            <legend>About you</legend>
+
+                                            <p>
+                                                <label for="name-2">Name:</label>
+                                                <input id="name-2" type="text" />
+                                            </p>
+
+                                            <p>
+                                                <label for="birthday-2">Birthday:</label>
+
+                                                <select id="birthday-2" name="day">
+                                                    <option>1984</option>
+                                                </select>
+                                            </p>
+
+                                            <p>
+                                                <label for="bio-2">Bio:</label>
+                                                <textarea id="bio-2"></textarea>
+                                            </p>
+                                        </fieldset>
+
+                                        <fieldset title="Professional">
+                                            <legend>Your professional informations</legend>
+
+                                            <p class="skills">
+                                                <input id="ruby-2" type="checkbox" name="ruby-2" />
+                                                <label for="ruby-2">Ruby</label>
+
+                                                <input id="python-2" type="checkbox" name="python" />
+                                                <label for="python-2">Python</label>
+
+                                                <input id="java-2" type="checkbox" name="java" />
+                                                <label for="java-2">Java</label>
+
+                                                <input id="javascript-2" type="checkbox" name="javascript" />
+                                                <label for="javascript-2">Javascript</label>
+                                            </p>
+
+                                            <p>
+                                                <label for="linkedin-2">Linkedin:</label>
+                                                <input id="linkedin-2" type="text" name="Linkedin" />
+                                            </p>
+                                        </fieldset>
+
+                                        <input type="submit" value="Finish!" />
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+
+
+
+
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="not-found">
-                         
-                            <img class="img-responsive" src="img/404.png">
+                        <div class="box">
+                            <div class="box-header">
+                                <!-- tools box -->
+                                <div class="pull-right box-tools">
 
-                            <p>There's a lot of reasons why this page is 404.. <br>Meanwhile, you may return to dashboard or try using the search form.</p>
-
-                            <form class="search-form not-found-search">
-                                <div class="input-group">
-                                    <input type="text" name="search" class="form-control" placeholder="Search">
-                                    <div class="input-group-btn">
-                                        <button type="submit" name="submit" class="btn bg-red"><i class="fa fa-search"></i>
-                                        </button>
-                                    </div>
+                                    <span class="box-btn" data-widget="collapse"><i class="fa fa-minus"></i>
+                                    </span>
+                                    <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
+                                    </span>
                                 </div>
-                                <!-- /.input-group -->
-                            </form>
+                                <h3 class="box-title"><i class="fontello-doc"></i> <span>Blank Page</span></h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <h4>Content Goes Here</h4>
+                                <p>content</p>
+                            </div>
+                            <!-- /.box-body -->
                         </div>
-
+                        <!-- /.box -->
                     </div>
                 </div>
 
@@ -746,10 +912,49 @@
     <script type='text/javascript' src="js/tab/app.ticker.js"></script>
     <script type='text/javascript' src='js/app.js'></script>
 
-      <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script>
+    <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+
+    <script type="text/javascript" src="js/wizard/lib/jquery.cookie-1.3.1.js"></script>
+    <script type="text/javascript" src="js/wizard/build/jquery.steps.js"></script>
+    <script type="text/javascript" src="js/wizard/jquery.stepy.js"></script>
+
+        <script>
+    $(function() {
+        $("#wizard").steps({
+            headerTag: "h2",
+            bodyTag: "section",
+            transitionEffect: "slideLeft"
+        });
+
+        $("#wizard_vertical").steps({
+            headerTag: "h2",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            stepsOrientation: "vertical"
+        });
+
+        $("#wizard-tab").steps({
+            headerTag: "h2",
+            bodyTag: "section",
+            transitionEffect: "none",
+            enableFinishButton: false,
+            enablePagination: false,
+            enableAllSteps: true,
+            titleTemplate: "#title#",
+            cssClass: "tabcontrol"
+        });
+
+        //stepy
+        $('#transition-duration-demo').stepy({
+            duration: 400,
+            transition: 'fade'
+        });
+
+    });
+    </script>
 
 
-    <script type="text/javascript">
+     <script type="text/javascript">
     //<![CDATA[
     $(window).load(function() { // makes sure the whole site is loaded
         $('#status').fadeOut(); // will first fade out the loading animation

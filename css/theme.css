@@ -262,6 +262,11 @@ body {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
     padding-bottom: 10px;
 }
+p {
+    margin: 0 0 10px;
+    font-size: 13px;
+    color: #888;
+}
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: transparent!important;
 }
@@ -290,6 +295,19 @@ body {
     -webkit-transition: none!important;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s!important;
     transition: none!important;
+}
+.btn {
+    font-size: 12px!important;
+}
+.panel-title > a {
+    font-size: 13px;
+}
+.panel-title > a:hover {
+    text-decoration: none;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    font-size: 13px;
+    color: #888;
 }
 /*COUSTOMIZE*/
 
@@ -678,7 +696,7 @@ ol.breadcrumb.newcrumb li a span {
 .box .box-header > .fa, .box .box-header > .glyphicon, .box .box-header > .ion, .box .box-header .box-title {
     display: inline-block;
     padding: 15px 0px 10px 0;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 15px;
     font-size: 14px;
     float: left;
     cursor: default;
@@ -710,7 +728,7 @@ ol.breadcrumb.newcrumb li a span {
     color: #444;
 }
 .box .box-header > .box-tools {
-    padding: 10px 5px 5px 5px;
+    padding: 15px 15px 5px 5px;
 }
 .box-tools span {
     background: #F7BFA8;
@@ -777,6 +795,15 @@ box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.1); */
     text-transform: uppercase;
     padding: 7px 0;
     color: #fff;
+}
+.content-box {
+    color: #888;
+    border-bottom: 1px solid #ddd;
+    /* border-top: 1px solid #ddd; */
+    padding: 0 0 10px;
+    margin: 0 0 20px;
+    font-size: 13px;
+    line-height: 1.6em;
 }
 .fc-grid .fc-day-number {
     float: none!important;
@@ -2284,7 +2311,7 @@ input:-moz-placeholder {
     height: 35px;
     width: 20px;
     float: left;
-    margin: 0px 0 0 15px;
+    margin: 0px 0 0 20px;
     text-align: center;
     padding: 5px 0 0;
     line-height: 25px;

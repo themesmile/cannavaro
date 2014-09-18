@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="js/chartist/chartist.min.css">
     <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
     <link rel="stylesheet" type="text/css" href="js/range-slider/jquery.range2dslider.css" />
+    <link rel="stylesheet" type="text/css" href="js/number-progress-bar/number-pb.css">
+    <link rel="stylesheet" type="text/css" href="js/growl/jquery.growl.css" />
 
 
 </head>
@@ -714,7 +716,9 @@
                                     <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
                                     </span>
                                 </div>
-                                <h3 class="box-title">jQuery Range 2D Slider Demos</h3>
+                                <h3 class="box-title"><i class="fontello-params"></i>
+                                    <span>jQuery Range 2D Slider Demos</span>
+                                </h3>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
@@ -744,18 +748,206 @@
                                     <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
                                     </span>
                                 </div>
-                                <h3 class="box-title fontello-doc">Blank Page</h3>
+                                <h3 class="box-title"><i class="fontello-params"></i>
+                                    <span>Number Progress Bar</span>
+
+                                </h3>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
-                                <h4>Content Goes Here</h4>
-                                <p>content</p>
+                                <section id="basic">
+                                    <article>
+                                        <h2 class="box-title">Basic</h2>
+
+                                        <div class="number-pb">
+                                            <div class="number-pb-shown"></div>
+                                            <div class="number-pb-num">0</div>
+                                        </div>
+                                    </article>
+                                </section>
+
+                                <section id="percentage">
+                                    <article>
+                                        <h2 class="box-title">Percentage</h2>
+                                        <div class="number-pb">
+                                            <div class="number-pb-shown dream"></div>
+                                            <div class="number-pb-num">0%</div>
+                                        </div>
+                                    </article>
+                                </section>
+
+                                <section id="step">
+                                    <article>
+                                        <h2 class="box-title">Step</h2>
+
+                                        <div class="number-pb">
+                                            <div class="number-pb-shown sun"></div>
+                                            <div class="number-pb-num">0/0</div>
+                                        </div>
+                                    </article>
+                                </section>
                             </div>
                             <!-- /.box-body -->
                         </div>
                         <!-- /.box -->
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="box">
+                            <div class="box-header">
+
+                                <h3 class="box-title"><i class="fontello-cancel-circled"></i>
+                                    <span>jQuery Growl</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <div class="bs-example">
+                                    <p class="content-box">Growl is a jQuery plugin designed to provide informative messages in the browser</p>
+                                    <a class='btn btn-default default' href='#'>Default</a>
+                                    <a class='btn error bg-red' href='#'>Error!</a>
+                                    <a class='btn bg-green notice' href='#'>Notice!</a>
+                                    <a class='btn bg-yellow warning' href='#'>Warning!</a>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+
+
+
+                    <div class="col-lg-6">
+                        <div class="box">
+                            <div class="box-header">
+                                <!-- tools box -->
+                                <h3 class="box-title"><i class="fontello-cancel-circled"></i>
+                                    <span>Modal Box</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <p class="content-box">Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Launch demo modal
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    <span class="sr-only">Close</span>
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="box">
+                            <div class="box-header">
+
+                                <h3 class="box-title"><i class=" icon-conversation"></i>
+                                    <span>Tooltip</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div class="bs-example">
+                                    <p class="content-box">Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+                                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Left</button>
+
+                                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Top</button>
+
+                                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Bottom</button>
+
+                                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Right</button>
+
+
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="box">
+                            <div class="box-header">
+
+                                <h3 class="box-title"><i class="fontello-cancel-circled"></i>
+                                    <span>Collapse</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading bg-red">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Collapsible 1
+        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading bg-green">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          Collapsible 2
+        </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                            </div>
+                                        </div>
+                                    </div>
+                          
+                                </div>
+
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+
+
+
+
+
 
             </div>
             <!-- #/paper bg -->
@@ -818,8 +1010,108 @@
     <script type='text/javascript' src="js/tab/app.ticker.js"></script>
     <script type='text/javascript' src='js/app.js'></script>
     <script type='text/javascript' src='js/range-slider/jquery.range2dslider.js'></script>
+    <script type='text/javascript' src="js/number-progress-bar/jquery.velocity.min.js"></script>
+    <script type='text/javascript' src="js/number-progress-bar/number-pb.js"></script>
+    <script type='text/javascript' src="js/growl/jquery.growl.js"></script>
 
     <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+    <script type="text/javascript">
+    (function() {
+        $(function() {
+
+            $('.default').click(function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                return $.growl({
+                    message: "The kitten is attacking!"
+                });
+            });
+            $('.error').click(function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                return $.growl.error({
+                    message: "The kitten is attacking!"
+                });
+            });
+            $('.notice').click(function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                return $.growl.notice({
+                    message: "The kitten is cute!"
+                });
+            });
+            return $('.warning').click(function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                return $.growl.warning({
+                    message: "The kitten is ugly!"
+                });
+            });
+        });
+
+    }).call(this);
+    </script>
+    <script>
+    $(function() {
+        function randomPercentage() {
+            return Math.floor(Math.random() * 100);
+        }
+
+        function randomInterval() {
+            var min = Math.floor(Math.random() * 30);
+            var max = min + (Math.floor(Math.random() * 40) + 70);
+            return [min, max];
+        }
+
+        function randomStep() {
+            return Math.floor(Math.random() * 10) + 5;
+        }
+
+        // setup
+        var $basic = $('#basic');
+        var interval = randomInterval();
+        var basicBar = $basic.find('.number-pb').NumberProgressBar({
+            style: 'basic',
+            min: interval[0],
+            max: interval[1]
+        })
+        $basic.find('.title span').text('[Min: ' + interval[0] + ', Max: ' + interval[1] + ']');
+
+        var percentageBar = $('#percentage .number-pb').NumberProgressBar({
+            style: 'percentage'
+        })
+
+        var $step = $('#step');
+        var maxStep = randomStep()
+        var stepBar = $('#step .number-pb').NumberProgressBar({
+            style: 'step',
+            max: maxStep
+        })
+        $step.find('.title span').text('[Max step: ' + maxStep + ']');
+
+        // loop
+        var basicLoop = function() {
+            basicBar.reach(undefined, {
+                complete: percentageLoop
+            });
+        }
+
+        var percentageLoop = function() {
+            percentageBar.reach(undefined, {
+                complete: stepLoop
+            });
+        }
+
+        var stepLoop = function() {
+            stepBar.reach(undefined, {
+                complete: basicLoop
+            });
+        }
+
+        // start
+        basicLoop();
+    });
+    </script>
     <script>
     $('#slider4').range2DSlider({
         grid: false,
