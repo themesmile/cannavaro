@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="js/tip/tooltipster.css">
+    <link rel="stylesheet" href="js/chartist/chartist.min.css">
     <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
     <!-- pace loader -->
     <script src="js/pace/pace.js"></script>
@@ -503,7 +504,7 @@
                                             <a class="tooltip-tip2" href="table-dynamic.html" title="Table Dynamic">Table Dynamic</a>
 
                                         </li>
-                                
+
                                     </ul>
                                 </li>
                                 <li>
@@ -633,7 +634,7 @@
                             <span>
                             </span>UI</a>
                     </li>
-                    <li><a href="#">Element</a>
+                    <li><a href="#">Chart</a>
                     </li>
                 </ol>
                 <div class="dark" style="visibility: visible;">
@@ -666,12 +667,70 @@
                                     <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
                                     </span>
                                 </div>
-                                <h3 class="box-title"><i class="fontello-doc"></i> <span>Blank Page</span></h3>
+                                <h3 class="box-title"><i class="fontello-doc"></i> 
+                                    <span>Blank Page</span>
+                                </h3>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
-                                <h4>Content Goes Here</h4>
-                                <p>content</p>
+                                <div>
+                                    <canvas id="canvas1" width="800" height="300"></canvas>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="box">
+                            <div class="box-header">
+                                <!-- tools box -->
+                                <div class="pull-right box-tools">
+
+                                    <span class="box-btn" data-widget="collapse"><i class="fa fa-minus"></i>
+                                    </span>
+                                    <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
+                                    </span>
+                                </div>
+                                <h3 class="box-title"><i class="fontello-doc"></i> 
+                                    <span>Radar Chart</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div>
+                                    <canvas id="radar" height="450" width="450"></canvas>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="box">
+                            <div class="box-header">
+                                <!-- tools box -->
+                                <div class="pull-right box-tools">
+
+                                    <span class="box-btn" data-widget="collapse"><i class="fa fa-minus"></i>
+                                    </span>
+                                    <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
+                                    </span>
+                                </div>
+                                <h3 class="box-title"><i class="fontello-doc"></i> 
+                                    <span>Pie Chart</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div id="canvas-holder">
+                                    <canvas id="chart-area" width="300" height="300" />
+                                </div>
                             </div>
                             <!-- /.box-body -->
                         </div>
@@ -738,9 +797,99 @@
     <script type='text/javascript' src='js/app.js'></script>
 
     <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+    <!-- Dashboard -->
+    <script type="text/javascript" src='js/chart/Chart.js'></script>
+    <script type="text/javascript" src='js/chart/pie.js'></script>
+    <script>
+
+    </script>
 
 
-     <script type="text/javascript">
+    <script>
+    var radarChartData = {
+        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+        datasets: [{
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [65, 59, 90, 81, 56, 55, 40]
+        }, {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [28, 48, 40, 19, 96, 27, 100]
+        }]
+    };
+
+    window.onload = function() {
+        window.myRadar = new Chart(document.getElementById("radar").getContext("2d")).Radar(radarChartData, {
+            responsive: true,
+            scaleFontFamily: "'Open sans', 'Helvetica', 'Arial', sans-serif",
+            scaleFontColor: "#888", //#f79365
+            scaleFontSize: 10
+        });
+    }
+    </script>
+
+    <script>
+    var randomScalingFactor = function() {
+        return Math.round(Math.random() * 20)
+    };
+    var barChartData = {
+        labels: ["SUN", "MON", "TUS", "WED", "THU", "FRI", "SAT"],
+        datasets: [{
+            label: "My First dataset",
+            fillColor: "#41C3AC",
+            strokeColor: "#41C3AC",
+            pointColor: "r#41C3AC",
+            pointStrokeColor: "#E5E9EC",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [18, 38, 50, 90, 36, 27, 10]
+        }, {
+            label: "My Second dataset",
+            fillColor: "#FF6B57",
+            strokeColor: "#FF6B57",
+            pointColor: "#FF6B57",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(0,144,217,1)",
+            data: [20, 22, 35, 50, 80, 35, 15]
+        }, {
+            label: "My Third dataset",
+            fillColor: "#3E739D",
+            strokeColor: "#3E739D",
+            pointColor: "#3E739D",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(0,144,217,1)",
+            data: [65, 59, 80, 81, 56, 55, 40]
+        }]
+
+    }
+
+    window.onload = function() {
+        var ctx = document.getElementById("canvas1").getContext("2d");
+        window.myBar = new Chart(ctx).Bar(barChartData, {
+            responsive: true,
+            scaleFontFamily: "'Open sans', 'Helvetica', 'Arial', sans-serif",
+            scaleFontColor: "#888", //#f79365
+            scaleFontSize: 10
+
+        });
+    }
+    </script>
+
+
+    <script type="text/javascript">
     //<![CDATA[
     $(window).load(function() { // makes sure the whole site is loaded
         $('#status').fadeOut(); // will first fade out the loading animation

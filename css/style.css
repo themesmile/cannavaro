@@ -241,10 +241,10 @@ Icons
     font-size: 13px;
 }
 .switch {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-    color: #666;
+   /*  position: absolute;
+   right: 0;
+   bottom: 10px;
+   color: #666; */
 }
 .switch input {
     margin-right: 0.3em;

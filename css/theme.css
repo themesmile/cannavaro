@@ -13,6 +13,8 @@ body {
     background: url("../img/wood.jpg") repeat fixed;
     padding: 20px 65px 60px;
     overflow: hidden;
+    font-size: 13px!important;
+    color: #888!important;
 }
 /* 10px padding and margins */
 
@@ -281,7 +283,6 @@ p {
 .form-control {
     display: block;
     width: 100%;
-    height: 34px;
     padding: 6px 12px;
     font-size: 12px!important;
     line-height: 1.42857143;
@@ -308,6 +309,20 @@ p {
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
     font-size: 13px;
     color: #888;
+}
+.input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group {
+    margin-right: -2px!important;
+    padding-bottom: 8px!important;
+}
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #FCF7EA!important;
+    border: 0px solid #e3e3e3!important;
+    border-radius: 4px;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
 }
 /*COUSTOMIZE*/
 

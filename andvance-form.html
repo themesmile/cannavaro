@@ -25,6 +25,17 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="js/tip/tooltipster.css">
     <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
+
+    <link href="js/colorPicker/bootstrap-colorpicker.css" rel="stylesheet">
+    <link href="js/validate/validate.css" rel="stylesheet">
+    <link href="js/idealform/css/jquery.idealforms.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="js/timepicker/bootstrap-timepicker.css">
+    <link rel="stylesheet" href="js/datepicker/datepicker.css">
+    <link rel="stylesheet" href="js/datepicker/clockface.css">
+    <link rel="stylesheet" href="js/datepicker/bootstrap-datetimepicker.css">
     <!-- pace loader -->
     <script src="js/pace/pace.js"></script>
     <link href="js/pace/themes/orange/pace-theme-flash.css" rel="stylesheet" />
@@ -503,7 +514,7 @@
                                             <a class="tooltip-tip2" href="table-dynamic.html" title="Table Dynamic">Table Dynamic</a>
 
                                         </li>
-                                
+
                                     </ul>
                                 </li>
                                 <li>
@@ -631,9 +642,9 @@
                     <li>
                         <a href="#">
                             <span>
-                            </span>UI</a>
+                            </span>Form</a>
                     </li>
-                    <li><a href="#">Element</a>
+                    <li><a href="#">Advance Element</a>
                     </li>
                 </ol>
                 <div class="dark" style="visibility: visible;">
@@ -666,12 +677,46 @@
                                     <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
                                     </span>
                                 </div>
-                                <h3 class="box-title"><i class="fontello-doc"></i> <span>Blank Page</span></h3>
+                                <h3 class="box-title"><i class="fontello-doc"></i> 
+                                    <span>Form Validation</span>
+                                </h3>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
-                                <h4>Content Goes Here</h4>
-                                <p>content</p>
+                                <form action="contact" id="contact-form" class="form-horizontal">
+                                    <fieldset>
+
+
+                                        <div class="control-group">
+                                            <label class="control-label" for="name">Your Name</label>
+                                            <div class="controls">
+                                                <input type="text" class="form-control" name="name" id="name">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="email">Email Address</label>
+                                            <div class="controls">
+                                                <input type="text" class="form-control" name="email" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="subject">Subject</label>
+                                            <div class="controls">
+                                                <input type="text" class="form-control" name="subject" id="subject">
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="message">Your Message</label>
+                                            <div class="controls">
+                                                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-actions" style="margin:20px 0 0 0;">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <button type="reset" class="btn">Cancel</button>
+                                        </div>
+                                    </fieldset>
+                                </form>
                             </div>
                             <!-- /.box-body -->
                         </div>
@@ -679,6 +724,191 @@
                     </div>
                 </div>
 
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box">
+                            <div class="box-header">
+
+                                <h3 class="box-title">
+                                    <span>Masked Input</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <div class="well">
+                                    <div class="input-group ">
+                                        <span class="input-group-addon btn-success"><i class="fa fa-calendar"></i>
+                                        </span>
+                                        <input type="text" class="form-control" id="date">
+                                        <span class="input-group-addon ">99/99/9999</span>
+                                    </div>
+                                </div>
+
+                                <div class="well">
+                                    <div class="input-group ">
+                                        <span class="input-group-addon btn-success"><i class="fa fa-phone-square"></i>
+                                        </span>
+                                        <input type="text" class="form-control" id="phone">
+                                        <span class="input-group-addon ">eg.(021) 751-2789</span>
+                                    </div>
+                                </div>
+
+                                <div class="well">
+                                    <div class="input-group ">
+                                        <span class="input-group-addon btn-success"><i class="fa fa-money"></i>
+                                        </span>
+                                        <input type="text" class="form-control" id="money">
+                                        <span class="input-group-addon ">eg.20.000.000</span>
+                                    </div>
+                                </div>
+                                <div class="well">
+                                    <div class="input-group ">
+                                        <span class="input-group-addon btn-success"><i class="fa fa-phone-square"></i>
+                                        </span>
+                                        <input type="text" class="form-control" id="ssn">
+                                        <span class="input-group-addon ">eg.99-AAA-9999</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box">
+                            <div class="box-header">
+
+                                <h3 class="box-title">
+                                    <span>Date Picker</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+
+                                <p>Attached to a field with the format specified via options.</p>
+
+                                <div class="well">
+                                    <input type="text" class="form-control" id="dp1" value="02-16-2012">
+                                </div>
+                                <p>Start with years viewMode.</p>
+
+
+                                <div class="well">
+                                    <div data-date-viewmode="years" data-date-format="dd-mm-yyyy" data-date="12-02-2012" id="dpYears" class="input-group date">
+                                        <span class="input-group-addon add-on entypo-calendar "></span>
+                                        <input type="text" value="12-02-2012" class="form-control" id="ssn2">
+
+                                    </div>
+
+                                </div>
+                                <p>Default behavior in pt-BR, picks date/time with fast masked input typing (need only to type the numbers, the static part of the mask is inserted automatically if missing) or via the popup widget, which supports year, month, day, hour and minute views:</p>
+
+                                <div class="well">
+                                    <div id="datetimepicker1" class="input-group date">
+                                        <input class="form-control" data-format="dd/MM/yyyy hh:mm:ss" type="text">
+
+                                        <span class="input-group-addon add-on">
+                                            <i style="font-style:normal;" data-time-icon="entypo-clock" data-date-icon="entypo-calendar">
+      </i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box">
+                            <div class="box-header">
+
+                                <h3 class="box-title">
+                                    <span>Time picker</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div class="well">
+                                    <div class="input-group bootstrap-timepicker">
+
+                                        <input id="timepicker1" type="text" class="form-control">
+                                        <span class="input-group-addon add-on entypo-clock"></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="well">
+                                    <input id="t1" value="2:30 PM" data-format="hh:mm A" class="form-control" type="text">
+                                </div>
+
+                                <div class="well">
+                                    <div class="input-group">
+                                        <input id="t2" value="14:30" class="form-control" readonly="" type="text">
+                                        <span style="cursor:pointer;" id="toggle-btn" class="input-group-addon add-on entypo-calendar "></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box">
+                            <div class="box-header">
+
+                                <h3 class="box-title">
+                                    <span>Color picker</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div class="well">
+                                    <input type="text" class="form-control" value="#8fff00" id="cp1">
+                                </div>
+
+                                <div class="well">
+                                    <input type="text" class="form-control" value="rgb(0,194,255,0.78)" id="cp2" data-color-format="rgba">
+                                </div>
+
+                                <div class="well">
+                                    <div class="input-group colorpicker-component bscp" data-color="rgb(255, 146, 180)" data-color-format="rgb" id="cp3">
+                                        <input type="text" value="" readonly class="form-control" />
+                                        <span class="input-group-addon"><i style="background-color: rgb(255, 146, 180)"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="well">
+                                    <a href="#" class="btn btn-info" id="cp4" data-color-format="hex" data-color="rgb(255, 255, 255)">Change background color</a>
+
+                                </div>
+                                <hr>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
             </div>
             <!-- #/paper bg -->
         </div>
@@ -739,8 +969,118 @@
 
     <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
 
+    <script type="text/javascript" src="js/colorPicker/bootstrap-colorpicker.min.js"></script>
+    <script type="text/javascript" src="js/inputMask/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="js/switch/bootstrap-switch.js"></script>
+    <script type="text/javascript" src="js/validate/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/idealform/jquery.idealforms.js"></script>
 
-     <script type="text/javascript">
+    <script type="text/javascript" src="js/timepicker/bootstrap-timepicker.js"></script>
+    <script type="text/javascript" src="js/datepicker/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/datepicker/clockface.js"></script>
+    <script type="text/javascript" src="js/datepicker/bootstrap-datetimepicker.js"></script>
+
+    <script type="text/javascript">
+    $('#datetimepicker1').datetimepicker({
+        language: 'pt-BR'
+    });
+    $('#dp1').datepicker()
+    $('#dpYears').datepicker();
+    $('#timepicker1').timepicker();
+    $('#t1').clockface();
+    $('#t2').clockface({
+        format: 'HH:mm',
+        trigger: 'manual'
+    });
+
+    $('#toggle-btn').click(function(e) {
+        e.stopPropagation();
+        $('#t2').clockface('toggle');
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        //Validation
+        $('#contact-form').validate({
+            rules: {
+                name: {
+                    minlength: 2,
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                subject: {
+                    minlength: 2,
+                    required: true
+                },
+                message: {
+                    minlength: 2,
+                    required: true
+                }
+            },
+            highlight: function(element) {
+                $(element).closest('.control-group').removeClass('success').addClass('error');
+            },
+            success: function(element) {
+                element
+                    .text('OK!').addClass('valid')
+                    .closest('.control-group').removeClass('error').addClass('success');
+            }
+        });
+
+        // MASKED INPUT
+
+        $("#date").mask("99/99/9999", {
+            completed: function() {
+                alert("Your birthday was: " + this.val());
+            }
+        });
+        $("#phone").mask("(999) 999-9999");
+
+        $("#money").mask("99.999.9999", {
+            placeholder: "*"
+        });
+        $("#ssn").mask("99--AAA--9999", {
+            placeholder: "*"
+        });
+
+
+        //COLOR PICKER
+        window.prettyPrint && prettyPrint();
+
+        // Code for those demos
+        var _createColorpickers = function() {
+            $('#cp1').colorpicker({
+                format: 'hex'
+            });
+            $('#cp2').colorpicker();
+            $('#cp3').colorpicker();
+            var bodyStyle = $('body')[0].style;
+            $('#cp4').colorpicker().on('changeColor', function(ev) {
+                bodyStyle.backgroundColor = ev.color.toHex();
+            });
+        }
+
+        _createColorpickers();
+
+        $('.bscp-destroy').click(function(e) {
+            e.preventDefault();
+            $('.bscp').colorpicker('destroy');
+        });
+
+        $('.bscp-create').click(function(e) {
+            e.preventDefault();
+            _createColorpickers();
+        });
+
+
+    });
+    </script>
+
+
+    <script type="text/javascript">
     //<![CDATA[
     $(window).load(function() { // makes sure the whole site is loaded
         $('#status').fadeOut(); // will first fade out the loading animation
