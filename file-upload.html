@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--   <meta content="IE=edge" http-equiv="X-UA-Compatible"> -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="ico/favicon.ico" rel="shortcut icon">
+
+    <title>Cannavaro Web Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap theme -->
+    <!--  <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dripicon.css">
+    <link rel="stylesheet" href="css/typicons.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="js/tip/tooltipster.css">
+    <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
+
+    <link rel="stylesheet" href="js/upload/demos/css/uploader.css" />
+    <link rel="stylesheet" href="js/upload/demos/css/demo.css" />
+
+    <link rel="stylesheet" href="js/dropZone/downloads/css/dropzone.css" />
+    <!-- pace loader -->
+    <script src="js/pace/pace.js"></script>
+    <link href="js/pace/themes/orange/pace-theme-flash.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body role="document">
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- TOPNAV -->
+    <nav class="navbar navbar-default navbar-static-top nav-bg-trans" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+                    <li><i class="fontello-th text-amber"></i>
+                    </li>
+                    <li id="Date"></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+                    <li><i class="fontello-stopwatch text-amber"></i>
+                    </li>
+                    <li id="hours"></li>
+                    <li class="point">:</li>
+                    <li id="min"></li>
+                    <li class="point">:</li>
+                    <li id="sec"></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left list-unstyled list-inline text-amber date-list">
+
+
+                    <li><i class="fontello-doc-text text-amber"></i>
+                    </li>
+                    <li>
+                        <ul class="list-unstyled top-newsticker text-amber news-list">
+                            <li><i class="fontello-cloud-flash-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Yogyakarta,</strong>Achmad Dhani Partly Cloudy Feels Like &nbsp;<b>22 °C</b>
+                            </li>
+                            <li><i class="fontello-sun-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Bandung,</strong>Jln Sudirman, Sunny Feels Like &nbsp;<b>31 °C</b>
+                            </li>
+                            <li><i class="fontello-rain-inv text-amber"></i>&nbsp;&nbsp;
+                                <strong>Jakarta,</strong>Tomang, Rain Like &nbsp;<b>19 °C</b>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/23.jpg">Hi, Dave Mattew <b class="caret"></b>
+                        </a>
+                        <ul style="margin-top:6px;" role="menu" class="dropdown-setting dropdown-menu bg-amber">
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-user"></span>&nbsp;&nbsp;My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-vcard"></span>&nbsp;&nbsp;Account Setting</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-lifebuoy"></span>&nbsp;&nbsp;Help</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="http://themeforest.net/item/apricot-navigation-admin-dashboard-template/7664475?WT.ac=category_item&amp;WT.z_author=themesmile">
+                                    <span class="entypo-basket"></span>&nbsp;&nbsp; Purchase</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-gear"></i>&nbsp;&nbsp;Setting <span class="caret"></span></a>
+                        <ul style="margin-top:6px;" class="dropdown-setting dropdown-menu bg-amber" role="menu">
+                            <li><a href="#">Color Changer</a>
+                                <li class="divider"></li>
+                                <li><a href="#"><i class="fontello-brush"></i> Color Background</a>
+                                </li>
+                                <li><a href="#"><i class="fontello-picture-outline"></i> Image Background</a>
+                                </li>
+                                <li><a href="#"><i class="fontello-puzzle-outline"></i> Pattern Background</a>
+                                </li>
+                                <li><a href="#"><i class="fontello-video"></i> Video Background</a>
+                                </li>
+                        </ul>
+                        </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- END OF TOPNAV -->
+
+    <!-- Comtainer -->
+    <div class="container-fluid paper-wrap bevel tlbr">
+        <div id="paper-top">
+            <div class="row">
+                <div class="col-sm-2 no-pad">
+                    <!--     -->
+                    <a class="navbar-brand logo-text" href="#">Cannavaro</a>
+                </div>
+                <div class="col-sm-7 no-pad">
+                    <ul class="list-unstyled list-inline noft-btn">
+                        <li data-toggle="tooltip" data-placement="left" title="Profile" style="padding-left:4px;"><i class="fontello-user-outline"></i>
+                        </li>
+
+                        <li data-toggle="tooltip" data-placement="right" title="Log Out"> <a href="login.html" class="text-white"><i class="fontello-eject"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 no-pad">
+                    <!-- menu right -->
+                    <div class="navbar-right">
+                        <ul class="nav navbar-nav margin-left">
+                            <!-- Messages: style can be found in dropdown.less-->
+                            <li class="dropdown messages-menu">
+                                <div class="drop-btn dropdown-toggle bg-green" data-toggle="dropdown">
+                                    <i class="fa  fontello-chat"></i>
+                                    <span class="label label-success label-drop">4</span>
+                                </div>
+                                <ul class="dropdown-menu drop-msg ">
+                                    <li class="header bg-green">
+                                        You have 4 messages</li>
+
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu bg-green">
+                                            <li>
+                                                <!-- start message -->
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="http://api.randomuser.me/portraits/thumb/men/30.jpg" class="img-circle" alt="User Image" />
+                                                    </div>
+                                                    <h4>
+                                                        Developer
+                                                        <!-- <small><i class="fa fa-clock-o"></i> 5 mins</small> -->
+                                                    </h4>
+                                                    <p>Bug fixed level 90%</p>
+                                                </a>
+                                            </li>
+                                            <!-- end message -->
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="http://api.randomuser.me/portraits/thumb/women/30.jpg" class="img-circle" alt="user image" />
+                                                    </div>
+                                                    <h4>
+                                                        Aplication Support
+                                                        <!-- <small><i class="fa fa-clock-o"></i> 2 hours</small> -->
+                                                    </h4>
+                                                    <p>There is some bug in your last submit</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="http://api.randomuser.me/portraits/thumb/men/31.jpg" class="img-circle" alt="user image" />
+                                                    </div>
+                                                    <h4>
+                                                        Lead Developers
+
+                                                    </h4>
+                                                    <p>Please check again your submit</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="http://api.randomuser.me/portraits/thumb/women/31.jpg" class="img-circle" alt="user image" />
+                                                    </div>
+                                                    <h4>
+                                                        Web Designer
+
+                                                    </h4>
+                                                    <p>Art has done</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="pull-left">
+                                                        <img src="http://api.randomuser.me/portraits/thumb/men/32.jpg" class="img-circle" alt="user image" />
+                                                    </div>
+                                                    <h4>
+                                                        General Manager
+
+                                                    </h4>
+                                                    <p>Employed newslatter</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="footer-green">
+                                        <div class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-trash"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Notifications: style can be found in dropdown.less -->
+                            <li class="dropdown notifications-menu">
+                                <div class="drop-btn dropdown-toggle bg-aqua" data-toggle="dropdown">
+                                    <i class="fa fontello-warning-empty"></i>
+                                    <span class="label bg-aqua label-drop">7</span>
+                                </div>
+                                <ul class="dropdown-menu drop-noft">
+
+                                    <li class="header bg-aqua">
+                                        You have 10 notifications</li>
+
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu bg-aqua">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fontello-user-add-outline"></i> New developer registered
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fontello-upload-outline"></i> 2 item commit
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fontello-users-outline"></i> 3 members joined
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fontello-basket"></i> 22 sales made
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fontello-contacts"></i> New task from manager
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="footer-blue">
+                                        <div class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-trash"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Tasks: style can be found in dropdown.less -->
+                            <li class="dropdown tasks-menu">
+                                <div class="drop-btn bg-red dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa  fontello-lightbulb"></i>
+                                    <span class="label bg-red label-drop">9</span>
+                                </div>
+                                <ul class="dropdown-menu drop-task">
+
+                                    <li class="header bg-red">
+                                        <span></span>You have 9 tasks</li>
+
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu bg-red">
+                                            <li>
+                                                <!-- Task item -->
+                                                <div class="task-list-item">
+                                                    <h2>Wed, 25 Mar 2014
+                                                        <span>9:32
+                                                            <small>PM</small>
+                                                        </span>
+                                                    </h2>
+                                                    <h1>Finished task Testing.</h1>
+                                                    <p>Lorem ipsum dollor si amet amet jabang bayi</p>
+                                                </div>
+                                            </li>
+                                            <!-- end task item -->
+                                            <li>
+                                                <!-- Task item -->
+
+                                                <div class="task-list-item">
+                                                    <h2>Thu, 23 Mar 2014
+                                                        <span>7:54
+                                                            <small>PM</small>
+                                                        </span>
+                                                    </h2>
+                                                    <h1>Creat the documentation</h1>
+                                                    <p>Lorem ipsum dollor si amet amet jabang bayi</p>
+                                                </div>
+
+                                            </li>
+                                            <!-- end task item -->
+                                            <li>
+                                                <!-- Task item -->
+                                                <div class="task-list-item">
+                                                    <h2>Wed, 21 Mar 2014
+                                                        <span>12:43
+                                                            <small>PM</small>
+                                                        </span>
+                                                    </h2>
+                                                    <h1>Repository you file now!</h1>
+                                                    <p>Lorem ipsum dollor si amet amet jabang bayi</p>
+                                                </div>
+                                            </li>
+                                            <!-- end task item -->
+                                            <li>
+                                                <!-- Task item -->
+                                                <div class="task-list-item">
+                                                    <h2>Fri, 20 Mar 2014
+                                                        <span>8:00
+                                                            <small>PM</small>
+                                                        </span>
+                                                    </h2>
+                                                    <h1>Fill the job description</h1>
+                                                    <p>Lorem ipsum dollor si amet amet jabang bayi</p>
+                                                </div>
+                                            </li>
+                                            <!-- end task item -->
+                                        </ul>
+                                    </li>
+
+                                    <li class="footer-red">
+                                        <div class="btn btn-xs bg-opacity-white-btn  fontello-arrows-cw"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-trash"></div>
+                                        <div class="btn btn-xs bg-opacity-white-btn fontello-eye-outline"></div>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of menu right -->
+            </div>
+        </div>
+
+        <!-- SIDE MENU -->
+        <div class="wrap-sidebar-content">
+            <div id="skin-select">
+                <a id="toggle">
+                    <span class="fa fa-angle-left"></span>
+                    <span class="fa fa-angle-right"></span>
+                </a>
+
+                <div class="skin-part">
+                    <div id="tree-wrap">
+                        <div class="side-bar">
+                            <ul id="menu-showhide" class="topnav">
+                                <li class="devider-title">
+                                    <h3>
+                                        <span>Desain Kit Menu</span>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="index.html" title="Dashboard">
+                                        <i class="fontello-desktop-1"></i>
+                                        <span>Dashboard</span>
+                                        <!--   <div class="noft-blue">New</div> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="#" title="Mail">
+                                        <i class=" fontello-mail-1"></i>
+                                        <span>mail</span>
+
+                                    </a>
+                                    <ul>
+                                        <!--  <li class="hide-min-toggle">UI Element</li> -->
+                                        <li>
+                                            <!-- class="active" -->
+                                            <a class="tooltip-tip2" href="mail.html" title="Index">Inbox<small class="side-menu-noft bg-aqua">289</small></a>
+                                        </li>
+                                        <li>
+                                            <!-- class="active" -->
+                                            <a class="tooltip-tip2" href="compose.html" title="Compose">Compose</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="#" title="UI">
+                                        <i class="fontello-note"></i>
+                                        <span>UI</span>
+                                    </a>
+                                    <ul>
+                                        <!--  <li class="hide-min-toggle">UI Element</li> -->
+                                        <li>
+                                            <!-- class="active" -->
+                                            <a class="tooltip-tip2" href="element.html" title="Element">Element</a>
+                                        </li>
+                                        <li><a class="tooltip-tip2" href="button.html" title="Button">
+                                            Button
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="wizard.html" title="Tab & Accordion">Wizard</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="calendar.html" title="Calender">Calendar</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="tree.html" title="Tree View">Tree View</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="grids.html" title="Grids">Grids</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="chart.html" title="Chart">Chart</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip" href="typhography.html" title="Typhoghrapy">
+                                                
+                                                Typhoghrapy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="devider-horizontal"></li>
+                                <li class="devider-title">
+                                    <h3>
+                                        <span>Component</span>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="#" title="Form">
+                                        <i class="fontello-doc-1"></i>
+                                        <span>Form</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a class="tooltip-tip2" href="form-element.html" title="Form Elements">Form Elements</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="andvance-form.html" title="Andvance Form">Andvance Form</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="text-editor.html" title="Text Editor">Text Editor</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="file-upload.html" title="File Upload">File Upload</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="#" title="Tables">
+                                        <i class="fontello-calendar-1"></i>
+                                        <span>Tables</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a class="tooltip-tip2" href="table-static.html" title="Table Static">Table Static</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="table-dynamic.html" title="Table Dynamic">Table Dynamic</a>
+
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="icon.html" title="Icons">
+                                        <i class="fontello-food"></i>
+                                        <span>Icons</span>
+                                        <div class="noft-blue bg-green" style="display: inline-block; float: none;">New</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="map.html" title="Map">
+                                        <i class="fontello-location-1"></i>
+                                        <span>Map</span>
+
+                                    </a>
+                                </li>
+                                <li class="devider-horizontal"></li>
+                                <li class="devider-title">
+                                    <h3>
+                                        <span>Special Page</span>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <a class="tooltip-tip" href="#" title="Extra">
+                                        <i class="fontello-beaker"></i>
+                                        <span>Extra</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a class="tooltip-tip2" href="invoice.html" title="Invoice">Invoice</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="pricing_table.html" title="Pricing Table">Pricing Table</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="time-line.html" title="Time Line">Time Line</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="404.html" title="404 Error Page">404 Error Page</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="500.html" title="500 Error Page">500 Error Page</a>
+                                        </li>
+                                        <li>
+                                            <a class="tooltip-tip2" href="lock-screen.html" title="Lock Screen">Lock Screen</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a class="tooltip-tip " href="login.html" title="login">
+                                        <i class=" fontello-lock-1"></i>
+                                        <span>Login</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="side-dash">
+                                <h3>
+                                    <span>Task Progress</span>
+                                </h3>
+                                <ul class="side-dashh-list">
+                                    <li>
+                                        <!-- Task item -->
+                                        <a href="#">
+                                            <h3 class="fontello-leaf">
+                                                Tidy up your files
+                                                <small class="pull-right">35%</small>
+                                            </h3>
+                                            <div class="progress xs bg-opacity-one height-tiny">
+                                                <div class="progress-bar bg-blue " style="width: 35%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="sr-only">35% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end task item -->
+                                    <li>
+                                        <!-- Task item -->
+                                        <a href="#">
+                                            <h3 class="fontello-box">
+                                                Check server status
+                                                <small class="pull-right">40%</small>
+                                            </h3>
+                                            <div class="progress xs bg-opacity-one height-tiny">
+                                                <div class="progress-bar bg-aqua" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="sr-only">40% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- end task item -->
+                                    <li>
+                                        <!-- Task item -->
+                                        <a href="#">
+                                            <h3 class="fontello-headphones">
+                                                Support costumer
+                                                <small class="pull-right">60%</small>
+                                            </h3>
+                                            <div class="progress xs bg-opacity-one height-tiny">
+                                                <div class="progress-bar bg-red-orange" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="sr-only">60% Complete</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <h3>
+                                    <span>Reply</span>
+                                </h3>
+                                <div id="doughnutChart" class="chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/skin-select -->
+            <!-- END OF SIDE MENU -->
+
+            <!-- Breadcrumb -->
+            <div class="sub-board">
+                <span class="header-icon"><i class="icon-home"></i>
+                </span>
+                <ol class="breadcrumb newcrumb ng-scope">
+                    <li>
+                        <a href="#">
+                            <span>
+                            </span>Form</a>
+                    </li>
+                    <li><a href="#">File Upload</a>
+                    </li>
+                </ol>
+                <div class="dark" style="visibility: visible;">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control search rounded id_search" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- End of Breadcrumb -->
+
+
+
+
+
+
+            <!-- CONTENT -->
+            <div class="wrap-fluid" id="paper-bg">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <!-- tools box -->
+                                <div class="pull-right box-tools">
+
+                                    <span class="box-btn" data-widget="collapse"><i class="fa fa-minus"></i>
+                                    </span>
+                                    <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
+                                    </span>
+                                </div>
+                                <h3 class="box-title"><i class="fontello-upload"></i> 
+                                    <span>Image Uploader</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div class="row demo-columns">
+                                    <div class="col-md-6">
+                                        <!-- D&D Zone-->
+                                        <div id="drag-and-drop-zone" class="uploader">
+                                            <div>Drag &amp; Drop Images Here</div>
+                                            <div class="or">-or-</div>
+                                            <div class="browser">
+                                                <label>
+                                                    <span>Click to open the file Browser</span>
+                                                    <input type="file" name="files[]" multiple="multiple" title='Click to add Files'>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- /D&D Zone -->
+
+                                        <!-- Debug box -->
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h5 class="panel-title">Debug</h5>
+                                            </div>
+                                            <div class="panel-body demo-panel-debug">
+                                                <ul id="demo-debug">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- /Debug box -->
+                                    </div>
+                                    <!-- / Left column -->
+
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h5 class="panel-title">Uploads</h5>
+                                            </div>
+                                            <div class="panel-body demo-panel-files" id='demo-files'>
+                                                <span class="demo-note">No Files have been selected/droped yet...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / Right column -->
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <!-- tools box -->
+                                <div class="pull-right box-tools">
+
+                                    <span class="box-btn" data-widget="collapse"><i class="fa fa-minus"></i>
+                                    </span>
+                                    <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
+                                    </span>
+                                </div>
+                                <h3 class="box-title"><i class="fontello-upload"></i> 
+                                    <span>DropZone</span>
+                                </h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <form action="js/dropZone/upload" class="dropzone" id="my-dropzone"></form>
+                                <button style="margin-top:10px;" class="btn btn-info" id="submit-all">Submit all files</button>
+
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- #/paper bg -->
+        </div>
+        <!-- ./wrap-sidebar-content -->
+
+        <!-- / END OF CONTENT -->
+
+
+
+
+
+
+
+
+        <!-- FOOTER -->
+        <div id="footer">
+            <div class="devider-footer-left"></div>
+            <div class="time">
+                <p id="spanDate"></p>
+                <p id="clock"></p>
+            </div>
+            <div class="copyright">Copyright &copy; 2014 <a href="http://ndesaintheme.com/">Themesmile</a> Made with <i class="fontello-heart-filled text-red"></i>
+            </div>
+            <div class="devider-footer"></div>
+            <ul>
+                <li><i class="fa fa-facebook-square"></i>
+                </li>
+                <li><i class="fa fa-twitter-square"></i>
+                </li>
+                <li><i class="fa fa-instagram"></i>
+                </li>
+            </ul>
+        </div>
+        <!-- / FOOTER -->
+    </div>
+    <!-- Container -->
+
+
+
+
+
+    <!-- 
+    ================================================== -->
+    <!-- Main jQuery Plugins -->
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+
+    <script type='text/javascript' src='js/bootstrap.js'></script>
+    <script type='text/javascript' src='js/date.js'></script>
+    <script type='text/javascript' src='js/slimscroll/jquery.slimscroll.js'></script>
+    <script type='text/javascript' src='js/jquery.nicescroll.min.js'></script>
+    <script type='text/javascript' src='js/sliding-menu.js'></script>
+    <script type='text/javascript' src='js/scriptbreaker-multiple-accordion-1.js'></script>
+    <script type='text/javascript' src='js/tip/jquery.tooltipster.min.js'></script>
+    <script type='text/javascript' src="js/donut-chart/jquery.drawDoughnutChart.js"></script>
+    <script type='text/javascript' src="js/tab/jquery.newsTicker.js"></script>
+    <script type='text/javascript' src="js/tab/app.ticker.js"></script>
+    <script type='text/javascript' src='js/app.js'></script>
+
+    <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="js/upload/demos/js/demo.min.js"></script>
+    <script type="text/javascript" src="js/upload/src/dmuploader.min.js"></script>
+    <script src="js/dropZone/lib/dropzone.js"></script>
+
+
+    <script type="text/javascript">
+    $('#drag-and-drop-zone').dmUploader({
+        url: '/assets/js/upload/demos/upload.php',
+        dataType: 'json',
+        allowedTypes: 'image/*',
+        /*extFilter: 'jpg;png;gif',*/
+        onInit: function() {
+            $.danidemo.addLog('#demo-debug', 'default', 'Plugin initialized correctly');
+        },
+        onBeforeUpload: function(id) {
+            $.danidemo.addLog('#demo-debug', 'default', 'Starting the upload of #' + id);
+
+            $.danidemo.updateFileStatus(id, 'default', 'Uploading...');
+        },
+        onNewFile: function(id, file) {
+            $.danidemo.addFile('#demo-files', id, file);
+        },
+        onComplete: function() {
+            $.danidemo.addLog('#demo-debug', 'default', 'All pending tranfers completed');
+        },
+        onUploadProgress: function(id, percent) {
+            var percentStr = percent + '%';
+
+            $.danidemo.updateFileProgress(id, percentStr);
+        },
+        onUploadSuccess: function(id, data) {
+            $.danidemo.addLog('#demo-debug', 'success', 'Upload of file #' + id + ' completed');
+
+            $.danidemo.addLog('#demo-debug', 'info', 'Server Response for file #' + id + ': ' + JSON.stringify(data));
+
+            $.danidemo.updateFileStatus(id, 'success', 'Upload Complete');
+
+            $.danidemo.updateFileProgress(id, '100%');
+        },
+        onUploadError: function(id, message) {
+            $.danidemo.updateFileStatus(id, 'error', message);
+
+            $.danidemo.addLog('#demo-debug', 'error', 'Failed to Upload file #' + id + ': ' + message);
+        },
+        onFileTypeError: function(file) {
+            $.danidemo.addLog('#demo-debug', 'error', 'File \'' + file.name + '\' cannot be added: must be an image');
+        },
+        onFileSizeError: function(file) {
+            $.danidemo.addLog('#demo-debug', 'error', 'File \'' + file.name + '\' cannot be added: size excess limit');
+        },
+        /*onFileExtError: function(file){
+          $.danidemo.addLog('#demo-debug', 'error', 'File \'' + file.name + '\' has a Not Allowed Extension');
+        },*/
+        onFallbackMode: function(message) {
+            $.danidemo.addLog('#demo-debug', 'info', 'Browser not supported(do something else here!): ' + message);
+        }
+    });
+    </script>
+
+
+    <script>
+    Dropzone.options.myDropzone = {
+
+        // Prevents Dropzone from uploading dropped files immediately
+        autoProcessQueue: false,
+
+        init: function() {
+            var submitButton = document.querySelector("#submit-all")
+            myDropzone = this; // closure
+
+            submitButton.addEventListener("click", function() {
+                myDropzone.processQueue(); // Tell Dropzone to process all queued files.
+            });
+
+            // You might want to show the submit button only when 
+            // files are dropped here:
+            this.on("addedfile", function() {
+                // Show submit button here and/or inform user to click it.
+            });
+
+        }
+    };
+    </script>
+
+
+
+    <script type="text/javascript">
+    //<![CDATA[
+    $(window).load(function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({
+            'overflow': 'visible'
+        });
+        $.vegas('slideshow', {
+            delay: 8000,
+            backgrounds: [{
+                src: 'img/books-desk-google-nexus.jpg',
+                fade: 2000
+            }, {
+                src: 'img/analog-camera-kodak-old.jpg',
+                fade: 2000
+            }, {
+                src: 'img/activity-aviation-fly.jpg',
+                fade: 2000
+            }, {
+                src: 'img/boat-lake-landing-stage.jpg',
+                fade: 2000
+            }, {
+                src: 'img/city-people-shops.jpg',
+                fade: 2000
+            }, {
+                src: 'img/keyboard-old-technology.jpg',
+                fade: 2000
+            }, {
+                src: 'img/agriculture-farming-field.jpg',
+                fade: 2000
+            }, {
+                src: 'img/asia-buildings-china.jpg',
+                fade: 2000
+            }]
+        })('overlay', {
+            src: 'js/vegas/overlays/02.png'
+        });
+    })
+    //]]>
+    </script>
+
+
+
+
+</body>
+
+</html>
