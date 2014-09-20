@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="js/tip/tooltipster.css">
     <link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
 
-    <link rel="stylesheet" type="text/css" href="js/textEditor/editor.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="js/textEditor/sceditor/minified/themes/square.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="js/textEditor/editor.css">
+    <link rel="stylesheet" type="text/css" href="js/textEditor/sceditor/minified/themes/square.min.css">
     <link rel="stylesheet" type="text/css" href="js/textEditor/src/bootstrap-wysihtml5.css" />
     <!-- pace loader -->
     <script src="js/pace/pace.js"></script>
@@ -840,7 +840,8 @@
     <script type='text/javascript' src="js/tab/app.ticker.js"></script>
     <script type='text/javascript' src='js/app.js'></script>
 
-    <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+    <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> 
+    <script type='text/javascript' src='js/vegas.js'></script> 
     <script src="js/ckeditor/ckeditor.js" type="text/javascript"></script>
     <script src="js/textEditor/parser_rules/advanced.js"></script>
     <script src="js/textEditor/dist/wysihtml5-0.4.0pre.js"></script>
@@ -858,9 +859,7 @@
     $('.textarea1').wysihtml5();
     </script>
 
-    <script type="text/javascript">
-    $(prettyPrint);
-    </script>
+
     <script>
     // Source: http://www.backalleycoder.com/2011/03/20/link-tag-css-stylesheet-load-event/
     var loadCSS = function(url, callback) {
@@ -937,48 +936,6 @@
     $(".textarea").wysihtml5();
     </script>
 
-
-    <script type="text/javascript">
-    //<![CDATA[
-    $(window).load(function() { // makes sure the whole site is loaded
-        $('#status').fadeOut(); // will first fade out the loading animation
-        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-        $('body').delay(350).css({
-            'overflow': 'visible'
-        });
-        $.vegas('slideshow', {
-            delay: 8000,
-            backgrounds: [{
-                src: 'img/books-desk-google-nexus.jpg',
-                fade: 2000
-            }, {
-                src: 'img/analog-camera-kodak-old.jpg',
-                fade: 2000
-            }, {
-                src: 'img/activity-aviation-fly.jpg',
-                fade: 2000
-            }, {
-                src: 'img/boat-lake-landing-stage.jpg',
-                fade: 2000
-            }, {
-                src: 'img/city-people-shops.jpg',
-                fade: 2000
-            }, {
-                src: 'img/keyboard-old-technology.jpg',
-                fade: 2000
-            }, {
-                src: 'img/agriculture-farming-field.jpg',
-                fade: 2000
-            }, {
-                src: 'img/asia-buildings-china.jpg',
-                fade: 2000
-            }]
-        })('overlay', {
-            src: 'js/vegas/overlays/02.png'
-        });
-    })
-    //]]>
-    </script>
 
 
 

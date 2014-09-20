@@ -29,7 +29,7 @@ $(document).ready(function() {
 			$('ul.topnav ul').css({"position":"relative", "right":"0px", "width":"100%", "margin-top":"0px"});
 			$('#menu-showhide').css({"height":"auto", "margin":"-10px 0 0"});
 			$('#skin-select li i').css({"top":"8px 0"});
-			$('ul.topnav ul').css({"border-radius":"0"});
+			$('ul.topnav ul').css({"border-radius":"0", "padding":"15px 25px"});
 			
 		} else {
 			$(this).addClass('active')
@@ -49,7 +49,7 @@ $(document).ready(function() {
 			$('#menu-showhide').css({"height":"100vh", "margin":"40px 0 0"});
 			$('ul.topnav ul').css({"position":"absolute", "right":"-180px", "width":"180px", "margin-top":"-38px"});
 			$('#skin-select li i').css({"top":"0", "left":"-11px", "padding":"8px 0"});
-			$('ul.topnav ul').css({"border-radius":"0 4px 4px 0"});
+			$('ul.topnav ul').css({"border-radius":"0 4px 4px 0", "padding":"5px 10px"});
 			
 	
 

@@ -27,7 +27,7 @@
 
     <link rel="stylesheet" href="js/wizard/css/jquery.steps.css">
     <link rel="stylesheet" href="js/wizard/jquery.stepy.css" />
-    <link rel="stylesheet" href="js/tabs/acc-wizard.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/tabs/acc-wizard.min.css">
 
     <!-- pace loader -->
     <script src="js/pace/pace.js"></script>
@@ -507,7 +507,7 @@
                                             <a class="tooltip-tip2" href="table-dynamic.html" title="Table Dynamic">Table Dynamic</a>
 
                                         </li>
-                                
+
                                     </ul>
                                 </li>
                                 <li>
@@ -658,16 +658,18 @@
             <!-- CONTENT -->
             <div class="wrap-fluid" id="paper-bg">
 
-              <div class="row">
+                <div class="row">
                     <div class="col-lg-12">
                         <div class="box">
                             <div class="box-header">
-                          
-                                <h3 class="box-title"><i class="fontello-doc"></i> <span>Basic Wizard</span></h3>
+
+                                <h3 class="box-title"><i class="fontello-doc"></i> 
+                                    <span>Basic Wizard</span>
+                                </h3>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
-                                      <div id="wizard">
+                                <div id="wizard">
                                     <h2>First Step</h2>
                                     <section>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus dolor, tristique ac tempus nec, iaculis quis nisi.</p>
@@ -698,16 +700,18 @@
 
 
 
-                  <div class="row">
+                <div class="row">
                     <div class="col-lg-12">
                         <div class="box">
                             <div class="box-header">
-                            
-                                <h3 class="box-title"><i class="fontello-doc"></i> <span>Blank Page</span></h3>
+
+                                <h3 class="box-title"><i class="fontello-doc"></i> 
+                                    <span>Blank Page</span>
+                                </h3>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
-                                       <div id="wizard_vertical">
+                                <div id="wizard_vertical">
                                     <h2>First Step</h2>
                                     <section>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus dolor, tristique ac tempus nec, iaculis quis nisi.</p>
@@ -738,16 +742,18 @@
 
 
 
-                   <div class="row">
+                <div class="row">
                     <div class="col-lg-12">
                         <div class="box">
                             <div class="box-header">
-                             
-                                <h3 class="box-title"><i class="fontello-doc"></i> <span>Blank Page</span></h3>
+
+                                <h3 class="box-title"><i class="fontello-doc"></i> 
+                                    <span>Blank Page</span>
+                                </h3>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">
-                                       <div class="demo">
+                                <div class="demo">
                                     <form id="transition-duration-demo">
                                         <fieldset title="Login">
                                             <legend>Access</legend>
@@ -824,36 +830,6 @@
                         <!-- /.box -->
                     </div>
                 </div>
-
-
-
-
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="box">
-                            <div class="box-header">
-                                <!-- tools box -->
-                                <div class="pull-right box-tools">
-
-                                    <span class="box-btn" data-widget="collapse"><i class="fa fa-minus"></i>
-                                    </span>
-                                    <span class="box-btn" data-widget="remove"><i class="fa fa-times"></i>
-                                    </span>
-                                </div>
-                                <h3 class="box-title"><i class="fontello-doc"></i> <span>Blank Page</span></h3>
-                            </div>
-                            <!-- /.box-header -->
-                            <div class="box-body">
-                                <h4>Content Goes Here</h4>
-                                <p>content</p>
-                            </div>
-                            <!-- /.box-body -->
-                        </div>
-                        <!-- /.box -->
-                    </div>
-                </div>
-
             </div>
             <!-- #/paper bg -->
         </div>
@@ -912,13 +888,14 @@
     <script type='text/javascript' src="js/tab/app.ticker.js"></script>
     <script type='text/javascript' src='js/app.js'></script>
 
-    <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+    <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script>
+    <script type='text/javascript' src='js/vegas.js'></script>
 
     <script type="text/javascript" src="js/wizard/lib/jquery.cookie-1.3.1.js"></script>
     <script type="text/javascript" src="js/wizard/build/jquery.steps.js"></script>
     <script type="text/javascript" src="js/wizard/jquery.stepy.js"></script>
 
-        <script>
+    <script>
     $(function() {
         $("#wizard").steps({
             headerTag: "h2",
@@ -952,52 +929,6 @@
 
     });
     </script>
-
-
-     <script type="text/javascript">
-    //<![CDATA[
-    $(window).load(function() { // makes sure the whole site is loaded
-        $('#status').fadeOut(); // will first fade out the loading animation
-        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-        $('body').delay(350).css({
-            'overflow': 'visible'
-        });
-        $.vegas('slideshow', {
-            delay: 8000,
-            backgrounds: [{
-                src: 'img/books-desk-google-nexus.jpg',
-                fade: 2000
-            }, {
-                src: 'img/analog-camera-kodak-old.jpg',
-                fade: 2000
-            }, {
-                src: 'img/activity-aviation-fly.jpg',
-                fade: 2000
-            }, {
-                src: 'img/boat-lake-landing-stage.jpg',
-                fade: 2000
-            }, {
-                src: 'img/city-people-shops.jpg',
-                fade: 2000
-            }, {
-                src: 'img/keyboard-old-technology.jpg',
-                fade: 2000
-            }, {
-                src: 'img/agriculture-farming-field.jpg',
-                fade: 2000
-            }, {
-                src: 'img/asia-buildings-china.jpg',
-                fade: 2000
-            }]
-        })('overlay', {
-            src: 'js/vegas/overlays/02.png'
-        });
-    })
-    //]]>
-    </script>
-
-
-
 
 </body>
 

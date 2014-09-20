@@ -853,100 +853,100 @@
                                 <p>A UI concept which merges loading indicators into the action that invoked them. Primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing. For a real-world example</p>
 
 
-                                <section class="button-demo">
+                                <div class="button-demo">
                                     <button class="ladda-button" data-size="xs" data-color="green" data-style="expand-left">Expand Left</button>
-                                </section>
+                                </div>
 
-                                <section class="button-demo">
-                                    <h3></h3>
+                                <div class="button-demo">
+                                  
                                     <button class="ladda-button" data-size="xs" data-color="green" data-style="expand-right">Expand Right</button>
-                                </section>
+                                </div>
 
-                                <section class="button-demo">
+                                <div class="button-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="green" data-style="expand-up">Expand Up</button>
-                                </section>
+                                </div>
 
-                                <section class="button-demo">
+                                <div class="button-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="green" data-style="expand-down">Expand Down</button>
-                                </section>
+                                </div>
 
                                 <br>
-                                <section class="button-demo">
+                                <div class="button-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="red" data-style="contract">Contract</button>
-                                </section>
+                                </div>
 
-                                <section class="button-demo">
-                                    <h3></h3>
+                                <div class="button-demo">
+                                 
                                     <button class="ladda-button" data-size="xs" data-color="red" data-style="contract-overlay" style="z-index: 10;">Contract Overlay</button>
-                                </section>
+                                </div>
 
-                                <section class="button-demo">
+                                <div class="button-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="red" data-style="zoom-in">Zoom In</button>
-                                </section>
+                                </div>
 
-                                <section class="button-demo">
+                                <div class="button-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="red" data-style="zoom-out">Zoom Out</button>
-                                </section>
+                                </div>
 
                                 <br>
-                                <section class="button-demo">
+                                <div class="button-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="blue" data-style="slide-left">Slide Left</button>
-                                </section>
+                                </div>
 
-                                <section class="button-demo">
+                                <div class="button-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="blue" data-style="slide-right">Slide Right</button>
-                                </section>
+                                </div>
 
-                                <section class="button-demo">
+                                <div class="button-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="blue" data-style="slide-up">Slide Up</button>
-                                </section>
+                                </div>
 
-                                <section class="button-demo">
+                                <div class="button-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="blue" data-style="slide-down">Slide Down</button>
-                                </section>
+                                </div>
 
                                 <br>
 
-                                <section class="progress-demo">
+                                <div class="progress-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="purple" data-style="expand-right">Expand Right</button>
-                                </section>
+                                </div>
 
-                                <section class="progress-demo">
+                                <div class="progress-demo">
 
                                     <button class="ladda-button" data-size="xs" data-color="purple" data-style="contract">Contract</button>
-                                </section>
+                                </div>
 
                                 <br>
 
-                                <section class="progress-demo">
+                                <div class="progress-demo">
 
                                     <button class="ladda-button" data-color="mint" data-style="expand-right" data-size="xs">Extra Small</button>
-                                </section>
+                                </div>
 
-                                <section class="progress-demo">
+                                <div class="progress-demo">
 
                                     <button class="ladda-button" data-color="mint" data-style="expand-right" data-size="s">Small</button>
-                                </section>
+                                </div>
 
-                                <section class="progress-demo">
+                                <div class="progress-demo">
 
                                     <button class="ladda-button" data-color="mint" data-style="expand-right" data-size="l">Large</button>
-                                </section>
+                                </div>
 
-                                <section class="progress-demo">
+                                <div class="progress-demo">
 
                                     <button class="ladda-button" data-color="mint" data-style="expand-right" data-size="xl">Extra Large</button>
-                                </section>
+                                </div>
                             </div>
                             <!-- /.box-body -->
                         </div>
@@ -1205,7 +1205,8 @@
     <script type='text/javascript' src="js/tab/app.ticker.js"></script>
     <script type='text/javascript' src='js/app.js'></script>
 
-    <!--  <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> -->
+   <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script> 
+   <script type='text/javascript' src='js/vegas.js'></script> 
     <script type='text/javascript' src="js/button/ladda/spin.min.js"></script>
     <script type='text/javascript' src="js/button/ladda/ladda.min.js"></script>
     <script type='text/javascript' src='js/button/progressbutton.jquery.js'></script>
@@ -1320,47 +1321,7 @@
     </script>
 
 
-    <script type="text/javascript">
-    //<![CDATA[
-    $(window).load(function() { // makes sure the whole site is loaded
-        $('#status').fadeOut(); // will first fade out the loading animation
-        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-        $('body').delay(350).css({
-            'overflow': 'visible'
-        });
-        $.vegas('slideshow', {
-            delay: 8000,
-            backgrounds: [{
-                src: 'img/books-desk-google-nexus.jpg',
-                fade: 2000
-            }, {
-                src: 'img/analog-camera-kodak-old.jpg',
-                fade: 2000
-            }, {
-                src: 'img/activity-aviation-fly.jpg',
-                fade: 2000
-            }, {
-                src: 'img/boat-lake-landing-stage.jpg',
-                fade: 2000
-            }, {
-                src: 'img/city-people-shops.jpg',
-                fade: 2000
-            }, {
-                src: 'img/keyboard-old-technology.jpg',
-                fade: 2000
-            }, {
-                src: 'img/agriculture-farming-field.jpg',
-                fade: 2000
-            }, {
-                src: 'img/asia-buildings-china.jpg',
-                fade: 2000
-            }]
-        })('overlay', {
-            src: 'js/vegas/overlays/02.png'
-        });
-    })
-    //]]>
-    </script>
+ 
 
 
 

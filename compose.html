@@ -18,7 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dripicon.css">
     <link rel="stylesheet" href="css/typicons.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
@@ -684,21 +684,21 @@
                             <!-- /.box-header -->
                             <div class="box-body">
                                 <div class="compose_mail">
-                                    <form role="form">
+                                   
                                         <div class="form-group">
 
-                                            <input type="email" placeholder="To" id="exampleInputEmail1" class="form-control">
+                                            <input type="email" placeholder="To"  class="form-control">
                                         </div>
                                         <div class="form-group">
 
-                                            <input type="email" placeholder="Subject" id="exampleInputPassword1" class="form-control">
+                                            <input type="email" placeholder="Subject" class="form-control">
                                         </div>
                                         <div class="form-group">
 
-                                            <input type="email" placeholder="Cc" id="exampleInputPassword1" class="form-control">
+                                            <input type="email" placeholder="Cc"  class="form-control">
                                         </div>
 
-                                        <form>
+                                       
                                             <textarea id="editor1" name="editor1" rows="8" cols="150">
                                                 -- Agus Riyadi
                                                 <br>Graphic Designer
@@ -711,9 +711,9 @@
                                                 <br>
 
                                             </textarea>
-                                        </form>
+                                      
                                         <br>
-                                    </form>
+                                   
                                     <button style="margin-left:10px" class="btn bg-orange pull-right" type="submit">Send</button>
 
                                     <button class="btn bg-orange pull-right" type="submit">
@@ -791,55 +791,15 @@
     <!-- Editor -->
     <script src="js/ckeditor/ckeditor.js" type="text/javascript"></script>
     <script type='text/javascript' src='js/vegas/jquery.vegas.js'></script>
+    <script type='text/javascript' src='js/vegas.js'></script>
     <script>
-    // Replace the <textarea id="editor1"> with a CKEditor
-    // instance, using default configuration.
+
     CKEDITOR.replace('editor1');
-    //bootstrap WYSIHTML5 - text editor
+  
     $(".textarea").wysihtml5();
     </script>
 
-    <script type="text/javascript">
-    //<![CDATA[
-    $(window).load(function() { // makes sure the whole site is loaded
-        $('#status').fadeOut(); // will first fade out the loading animation
-        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-        $('body').delay(350).css({
-            'overflow': 'visible'
-        });
-        $.vegas('slideshow', {
-            delay: 8000,
-            backgrounds: [{
-                src: 'img/books-desk-google-nexus.jpg',
-                fade: 2000
-            }, {
-                src: 'img/analog-camera-kodak-old.jpg',
-                fade: 2000
-            }, {
-                src: 'img/activity-aviation-fly.jpg',
-                fade: 2000
-            }, {
-                src: 'img/boat-lake-landing-stage.jpg',
-                fade: 2000
-            }, {
-                src: 'img/city-people-shops.jpg',
-                fade: 2000
-            }, {
-                src: 'img/keyboard-old-technology.jpg',
-                fade: 2000
-            }, {
-                src: 'img/agriculture-farming-field.jpg',
-                fade: 2000
-            }, {
-                src: 'img/asia-buildings-china.jpg',
-                fade: 2000
-            }]
-        })('overlay', {
-            src: 'js/vegas/overlays/02.png'
-        });
-    })
-    //]]>
-    </script>
+
 
 
 
